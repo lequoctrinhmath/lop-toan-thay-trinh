@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Lớp Toán Thầy Trịnh – Hiểu bản chất, giỏi tự nhiên</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #eff6ff;
+  --secondary: #7c3aed;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --success-light: #ecfdf5;
+  --danger: #ef4444;
+  --danger-light: #fef2f2;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  flex: 1;
+}
+
+/* Header Banner */
+.brand-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #7c3aed 100%);
+  color: white;
+  padding: 24px 22px 20px;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px -5px rgba(37, 99, 235, 0.35);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.brand-header::before {
+  content: '📐';
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  font-size: 7.5rem;
+  opacity: 0.16;
+  pointer-events: none;
+}
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.brand-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.brand-subtitle {
+  font-size: 0.98rem;
+  opacity: 0.95;
+  font-weight: 600;
+  color: #fef08a;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.brand-contact {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #1e3a8a;
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+.contact-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  background: #f0fdf4;
+}
+.zalo-chip {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.zalo-chip:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 24px;
+  margin: 16px 0;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px -2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+/* Grade Filter Pills */
+.grade-filter-wrap {
+  margin-bottom: 18px;
+}
+.grade-filter-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.grade-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 2px 10px;
+  scrollbar-width: thin;
+}
+.grade-tab {
+  background: white;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.grade-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: #eff6ff;
+  transform: translateY(-1px);
+}
+.grade-tab.active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Exam Catalog Cards */
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.exam-catalog-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px 22px;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.exam-catalog-card:hover {
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.12);
+}
+.exam-meta-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.badge-grade {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.badge-count {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.exam-card-title {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.4;
+}
+.exam-card-desc {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+}
+.exam-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+.btn-enter-exam {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+.btn-enter-exam:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+/* Inputs & Buttons */
+input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 14px 16px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  outline: none;
+  background: #fbfcfe;
+  transition: all 0.2s;
+}
+input:focus {
+  border-color: var(--primary);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 14px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
+  margin: 10px 0;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-secondary { background: #475569; }
+.btn-secondary:hover { background: #334155; }
+
+/* Sticky Quiz Bar */
+.quiz-topbar {
+  position: sticky;
+  top: 10px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+.topbar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.btn-back-catalog {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.btn-back-catalog:hover {
+  background: #e2e8f0;
+}
+.student-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.timer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fef3c7;
+  color: #b45309;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.sound-toggle-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #475569;
+}
+
+/* Progress bar */
+.progress-wrap {
+  width: 100%;
+  height: 9px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Motivational Quote Bar */
+.motivation-bar {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Quick Jump Bubbles */
+.jump-bubbles {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 6px 2px;
+  scrollbar-width: thin;
+}
+.jump-bubble {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1.5px solid #cbd5e1;
+  background: white;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.jump-bubble.answered {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+.jump-bubble:hover { transform: scale(1.12); }
+
+/* Question Card */
+.q-card {
+  position: relative;
+  background: white;
+  border-radius: 18px;
+  padding: 22px 20px;
+  margin: 18px 0;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+  transition: all 0.2s;
+}
+.q-card:hover { border-color: #cbd5e1; }
+.q-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 4px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.q-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 18px;
+  line-height: 1.65;
+}
+
+/* Question Figure SVG */
+.q-fig-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 18px;
+  padding: 14px 10px;
+  background: #f8fafc;
+  border-radius: 14px;
+  border: 1.5px dashed #cbd5e1;
+  overflow-x: auto;
+}
+.q-fig-wrap svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Option item */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.option-label {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+.option-label:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+  transform: translateX(3px);
+}
+.option-label input { display: none; }
+.opt-circle {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: #475569;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.option-label.checked {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+.option-label.checked .opt-circle {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Review State */
+.option-label.ok {
+  background: #dcfce7 !important;
+  border-color: #10b981 !important;
+  color: #065f46;
+  font-weight: 600;
+}
+.option-label.ok .opt-circle {
+  background: #10b981 !important;
+  border-color: #10b981 !important;
+  color: white !important;
+}
+.option-label.bad {
+  background: #fee2e2 !important;
+  border-color: #ef4444 !important;
+  color: #991b1b;
+}
+.option-label.bad .opt-circle {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: white !important;
+}
+
+.why-box {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #78350f;
+  line-height: 1.55;
+}
+
+/* Result Modal / Card */
+.result-card {
+  text-align: center;
+  padding: 38px 20px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08);
+}
+.score-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b82f6, #7c3aed);
+  color: white;
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.35);
+  animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+.score-num { font-size: 2.6rem; font-weight: 800; line-height: 1; }
+.score-max { font-size: 0.85rem; opacity: 0.9; }
+.feedback-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+.feedback-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 20px;
+}
+
+/* Admin link & panel */
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: #94a3b8;
+  font-size: 0.88rem;
+}
+.admin-trigger {
+  color: #64748b;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.admin-trigger:hover { color: var(--primary); }
+
+table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.92rem; }
+th, td { border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; }
+th { background: #f8fafc; font-weight: 700; }
+
+.hide { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Brand Header -->
+  <header class="brand-header">
+    <div class="brand-badge">Toán Cấp 2 & Cấp 3 Chất Lượng Cao</div>
+    <h1 class="brand-title">📐 LỚP TOÁN THẦY TRỊNH</h1>
+    <p class="brand-subtitle">Lớp Toán Thầy Trịnh – Hiểu bản chất, giỏi tự nhiên.</p>
+    <div class="brand-contact">
+      <a href="tel:0936032378" class="contact-chip">
+        <span>📞 Hotline: 0936.032.378</span>
+      </a>
+      <a href="https://zalo.me/0936032378" target="_blank" class="contact-chip zalo-chip">
+        <span>💬 Nhắn Zalo Thầy</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 1. Catalog Section (Phân loại khối lớp & Danh sách đề thi) -->
+  <div id="catalogSection">
+    <div class="card" style="padding: 18px 20px 14px;">
+      <div class="grade-filter-title">
+        <span>🎯 CHỌN KHỐI LỚP CỦA EM:</span>
+      </div>
+      <div class="grade-tabs">
+        <button class="grade-tab active" onclick="filterGrade('all', this)">Tất cả khối</button>
+        <button class="grade-tab" onclick="filterGrade(6, this)">Khối 6</button>
+        <button class="grade-tab" onclick="filterGrade(7, this)">Khối 7</button>
+        <button class="grade-tab" onclick="filterGrade(8, this)">Khối 8</button>
+        <button class="grade-tab" onclick="filterGrade(9, this)">Khối 9</button>
+        <button class="grade-tab" onclick="filterGrade(10, this)">Khối 10</button>
+        <button class="grade-tab" onclick="filterGrade(11, this)">Khối 11</button>
+        <button class="grade-tab" onclick="filterGrade(12, this)">Khối 12</button>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin: 16px 4px 10px;">
+      <h3 id="catalogHeader" style="font-size: 1.15rem; color:#1e293b; font-weight:800;">📚 Danh Sách Các Bài Kiểm Tra:</h3>
+      <span id="catalogCount" style="font-size:0.88rem; color:#64748b; font-weight:600;"></span>
+    </div>
+
+    <div id="catalogList" class="catalog-list"></div>
+  </div>
+
+  <!-- 2. Student Info Entry Modal / Card -->
+  <div id="login" class="card hide">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+      <span id="loginGradeBadge" class="badge-grade">Khối lớp</span>
+      <button onclick="backToCatalog()" style="background:none; border:none; color:#64748b; font-weight:700; cursor:pointer; font-size:0.9rem;">
+        ← Đổi bài kiểm tra khác
+      </button>
+    </div>
+    <h2 id="loginExamTitle" style="font-size: 1.35rem; margin-bottom: 8px; color: #1e3a8a;">Tên bài kiểm tra</h2>
+    <p id="loginExamDesc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 18px;"></p>
+    
+    <label style="font-size: 0.9rem; font-weight: 600; color: #334155;">Họ và tên học sinh:</label>
+    <input id="name" placeholder="Ví dụ: Nguyễn Gia Huy" autocomplete="name" required>
+    
+    <label style="font-size: 0.9rem; font-weight: 600; color: #334155;">Lớp:</label>
+    <input id="cls" placeholder="Ví dụ: 8A1" autocomplete="off" required>
+    
+    <button class="btn btn-primary" onclick="start()">
+      <span>🚀 Bắt Đầu Làm Bài</span>
+    </button>
+    <p id="err" style="color: var(--danger); font-weight: 600; margin-top: 8px; font-size: 0.92rem;"></p>
+  </div>
+
+  <!-- 3. Quiz Interface -->
+  <div id="quizContainer" class="hide">
+    <div class="quiz-topbar">
+      <div class="topbar-meta">
+        <button class="btn-back-catalog" onclick="confirmExitQuiz()">
+          ← Đổi đề
+        </button>
+        <span class="student-tag">👤 <span id="tagStudent">Học sinh</span></span>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="sound-toggle-btn" onclick="toggleSound()">
+            <span id="soundIcon">🔊</span> <span id="soundTxt">Âm thanh</span>
+          </button>
+          <span class="timer-tag">⏱️ <span id="timerVal">00:00</span></span>
+        </div>
+      </div>
+
+      <!-- Specific Exam Title inside Quiz -->
+      <div style="margin: 6px 0 8px;">
+        <h2 id="quizActiveTitle" style="font-size: 1.15rem; color:#1e3a8a; font-weight:800; line-height:1.4;"></h2>
+      </div>
+
+      <div class="progress-wrap">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items:center; font-size: 0.84rem; color: #64748b; margin-bottom: 6px; flex-wrap:wrap; gap:4px;">
+        <span id="progressTxt" style="font-weight:700; color:#1e293b;">Đã làm: 0 câu (0%)</span>
+        <span id="motivateText" class="motivation-bar">🔥 Cố gắng lên nào! Hãy đọc kĩ từng câu nhé!</span>
+      </div>
+      <div id="jumpBubbles" class="jump-bubbles"></div>
+    </div>
+
+    <form id="quiz" onsubmit="return submitQuiz(event)"></form>
+  </div>
+
+  <!-- 4. Result Screen -->
+  <div id="result" class="result-card hide"></div>
+
+  <!-- 5. Admin Panel -->
+  <div id="adminBox" class="card hide">
+    <h3 style="margin-bottom: 12px; color: #334155;">Khu Vực Quản Trị - Giáo Viên</h3>
+    <input id="pass" type="password" placeholder="Mật khẩu giáo viên">
+    <input id="etitle" placeholder="Tên đề thi mới (tuỳ chọn)">
+    <input id="file" type="file" accept="application/pdf">
+    <button class="btn btn-primary" onclick="upload()">Tải PDF tạo đề</button>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+      <button class="btn btn-secondary" style="flex:1; min-width:140px; margin:0;" onclick="results()">📊 Xem Bảng Điểm</button>
+      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#4f46e5;" onclick="manageExams()">📁 Quản Lý & Xóa Đề Thi</button>
+      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#dc2626;" onclick="clearAllResults()">🗑️ Xóa Tất Cả Điểm</button>
+    </div>
+    <p id="amsg" style="margin-top: 10px; font-weight: 600;"></p>
+    <div id="rtable" style="overflow-x:auto;"></div>
+  </div>
+
+  <footer class="footer">
+    Lớp Toán Thầy Trịnh | Hotline: 0936.032.378
+    <br>
+    <span class="admin-trigger" onclick="toggleAdmin()">Dành cho Giáo viên</span>
+  </footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let allExams = [];
+let selectedExamId = null;
+let currentExamData = null;
+let who = null;
+let timerInterval = null, secondsElapsed = 0;
+let soundEnabled = true;
+let currentGradeFilter = 'all';
+
+// Web Audio API Sound generator
+let audioCtx = null;
+function playSound(type) {
+  if (!soundEnabled) return;
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    
+    if (type === 'select') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
+      osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.08); // A5
+      gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.08);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.08);
+    } else if (type === 'finish') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5
+      osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.1); // E5
+      osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.2); // G5
+      gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.4);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.4);
+    }
+  } catch (e) {}
+}
+
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  $('soundIcon').textContent = soundEnabled ? '🔊' : '🔇';
+  $('soundTxt').textContent = soundEnabled ? 'Âm thanh: Bật' : 'Âm thanh: Tắt';
+}
+
+const api = async (url, opt) => {
+  const r = await fetch(url, opt);
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error);
+  return j;
+};
+
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// Load All Exams on startup
+async function initCatalog() {
+  try {
+    allExams = await api('/api/exams');
+    renderCatalog();
+  } catch (e) {
+    $('catalogList').innerHTML = `<p style="color:#ef4444; font-weight:600;">Lỗi tải danh mục đề thi: ${esc(e.message)}</p>`;
+  }
+}
+initCatalog();
+
+function filterGrade(grade, btn) {
+  currentGradeFilter = grade;
+  document.querySelectorAll('.grade-tab').forEach(el => el.classList.remove('active'));
+  btn.classList.add('active');
+  renderCatalog();
+}
+
+function renderCatalog() {
+  let filtered = allExams;
+  if (currentGradeFilter !== 'all') {
+    filtered = allExams.filter(e => String(e.grade) === String(currentGradeFilter));
+  }
+
+  $('catalogCount').textContent = `${filtered.length} bài thi`;
+  if (currentGradeFilter === 'all') {
+    $('catalogHeader').textContent = '📚 Tất Cả Các Bài Kiểm Tra:';
+  } else {
+    $('catalogHeader').textContent = `📚 Các Bài Kiểm Tra Khối ${currentGradeFilter}:`;
+  }
+
+  if (filtered.length === 0) {
+    $('catalogList').innerHTML = `
+      <div class="card" style="text-align:center; padding:36px 20px; color:#64748b;">
+        <div style="font-size:2.4rem; margin-bottom:8px;">⏳</div>
+        <p style="font-weight:700; font-size:1.1rem; color:#334155;">Chưa có bài thi cho Khối ${currentGradeFilter}</p>
+        <p style="font-size:0.92rem; margin-top:4px;">Thầy Trịnh đang soạn thêm đề mới cho khối này. Em hãy chọn các khối khác để luyện tập nhé!</p>
+      </div>
+    `;
+    return;
+  }
+
+  $('catalogList').innerHTML = filtered.map(exam => `
+    <div class="exam-catalog-card" onclick="openExamLogin('${exam.id}')">
+      <div class="exam-meta-tags">
+        <span class="badge-grade">🎓 ${esc(exam.gradeName || 'Khối ' + exam.grade)}</span>
+        <span class="badge-count">📝 ${exam.count} câu hỏi</span>
+      </div>
+      <div>
+        <h4 class="exam-card-title">${esc(exam.title)}</h4>
+        ${exam.description ? `<p class="exam-card-desc">${esc(exam.description)}</p>` : ''}
+      </div>
+      <div class="exam-card-footer">
+        <button class="btn-enter-exam" onclick="event.stopPropagation(); openExamLogin('${exam.id}')">
+          <span>Vào thi bài này</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openExamLogin(examId) {
+  selectedExamId = examId;
+  const exam = allExams.find(e => e.id === examId);
+  if (!exam) return;
+
+  $('loginGradeBadge').textContent = `🎓 ${exam.gradeName || 'Khối ' + exam.grade}`;
+  $('loginExamTitle').textContent = exam.title;
+  $('loginExamDesc').textContent = exam.description || `Bài kiểm tra gồm ${exam.count} câu trắc nghiệm.`;
+  
+  $('catalogSection').classList.add('hide');
+  $('quizContainer').classList.add('hide');
+  $('result').classList.add('hide');
+  $('login').classList.remove('hide');
+  window.scrollTo({ top: $('login').offsetTop - 20, behavior: 'smooth' });
+}
+
+function backToCatalog() {
+  $('login').classList.add('hide');
+  $('quizContainer').classList.add('hide');
+  $('result').classList.add('hide');
+  $('catalogSection').classList.remove('hide');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function confirmExitQuiz() {
+  if (confirm('Em có chắc chắn muốn thoát khỏi bài thi này để chọn bài khác không? Kết quả chưa nộp sẽ không được lưu.')) {
+    clearInterval(timerInterval);
+    backToCatalog();
+  }
+}
+
+function startTimer() {
+  secondsElapsed = 0;
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    secondsElapsed++;
+    const m = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+    const s = String(secondsElapsed % 60).padStart(2, '0');
+    $('timerVal').textContent = `${m}:${s}`;
+  }, 1000);
+}
+
+function updateProgress() {
+  if (!currentExamData || !currentExamData.questions) return;
+  const answeredCount = currentExamData.questions.filter(q => document.querySelector(`input[name=q${q.n}]:checked`)).length;
+  const total = currentExamData.questions.length;
+  const percent = Math.round((answeredCount / total) * 100);
+  
+  $('progressBar').style.width = percent + '%';
+  $('progressTxt').textContent = `Đã làm: ${answeredCount}/${total} câu (${percent}%)`;
+
+  // Motivational messages
+  if (percent === 100) {
+    $('motivateText').textContent = '🎉 Tuyệt vời! Em đã hoàn thành tất cả câu hỏi!';
+  } else if (percent >= 75) {
+    $('motivateText').textContent = '⚡ Sắp cán đích rồi! Cố gắng kiểm tra kĩ nhé!';
+  } else if (percent >= 50) {
+    $('motivateText').textContent = '🔥 Đã qua nửa chặng đường! Tiếp tục bứt phá nào!';
+  } else if (percent >= 25) {
+    $('motivateText').textContent = '🚀 Khởi đầu rất tốt! Hãy duy trì phong độ nhé!';
+  } else {
+    $('motivateText').textContent = '💡 Đọc kĩ đề bài và chọn phương án chính xác nhất!';
+  }
+  
+  currentExamData.questions.forEach(q => {
+    const isAnswered = !!document.querySelector(`input[name=q${q.n}]:checked`);
+    const bubble = $(`bubble-${q.n}`);
+    if (bubble) {
+      if (isAnswered) bubble.classList.add('answered');
+      else bubble.classList.remove('answered');
+    }
+  });
+}
+
+async function start() {
+  const name = $('name').value.trim(), cls = $('cls').value.trim();
+  if (!name || !cls) return $('err').textContent = 'Vui lòng nhập đầy đủ họ tên và lớp';
+  $('err').textContent = '';
+  
+  try {
+    currentExamData = await api(`/api/exam?id=${selectedExamId}`);
+  } catch (e) {
+    return $('err').textContent = 'Lỗi tải đề thi: ' + e.message;
+  }
+  
+  who = { name, cls };
+  $('tagStudent').textContent = `${name} (${cls})`;
+  $('quizActiveTitle').textContent = `🎯 ${currentExamData.title}`;
+  
+  $('login').classList.add('hide');
+  
+  // Render Jump bubbles
+  $('jumpBubbles').innerHTML = currentExamData.questions.map(q => 
+    `<a href="#card-q-${q.n}" id="bubble-${q.n}" class="jump-bubble" title="Câu ${q.n}">${q.n}</a>`
+  ).join('');
+
+  // Render Questions
+  $('quiz').innerHTML = currentExamData.questions.map(q => `
+    <div class="q-card" id="card-q-${q.n}">
+      <div class="q-badge">Câu ${q.n} / ${currentExamData.questions.length}</div>
+      <div class="q-title">${esc(q.q)}</div>
+      ${q.svg ? `<div class="q-fig-wrap">${q.svg}</div>` : ''}
+      <div class="options-list">
+        ${q.opts.map((o, i) => {
+          const letter = 'ABCD'[i];
+          return `
+            <label class="option-label" data-q="${q.n}" data-l="${letter}" onclick="selectOption(${q.n}, '${letter}', this)">
+              <input type="radio" name="q${q.n}" value="${letter}">
+              <div class="opt-circle">${letter}</div>
+              <div class="opt-content">${esc(o)}</div>
+            </label>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `).join('') + `
+    <button class="btn btn-primary" style="margin-top: 26px; padding: 18px; font-size: 1.2rem;">
+      <span>📥 NỘP BÀI THI</span>
+    </button>
+  `;
+
+  $('quizContainer').classList.remove('hide');
+  startTimer();
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function selectOption(qNum, letter, labelEl) {
+  const siblings = document.querySelectorAll(`label[data-q="${qNum}"]`);
+  siblings.forEach(el => el.classList.remove('checked'));
+  labelEl.classList.add('checked');
+  const input = labelEl.querySelector('input');
+  if (input) input.checked = true;
+  playSound('select');
+  updateProgress();
+}
+
+async function submitQuiz(ev) {
+  ev.preventDefault();
+  const answers = {};
+  currentExamData.questions.forEach(q => {
+    const c = document.querySelector(`input[name=q${q.n}]:checked`);
+    if (c) answers[q.n] = c.value;
+  });
+  
+  const left = currentExamData.questions.length - Object.keys(answers).length;
+  if (left > 0 && !confirm(`Em còn ${left} câu chưa làm. Em có chắc chắn muốn nộp bài luôn không?`)) {
+    return false;
+  }
+  
+  clearInterval(timerInterval);
+
+  try {
+    const r = await api('/api/submit', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ examId: selectedExamId, ...who, answers })
+    });
+
+    // Review questions
+    r.review.forEach(({ n, a, why }) => {
+      document.querySelectorAll(`label[data-q="${n}"]`).forEach(l => {
+        if (l.dataset.l === a) {
+          l.classList.add('ok');
+        } else if (l.querySelector('input').checked) {
+          l.classList.add('bad');
+        }
+      });
+
+      const qCard = $(`card-q-${n}`);
+      const userChoice = answers[n] || 'Chưa chọn';
+      const isCorrect = answers[n] === a;
+
+      const whyDiv = document.createElement('div');
+      whyDiv.className = 'why-box';
+      whyDiv.innerHTML = `
+        <div style="font-weight: 700; margin-bottom: 4px; color: ${isCorrect ? '#065f46' : '#991b1b'}">
+          ${isCorrect ? '✔ Làm đúng!' : '✘ Làm chưa đúng!'} (Đáp án của em: <b>${userChoice}</b> | Đáp án chuẩn: <b>${a}</b>)
+        </div>
+        <div><b>💡 Hướng dẫn giải chi tiết:</b> ${esc(why)}</div>
+      `;
+      qCard.appendChild(whyDiv);
+    });
+
+    // Disable all inputs & remove submit button
+    document.querySelectorAll('#quiz input').forEach(i => i.disabled = true);
+    $('quiz').querySelector('button').remove();
+
+    // Feedback logic based on percentage
+    const pct = (r.score / r.total) * 10;
+    let badge = '', feedback = '', badgeColor = '', badgeBg = '';
+    
+    if (pct >= 9) {
+      badge = '👑 ĐẠI KIỆN TƯỚNG TOÁN HỌC';
+      feedback = `Thầy chúc mừng ${who.name}! Em có tư duy Toán học vô cùng sắc bén và xuất sắc tuyệt đối. Tiếp tục giữ vững phong độ nhé!`;
+      badgeColor = '#065f46'; badgeBg = '#dcfce7';
+      playSound('finish');
+      if (typeof confetti === 'function') confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+    } else if (pct >= 8) {
+      badge = '🥇 CAO THỦ TOÁN HỌC';
+      feedback = `Rất giỏi ${who.name}! Em đã chinh phục hầu như toàn bộ các thử thách của bài thi. Hãy xem lại một vài câu nhỏ bên dưới nhé!`;
+      badgeColor = '#1e40af'; badgeBg = '#dbeafe';
+      playSound('finish');
+      if (typeof confetti === 'function') confetti({ particleCount: 90, spread: 60, origin: { y: 0.6 } });
+    } else if (pct >= 6.5) {
+      badge = '🥈 CHIẾN BINH TƯ DUY';
+      feedback = `Làm tốt lắm ${who.name}! Điểm số rất đáng khen ngợi. Đọc thêm lời giải chi tiết của Thầy để hoàn thiện các câu còn nhầm lẫn nhé!`;
+      badgeColor = '#0369a1'; badgeBg = '#e0f2fe';
+      if (typeof confetti === 'function') confetti({ particleCount: 50, spread: 45, origin: { y: 0.6 } });
+    } else if (pct >= 5) {
+      badge = '🥉 ĐẠT CHUẨN KIẾN THỨC';
+      feedback = `Em đã đạt mức cơ bản. Hãy dành thời gian đọc kĩ từng câu giải thích phía dưới để nhớ sâu định nghĩa và phương pháp giải nhé!`;
+      badgeColor = '#92400e'; badgeBg = '#fef3c7';
+    } else {
+      badge = '🚀 CẦN BỨT PHÁ';
+      feedback = `Đừng nản lòng nhé! Em hãy đọc kĩ lại toàn bộ lời giải chi tiết từng câu của Thầy Trịnh phía dưới và nhắn Zalo hỏi Thầy nếu còn băn khoăn nhé!`;
+      badgeColor = '#991b1b'; badgeBg = '#fee2e2';
+    }
+
+    $('result').innerHTML = `
+      <div class="score-circle">
+        <span class="score-num">${r.score}</span>
+        <span class="score-max">trên ${r.total} câu</span>
+      </div>
+      <div class="feedback-badge" style="color: ${badgeColor}; background: ${badgeBg};">${badge}</div>
+      <h2 style="font-size: 1.45rem; margin-bottom: 4px;">${esc(who.name)} - Lớp ${esc(who.cls)}</h2>
+      <p style="font-weight:700; color:#1d4ed8; margin-bottom:12px;">Đề: ${esc(currentExamData.title)}</p>
+      <p class="feedback-text">${feedback}</p>
+      <div style="font-size: 0.95rem; color: #475569; margin-bottom: 22px;">
+        ⏱️ Thời gian hoàn thành: <b>${$('timerVal').textContent}</b>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a href="#card-q-1" class="btn btn-primary" style="text-decoration:none; display:inline-flex; width:auto; padding: 13px 26px;">
+          📖 Xem Lời Giải Chi Tiết
+        </a>
+        <button onclick="backToCatalog()" class="btn btn-secondary" style="width:auto; padding: 13px 26px;">
+          🔄 Chọn Làm Bài Thi Khác
+        </button>
+      </div>
+    `;
+
+    $('result').classList.remove('hide');
+    window.scrollTo({ top: $('result').offsetTop - 20, behavior: 'smooth' });
+
+  } catch (e) {
+    alert('Lỗi nộp bài: ' + e.message);
+  }
+  return false;
+}
+
+const toggleAdmin = () => $('adminBox').classList.toggle('hide');
+const H = () => ({ 'x-admin': $('pass').value });
+
+async function upload() {
+  const f = $('file').files[0];
+  if (!f) return $('amsg').textContent = 'Vui lòng chọn file PDF!';
+  const fd = new FormData();
+  fd.append('pdf', f);
+  fd.append('title', $('etitle').value);
+  $('amsg').textContent = 'Đang tải file lên...';
+  try {
+    const r = await api('/api/upload', { method: 'POST', headers: H(), body: fd });
+    $('amsg').innerHTML = `<span style="color:#10b981; font-weight:600;">✔ ${esc(r.message || 'Tải lên thành công!')}</span>`;
+  } catch (e) {
+    $('amsg').innerHTML = `<span style="color:#ef4444; font-weight:600;">✘ ${esc(e.message)}</span>`;
+  }
+}
+
+async function results() {
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs.length) {
+      $('rtable').innerHTML = '<p style="margin-top:10px; color:#64748b;">Chưa có học sinh nào nộp bài hoặc dữ liệu đã được làm sạch.</p>';
+      return;
+    }
+    $('rtable').innerHTML = `
+      <table>
+        <tr>
+          <th>STT</th>
+          <th>Họ và tên</th>
+          <th>Lớp</th>
+          <th>Khối</th>
+          <th>Bài kiểm tra</th>
+          <th>Điểm</th>
+          <th>Thời gian</th>
+          <th>Xóa</th>
+        </tr>
+        ${rs.map((r, i) => {
+          const date = new Date(r.at).toLocaleString('vi-VN');
+          return `
+            <tr>
+              <td>${i + 1}</td>
+              <td><b>${esc(r.name)}</b></td>
+              <td>${esc(r.cls)}</td>
+              <td><span class="badge-grade">${esc(r.gradeName || 'Khối ' + (r.grade || ''))}</span></td>
+              <td style="font-size:0.88rem; max-width:200px;">${esc(r.examTitle || r.exam)}</td>
+              <td style="color: #2563eb; font-weight:700;">${r.score}/${r.total}</td>
+              <td style="font-size:0.82rem; color:#64748b;">${date}</td>
+              <td>
+                <button type="button" style="width:auto; padding:4px 8px; font-size:0.8rem; background:#fee2e2; color:#b91c1c; border:1px solid #f87171; border-radius:6px; cursor:pointer;" onclick="deleteResult(${i})">Xóa</button>
+              </td>
+            </tr>
+          `;
+        }).join('')}
+      </table>
+    `;
+  } catch (e) {
+    $('amsg').textContent = e.message;
+  }
+}
+
+async function clearAllResults() {
+  if (!confirm('Thầy có chắc chắn muốn XÓA TOÀN BỘ kết quả thi của tất cả học sinh không?')) return;
+  try {
+    await api('/api/results/clear', { method: 'POST', headers: H() });
+    $('amsg').textContent = '✔ Đã xóa thành công toàn bộ kết quả thi!';
+    results();
+  } catch (e) {
+    $('amsg').textContent = e.message;
+  }
+}
+
+async function deleteResult(idx) {
+  if (!confirm('Thầy có chắc muốn xóa kết quả của học sinh này không?')) return;
+  try {
+    await api(`/api/results/${idx}`, { method: 'DELETE', headers: H() });
+    $('amsg').textContent = '✔ Đã xóa 1 bài thi.';
+    results();
+  } catch (e) {
+    $('amsg').textContent = e.message;
+  }
+}
+
+async function manageExams() {
+  if (!$('pass').value) return $('amsg').textContent = 'Vui lòng nhập mật khẩu giáo viên!';
+  try {
+    const list = await api('/api/exams');
+    if (!list.length) {
+      $('rtable').innerHTML = '<p style="margin-top:10px; color:#64748b;">Chưa có bài kiểm tra nào trong hệ thống.</p>';
+      return;
+    }
+    $('rtable').innerHTML = `
+      <h4 style="margin-top:16px; margin-bottom:8px; color:#1e293b; font-weight:800;">📁 Danh Sách Các Đề Thi Trong Hệ Thống:</h4>
+      <table>
+        <tr>
+          <th>STT</th>
+          <th>Khối</th>
+          <th>Tên bài kiểm tra</th>
+          <th>Số câu</th>
+          <th>Thao tác</th>
+        </tr>
+        ${list.map((e, i) => `
+          <tr>
+            <td>${i + 1}</td>
+            <td><span class="badge-grade">🎓 ${esc(e.gradeName || 'Khối ' + e.grade)}</span></td>
+            <td><b>${esc(e.title)}</b></td>
+            <td>${e.count} câu</td>
+            <td>
+              <button type="button" style="width:auto; padding:6px 12px; font-size:0.82rem; background:#fee2e2; color:#b91c1c; border:1px solid #f87171; border-radius:8px; font-weight:700; cursor:pointer;" onclick="deleteExam('${e.id}', '${esc(e.title)}')">
+                🗑️ Xóa Đề
+              </button>
+            </td>
+          </tr>
+        `).join('')}
+      </table>
+    `;
+    $('amsg').textContent = '';
+  } catch (e) {
+    $('amsg').textContent = e.message;
+  }
+}
+
+async function deleteExam(examId, examTitle) {
+  if (!confirm(`Thầy có chắc chắn muốn XÓA VĨNH VIỄN bài kiểm tra "${examTitle}" không?\nHọc sinh sẽ không thấy bài này trong danh sách nữa.`)) return;
+  try {
+    const r = await api(`/api/exams/${examId}`, { method: 'DELETE', headers: H() });
+    $('amsg').innerHTML = `<span style="color:#10b981; font-weight:700;">✔ ${esc(r.message || 'Đã xóa bài kiểm tra!')}</span>`;
+    await initCatalog();
+    manageExams();
+  } catch (e) {
+    $('amsg').innerHTML = `<span style="color:#ef4444; font-weight:700;">✘ ${esc(e.message)}</span>`;
+  }
+}
+</script>
+</body>
+</html>

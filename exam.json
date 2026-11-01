@@ -1,0 +1,494 @@
+{
+ "title": "Đấu trường tư duy trắc nghiệm Toán - Tứ Giác Hình Học 8",
+ "questions": [
+  {
+   "n": 1,
+   "q": "Điền từ thích hợp vào chỗ trống: \"Tứ giác có ...... là hình thoi.\"",
+   "opts": [
+    "hai cạnh đối song song và bằng nhau",
+    "bốn góc vuông",
+    "bốn cạnh bằng nhau",
+    "các cạnh đối song song"
+   ],
+   "a": "C",
+   "why": "Theo định nghĩa SGK Toán: Tứ giác có bốn cạnh bằng nhau là hình thoi."
+  },
+  {
+   "n": 2,
+   "q": "Điền từ thích hợp vào chỗ trống: \"Tứ giác có hai đường chéo … là hình thoi.\"",
+   "opts": [
+    "bằng nhau",
+    "giao nhau tại trung điểm mỗi đường và vuông góc với nhau",
+    "giao nhau tại trung điểm mỗi đường",
+    "bằng nhau và giao nhau tại trung điểm mỗi đường"
+   ],
+   "a": "B",
+   "why": "Tứ giác có hai đường chéo giao nhau tại trung điểm mỗi đường là hình bình hành. Hình bình hành có hai đường chéo vuông góc là hình thoi."
+  },
+  {
+   "n": 3,
+   "q": "Điền cụm từ thích hợp vào chỗ trống: \"Hình thoi có hai đường chéo …\"",
+   "opts": [
+    "cắt nhau tại trung điểm mỗi đường",
+    "là các đường phân giác của các góc của hình thoi",
+    "vuông góc với nhau",
+    "Cả A, B, C đều đúng"
+   ],
+   "a": "D",
+   "why": "Hình thoi có tất cả tính chất: hai đường chéo cắt nhau tại trung điểm mỗi đường, vuông góc với nhau và là phân giác các góc của hình thoi."
+  },
+  {
+   "n": 4,
+   "q": "Hình bình hành cần có thêm điều kiện nào sau đây thì trở thành hình thoi?",
+   "opts": [
+    "Có một góc vuông",
+    "Có hai cạnh kề bằng nhau",
+    "Có hai đường chéo bằng nhau",
+    "Có hai đường chéo cắt nhau tại trung điểm mỗi đường"
+   ],
+   "a": "B",
+   "why": "Theo dấu hiệu nhận biết: Hình bình hành có hai cạnh kề bằng nhau là hình thoi."
+  },
+  {
+   "n": 5,
+   "q": "Hãy chọn khẳng định SAI về hình thoi trong các câu sau:",
+   "opts": [
+    "Tứ giác có 4 cạnh bằng nhau là hình thoi",
+    "Tứ giác có hai đường chéo vuông góc với nhau và bằng nhau là hình thoi",
+    "Hình bình hành có đường chéo là phân giác của một góc là hình thoi",
+    "Hình bình hành có hai đường chéo vuông góc với nhau là hình thoi"
+   ],
+   "a": "B",
+   "why": "Khẳng định B sai vì hai đường chéo vuông góc và bằng nhau nhưng không cắt nhau tại trung điểm mỗi đường thì chưa chắc là hình thoi (ví dụ hình cánh diều)."
+  },
+  {
+   "n": 6,
+   "q": "Hình thoi KHÔNG có tính chất nào dưới đây?",
+   "opts": [
+    "Hai đường chéo cắt nhau tại trung điểm của mỗi đường",
+    "Hai đường chéo là các đường phân giác của các góc của hình thoi",
+    "Hai đường chéo bằng nhau",
+    "Hai đường chéo vuông góc với nhau"
+   ],
+   "a": "C",
+   "why": "Hình thoi thông thường có hai đường chéo không bằng nhau (chỉ bằng nhau khi hình thoi là hình vuông)."
+  },
+  {
+   "n": 7,
+   "q": "Chọn câu trả lời SAI trong các nhận định sau:",
+   "opts": [
+    "Hình bình hành có hai cạnh kề bằng nhau là hình thoi",
+    "Hình bình hành có một đường chéo là đường phân giác của một góc là hình thoi",
+    "Hình bình hành có hai đường chéo vuông góc với nhau là hình thoi",
+    "Tứ giác có bốn góc bằng nhau là hình thoi"
+   ],
+   "a": "D",
+   "why": "Tứ giác có bốn góc bằng nhau (mỗi góc bằng 90°) là hình chữ nhật, không nhất thiết là hình thoi."
+  },
+  {
+   "n": 8,
+   "q": "Tứ giác ABCD có 4 cạnh AB = BC = CD = DA là hình thoi theo dấu hiệu nào?",
+   "opts": [
+    "Tứ giác có hai đường chéo vuông góc",
+    "Hình bình hành có hai đường chéo bằng nhau",
+    "Tứ giác có hai đường chéo giao nhau tại trung điểm mỗi đường",
+    "Tứ giác có bốn cạnh bằng nhau"
+   ],
+   "a": "D",
+   "why": "Theo định nghĩa: Tứ giác có bốn cạnh bằng nhau là hình thoi.",
+   "svg": "<svg viewBox=\"0 0 240 180\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <!-- Diagonals -->\n  <line x1=\"40\" y1=\"90\" x2=\"200\" y2=\"90\" stroke=\"#94a3b8\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n  <line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"160\" stroke=\"#94a3b8\" stroke-dasharray=\"3,3\" stroke-width=\"1.5\"/>\n  <!-- Rhombus Edges -->\n  <polygon points=\"120,20 200,90 120,160 40,90\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Ticks on edges (single tick) -->\n  <line x1=\"77\" y1=\"52\" x2=\"83\" y2=\"58\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"157\" y1=\"58\" x2=\"163\" y2=\"52\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"157\" y1=\"122\" x2=\"163\" y2=\"128\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"77\" y1=\"128\" x2=\"83\" y2=\"122\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"120\" y=\"14\" font-weight=\"700\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"212\" y=\"94\" font-weight=\"700\" font-size=\"14\" fill=\"#0f172a\">C</text>\n  <text x=\"120\" y=\"176\" font-weight=\"700\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n  <text x=\"24\" y=\"94\" font-weight=\"700\" font-size=\"14\" fill=\"#0f172a\">A</text>\n\n  </svg>"
+  },
+  {
+   "n": 9,
+   "q": "Cho 3 tứ giác: Hình 1 (hai đường chéo vuông góc và cắt nhau tại trung điểm mỗi đường), Hình 2 (hình bình hành thông thường), Hình 3 (hình chữ nhật có chiều dài khác chiều rộng). Khẳng định nào đúng?",
+   "opts": [
+    "Cả ba hình đều là hình thoi",
+    "Hình 1 và hình 2 là hình thoi",
+    "Chỉ hình 1 là hình thoi",
+    "Cả ba hình đều không phải hình thoi"
+   ],
+   "a": "C",
+   "why": "Hình 1 là hình thoi vì hai đường chéo cắt nhau tại trung điểm mỗi đường (là HBH) và vuông góc với nhau. Hình 2 và 3 không có 4 cạnh bằng nhau.",
+   "svg": "<svg viewBox=\"0 0 560 180\" width=\"560\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <!-- HÌNH 1 -->\n  <g transform=\"translate(10, 0)\">\n    <polygon points=\"90,25 155,85 90,145 25,85\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <line x1=\"25\" y1=\"85\" x2=\"155\" y2=\"85\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"90\" y1=\"25\" x2=\"90\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Right angle at center -->\n    <path d=\"M 90 73 L 102 73 L 102 85\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <!-- Double ticks on horizontal diagonal -->\n    <line x1=\"55\" y1=\"80\" x2=\"55\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"59\" y1=\"80\" x2=\"59\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"121\" y1=\"80\" x2=\"121\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"125\" y1=\"80\" x2=\"125\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <!-- Single tick on vertical diagonal -->\n    <line x1=\"85\" y1=\"55\" x2=\"95\" y2=\"55\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"85\" y1=\"115\" x2=\"95\" y2=\"115\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <!-- Labels -->\n    <text x=\"20\" y=\"88\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"90\" y=\"18\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n    <text x=\"162\" y=\"88\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"90\" y=\"160\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n    <text x=\"90\" y=\"175\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\" text-anchor=\"middle\">Hình 1</text>\n  </g>\n\n  <!-- HÌNH 2 -->\n  <g transform=\"translate(195, 0)\">\n    <polygon points=\"35,135 135,135 155,35 55,35\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- 1 tick on top & bottom -->\n    <line x1=\"105\" y1=\"31\" x2=\"105\" y2=\"39\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"85\" y1=\"131\" x2=\"85\" y2=\"139\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <!-- 2 ticks on slanted edges -->\n    <line x1=\"43\" y1=\"81\" x2=\"49\" y2=\"87\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"40\" y1=\"84\" x2=\"46\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"143\" y1=\"81\" x2=\"149\" y2=\"87\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <line x1=\"140\" y1=\"84\" x2=\"146\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <!-- Labels -->\n    <text x=\"45\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"160\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n    <text x=\"142\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"22\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n    <text x=\"95\" y=\"175\" font-size=\"13\" font-weight=\"800\" fill=\"#475569\" text-anchor=\"middle\">Hình 2</text>\n  </g>\n\n  <!-- HÌNH 3 -->\n  <g transform=\"translate(385, 0)\">\n    <rect x=\"25\" y=\"35\" width=\"125\" height=\"100\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- 4 right angles -->\n    <path d=\"M 25 47 L 37 47 L 37 35\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 138 35 L 138 47 L 150 47\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 150 123 L 138 123 L 138 135\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 37 135 L 37 123 L 25 123\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <!-- Labels -->\n    <text x=\"12\" y=\"35\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"156\" y=\"35\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n    <text x=\"156\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"12\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n    <text x=\"87\" y=\"175\" font-size=\"13\" font-weight=\"800\" fill=\"#475569\" text-anchor=\"middle\">Hình 3</text>\n  </g>\n\n  </svg>"
+  },
+  {
+   "n": 10,
+   "q": "Cho hình thoi ABCD, O là giao điểm của hai đường chéo AC và BD. Khẳng định nào sau đây là SAI?",
+   "opts": [
+    "AB = BC = CD = DA",
+    "AB ⊥ CD",
+    "BC // AD",
+    "O là trung điểm của AC và BD"
+   ],
+   "a": "B",
+   "why": "AB và CD là hai cạnh đối song song của hình thoi ABCD, do đó AB // CD chứ không thể vuông góc (AB ⊥ CD là sai).",
+   "svg": "<svg viewBox=\"0 0 260 190\" width=\"260\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <polygon points=\"130,25 220,95 130,165 40,95\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"95\" x2=\"220\" y2=\"95\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"130\" y1=\"25\" x2=\"130\" y2=\"165\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Right angle at O -->\n  <path d=\"M 130 83 L 142 83 L 142 95\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <!-- Ticks -->\n  <line x1=\"126\" y1=\"60\" x2=\"134\" y2=\"60\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"126\" y1=\"130\" x2=\"134\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"83\" y1=\"91\" x2=\"83\" y2=\"99\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"87\" y1=\"91\" x2=\"87\" y2=\"99\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"173\" y1=\"91\" x2=\"173\" y2=\"99\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"177\" y1=\"91\" x2=\"177\" y2=\"99\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <!-- Labels -->\n  <text x=\"130\" y=\"16\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">A</text>\n  <text x=\"230\" y=\"99\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n  <text x=\"130\" y=\"182\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">C</text>\n  <text x=\"24\" y=\"99\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n  <text x=\"118\" y=\"90\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">O</text>\n\n  </svg>"
+  },
+  {
+   "n": 11,
+   "q": "Cho hình bình hành MNPQ (có MN = PQ và MN // PQ). Để chứng minh MNPQ là hình thoi ta cần chứng minh thêm điều kiện nào?",
+   "opts": [
+    "MP = NQ",
+    "MP ⊥ NQ",
+    "NP ⊥ PQ",
+    "NP = MQ"
+   ],
+   "a": "B",
+   "why": "Hình bình hành có hai đường chéo vuông góc với nhau (MP ⊥ NQ) là hình thoi.",
+   "svg": "<svg viewBox=\"0 0 250 180\" width=\"250\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <polygon points=\"125,25 210,90 125,155 40,90\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"90\" x2=\"210\" y2=\"90\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"125\" y1=\"25\" x2=\"125\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Ticks on MN and PQ -->\n  <line x1=\"80\" y1=\"55\" x2=\"86\" y2=\"61\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"165\" y1=\"120\" x2=\"171\" y2=\"126\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"125\" y=\"16\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">N</text>\n  <text x=\"220\" y=\"94\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">P</text>\n  <text x=\"125\" y=\"172\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">Q</text>\n  <text x=\"25\" y=\"94\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">M</text>\n\n  </svg>"
+  },
+  {
+   "n": 12,
+   "q": "Cho tứ giác EFGH có hai đường chéo cắt nhau tại trung điểm mỗi đường (là hình bình hành). Để chứng minh EFGH là hình thoi ta cần chứng minh thêm điều kiện nào?",
+   "opts": [
+    "EF = GH",
+    "EF // GH",
+    "EF = EG",
+    "EF = EH"
+   ],
+   "a": "D",
+   "why": "Hình bình hành có hai cạnh kề bằng nhau (EF = EH) là hình thoi.",
+   "svg": "<svg viewBox=\"0 0 240 180\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <polygon points=\"120,25 195,90 120,155 45,90\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"45\" y1=\"90\" x2=\"195\" y2=\"90\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"120\" y1=\"25\" x2=\"120\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Ticks: EI = IG (double tick), FI = IH (single tick) -->\n  <line x1=\"80\" y1=\"86\" x2=\"80\" y2=\"94\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"84\" y1=\"86\" x2=\"84\" y2=\"94\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"156\" y1=\"86\" x2=\"156\" y2=\"94\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"160\" y1=\"86\" x2=\"160\" y2=\"94\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"116\" y1=\"58\" x2=\"124\" y2=\"58\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <line x1=\"116\" y1=\"122\" x2=\"124\" y2=\"122\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  <!-- Labels -->\n  <text x=\"120\" y=\"16\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">F</text>\n  <text x=\"204\" y=\"94\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">G</text>\n  <text x=\"120\" y=\"172\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">H</text>\n  <text x=\"30\" y=\"94\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">E</text>\n  <text x=\"110\" y=\"86\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">I</text>\n\n  </svg>"
+  },
+  {
+   "n": 13,
+   "q": "Hình thoi có chu vi bằng 36cm thì độ dài cạnh của nó bằng bao nhiêu?",
+   "opts": [
+    "9cm",
+    "18cm",
+    "16cm",
+    "Không tính được"
+   ],
+   "a": "A",
+   "why": "Hình thoi có 4 cạnh bằng nhau nên độ dài cạnh = 36 : 4 = 9 (cm)."
+  },
+  {
+   "n": 14,
+   "q": "Hình thoi ABCD có chu vi bằng 100cm thì độ dài cạnh AB bằng bao nhiêu?",
+   "opts": [
+    "25cm",
+    "50cm",
+    "20cm",
+    "40cm"
+   ],
+   "a": "A",
+   "why": "Chu vi hình thoi = 4 . AB = 100cm => AB = 100 : 4 = 25 (cm)."
+  },
+  {
+   "n": 15,
+   "q": "Cho hình thoi ABCD có góc ABD = 50°. Tính số đo góc BCD.",
+   "opts": [
+    "50°",
+    "60°",
+    "80°",
+    "70°"
+   ],
+   "a": "C",
+   "why": "BD là phân giác góc ABC => góc ABC = 2 . 50° = 100°. Hai góc ABC và BCD trong cùng phía bù nhau => góc BCD = 180° - 100° = 80°."
+  },
+  {
+   "n": 16,
+   "q": "Trong các tứ giác: Hình 4 (có 4 góc vuông nhưng 2 cạnh kề không bằng nhau), Hình 5 (có 4 cạnh bằng nhau nhưng không có góc vuông), Hình 6 (có 4 góc vuông và 4 cạnh bằng nhau). Hình nào là hình vuông?",
+   "opts": [
+    "Hình 4",
+    "Hình 5",
+    "Hình 6",
+    "Hình 4 và hình 6"
+   ],
+   "a": "C",
+   "why": "Hình vuông là tứ giác có 4 góc vuông và 4 cạnh bằng nhau (Hình 6).",
+   "svg": "<svg viewBox=\"0 0 560 180\" width=\"560\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <!-- HÌNH 4: Hình chữ nhật -->\n  <g transform=\"translate(10, 0)\">\n    <rect x=\"25\" y=\"30\" width=\"130\" height=\"90\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <path d=\"M 25 42 L 37 42 L 37 30\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 143 30 L 143 42 L 155 42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 37 120 L 37 108 L 25 108\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <text x=\"12\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"160\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n    <text x=\"160\" y=\"125\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"12\" y=\"125\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n    <text x=\"90\" y=\"160\" font-size=\"13\" font-weight=\"800\" fill=\"#475569\" text-anchor=\"middle\">Hình 4</text>\n  </g>\n\n  <!-- HÌNH 5: Hình thoi -->\n  <g transform=\"translate(195, 0)\">\n    <polygon points=\"90,20 155,75 90,130 25,75\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <line x1=\"56\" y1=\"46\" x2=\"62\" y2=\"52\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"120\" y1=\"46\" x2=\"126\" y2=\"52\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"120\" y1=\"100\" x2=\"126\" y2=\"106\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"56\" y1=\"100\" x2=\"62\" y2=\"106\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <text x=\"90\" y=\"12\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n    <text x=\"163\" y=\"78\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"90\" y=\"145\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n    <text x=\"12\" y=\"78\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"90\" y=\"160\" font-size=\"13\" font-weight=\"800\" fill=\"#475569\" text-anchor=\"middle\">Hình 5</text>\n  </g>\n\n  <!-- HÌNH 6: Hình vuông -->\n  <g transform=\"translate(385, 0)\">\n    <rect x=\"35\" y=\"25\" width=\"95\" height=\"95\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- 4 góc vuông -->\n    <path d=\"M 35 37 L 47 37 L 47 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 118 25 L 118 37 L 130 37\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 130 108 L 118 108 L 118 120\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <path d=\"M 47 120 L 47 108 L 35 108\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <!-- 4 cạnh bằng nhau -->\n    <line x1=\"82\" y1=\"21\" x2=\"82\" y2=\"29\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"82\" y1=\"116\" x2=\"82\" y2=\"124\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"31\" y1=\"72\" x2=\"39\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <line x1=\"126\" y1=\"72\" x2=\"134\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.8\"/>\n    <text x=\"22\" y=\"25\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n    <text x=\"136\" y=\"25\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n    <text x=\"136\" y=\"125\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n    <text x=\"22\" y=\"125\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n    <text x=\"82\" y=\"160\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\" text-anchor=\"middle\">Hình 6</text>\n  </g>\n\n  </svg>"
+  },
+  {
+   "n": 17,
+   "q": "Định nghĩa đúng về hình vuông là:",
+   "opts": [
+    "Hình vuông là tứ giác có bốn góc vuông",
+    "Hình vuông là tứ giác có bốn cạnh bằng nhau",
+    "Hình vuông là tứ giác có ba góc vuông và ba cạnh bằng nhau",
+    "Hình vuông là tứ giác có bốn góc vuông và bốn cạnh bằng nhau"
+   ],
+   "a": "D",
+   "why": "Theo định nghĩa: Hình vuông là tứ giác có bốn góc vuông và bốn cạnh bằng nhau."
+  },
+  {
+   "n": 18,
+   "q": "Hai đường chéo của hình vuông có tính chất nào sau đây?",
+   "opts": [
+    "Chúng song song với nhau",
+    "Chúng bằng nhau",
+    "Chúng cắt nhau tại trung điểm của mỗi đường",
+    "Chúng bằng nhau, vuông góc với nhau và cắt nhau tại trung điểm của mỗi đường"
+   ],
+   "a": "D",
+   "why": "Hình vuông có hai đường chéo bằng nhau, vuông góc với nhau và cắt nhau tại trung điểm mỗi đường."
+  },
+  {
+   "n": 19,
+   "q": "Để chứng minh một hình chữ nhật là hình vuông, cách nào sau đây là SAI?",
+   "opts": [
+    "Hình chữ nhật có hai cạnh kề bằng nhau",
+    "Hình chữ nhật có hai đường chéo bằng nhau",
+    "Hình chữ nhật có hai đường chéo vuông góc",
+    "Hình chữ nhật có một đường chéo là đường phân giác của một góc"
+   ],
+   "a": "B",
+   "why": "Mọi hình chữ nhật vốn dĩ đã có 2 đường chéo bằng nhau, do đó điều này không giúp suy ra hình vuông."
+  },
+  {
+   "n": 20,
+   "q": "Để chứng minh một hình thoi là hình vuông, cách nào sau đây là ĐÚNG?",
+   "opts": [
+    "Hình thoi có hai đường chéo vuông góc",
+    "Hình thoi có hai cạnh kề bằng nhau",
+    "Hình thoi có một góc vuông",
+    "Hình thoi có một đường chéo là đường phân giác của một góc"
+   ],
+   "a": "C",
+   "why": "Dấu hiệu nhận biết: Hình thoi có một góc vuông (hoặc hai đường chéo bằng nhau) là hình vuông."
+  },
+  {
+   "n": 21,
+   "q": "Khẳng định nào sau đây là sai?",
+   "opts": [
+    "Hình vuông vừa là hình thoi vừa là hình chữ nhật",
+    "Hình vuông là hình chữ nhật nhưng không là hình thoi",
+    "Hình vuông có hai đường chéo bằng nhau và vuông góc với nhau",
+    "Hình vuông có đường chéo là phân giác các góc trong hình vuông"
+   ],
+   "a": "B",
+   "why": "Hình vuông có 4 cạnh bằng nhau nên hình vuông chắc chắn là hình thoi. Khẳng định B là sai."
+  },
+  {
+   "n": 22,
+   "q": "Các dấu hiệu nhận biết sau, dấu hiệu nào KHÔNG ĐỦ để kết luận tứ giác là hình vuông?",
+   "opts": [
+    "Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông",
+    "Hình thoi có một góc vuông là hình vuông",
+    "Hình chữ nhật có một đường chéo là đường phân giác của một góc là hình vuông",
+    "Hình thoi có hai đường chéo vuông góc là hình vuông"
+   ],
+   "a": "D",
+   "why": "Mọi hình thoi đều có hai đường chéo vuông góc, vì vậy điều này không đủ chứng minh nó là hình vuông."
+  },
+  {
+   "n": 23,
+   "q": "Khẳng định nào sau đây không phải là tính chất của hình vuông (mà là định nghĩa)?",
+   "opts": [
+    "Các cặp cạnh đối song song và bằng nhau",
+    "Hai đường chéo là các đường phân giác của các góc của hình vuông",
+    "Bốn góc vuông",
+    "Hai đường chéo vuông góc với nhau"
+   ],
+   "a": "C",
+   "why": "Bốn góc vuông và bốn cạnh bằng nhau là định nghĩa hình vuông; các đáp án A, B, D là tính chất được suy ra."
+  },
+  {
+   "n": 24,
+   "q": "Điền từ thích hợp vào chỗ trống: \"Hình thoi có hai đường chéo … là hình vuông\".",
+   "opts": [
+    "bằng nhau",
+    "vuông góc với nhau và cắt nhau tại trung điểm mỗi đường",
+    "cắt nhau tại trung điểm mỗi đường",
+    "vuông góc"
+   ],
+   "a": "A",
+   "why": "Dấu hiệu nhận biết: Hình thoi có hai đường chéo bằng nhau là hình vuông."
+  },
+  {
+   "n": 25,
+   "q": "Hình vuông có bao nhiêu trục đối xứng?",
+   "opts": [
+    "Không có trục đối xứng",
+    "Có 3 trục đối xứng",
+    "Có 2 trục đối xứng",
+    "Có 4 trục đối xứng"
+   ],
+   "a": "D",
+   "why": "Hình vuông có 4 trục đối xứng gồm 2 đường trung trực của 2 cặp cạnh đối và 2 đường thẳng chứa 2 đường chéo."
+  },
+  {
+   "n": 26,
+   "q": "Các dấu hiệu nhận biết sau, dấu hiệu nào KHÔNG ĐỦ để kết luận tứ giác là hình vuông?",
+   "opts": [
+    "Hình chữ nhật có hai đường chéo vuông góc với nhau là hình vuông",
+    "Hình bình hành có hai đường chéo bằng nhau là hình vuông",
+    "Hình thoi có một góc vuông là hình vuông",
+    "Hình thoi có hai đường chéo bằng nhau là hình vuông"
+   ],
+   "a": "B",
+   "why": "Hình bình hành có hai đường chéo bằng nhau chỉ mới là hình chữ nhật, chưa thể kết luận là hình vuông."
+  },
+  {
+   "n": 27,
+   "q": "Tứ giác nào sau đây vừa là hình chữ nhật, vừa là hình thoi?",
+   "opts": [
+    "Hình thang cân",
+    "Hình vuông",
+    "Hình bình hành",
+    "Hình thang"
+   ],
+   "a": "B",
+   "why": "Hình vuông vừa có 4 góc vuông (hình chữ nhật) vừa có 4 cạnh bằng nhau (hình thoi)."
+  },
+  {
+   "n": 28,
+   "q": "Để chứng minh tứ giác ABCD là hình vuông, dấu hiệu nào sau đây là SAI?",
+   "opts": [
+    "Tứ giác ABCD là hình thoi có hai đường chéo bằng nhau",
+    "Tứ giác ABCD là hình thoi có một góc vuông",
+    "Tứ giác ABCD là hình thoi có hai đường chéo vuông góc",
+    "Tứ giác ABCD là hình chữ nhật có hai cạnh kề bằng nhau"
+   ],
+   "a": "C",
+   "why": "Mọi hình thoi đều có hai đường chéo vuông góc, do đó dấu hiệu C không thể kết luận được hình vuông."
+  },
+  {
+   "n": 29,
+   "q": "Nếu ABCD là hình vuông thì khẳng định nào sau đây đúng?",
+   "opts": [
+    "AC = BD",
+    "AC, BD giao nhau tại trung điểm mỗi đường",
+    "AC ⊥ BD",
+    "Cả A, B, C đều đúng"
+   ],
+   "a": "D",
+   "why": "Hình vuông có hai đường chéo bằng nhau, vuông góc với nhau và cắt nhau tại trung điểm mỗi đường."
+  },
+  {
+   "n": 30,
+   "q": "Cho hình vuông MNPQ, hai đường chéo cắt nhau tại O. Khẳng định nào sau đây là SAI?",
+   "opts": [
+    "MP ⊥ NQ tại O",
+    "Góc M = Góc N = Góc P = Góc Q = 90°",
+    "OM = ON = OP = OQ",
+    "MN // MQ; PQ // NP"
+   ],
+   "a": "D",
+   "why": "MN và MQ là hai cạnh kề có chung đỉnh M (MN ⊥ MQ), không thể song song với nhau."
+  },
+  {
+   "n": 31,
+   "q": "Cho tứ giác ABCD có hai đường chéo vuông góc, cắt nhau tại trung điểm mỗi đường và bằng nhau (AC = BD). Tứ giác ABCD là hình vuông theo dấu hiệu nào?",
+   "opts": [
+    "Hình thoi có một góc vuông",
+    "Hình chữ nhật có hai đường chéo bằng nhau",
+    "Hình bình hành có hai đường chéo bằng nhau",
+    "Hình thoi có hai đường chéo bằng nhau"
+   ],
+   "a": "D",
+   "why": "Hai đường chéo vuông góc và cắt nhau tại trung điểm mỗi đường chứng tỏ là hình thoi. Hình thoi có hai đường chéo bằng nhau là hình vuông.",
+   "svg": "<svg viewBox=\"0 0 240 200\" width=\"240\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <polygon points=\"40,40 180,40 180,160 40,160\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"180\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"180\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Right angle at I -->\n  <path d=\"M 110 90 L 118 98 L 110 106\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <!-- 1 tick on 4 segments of diagonals -->\n  <line x1=\"72\" y1=\"67\" x2=\"78\" y2=\"73\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"142\" y1=\"137\" x2=\"148\" y2=\"143\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"72\" y1=\"133\" x2=\"78\" y2=\"127\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"142\" y1=\"63\" x2=\"148\" y2=\"57\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"28\" y=\"36\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n  <text x=\"188\" y=\"36\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n  <text x=\"188\" y=\"168\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n  <text x=\"28\" y=\"168\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n  <text x=\"110\" y=\"122\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">I</text>\n\n  </svg>"
+  },
+  {
+   "n": 32,
+   "q": "Cho hình chữ nhật ABCD có hai cạnh kề AB = BC. Tứ giác ABCD là hình vuông theo dấu hiệu nào?",
+   "opts": [
+    "Hình chữ nhật có hai cạnh đối bằng nhau",
+    "Hình chữ nhật có ba góc vuông bằng nhau",
+    "Hình chữ nhật có hai cạnh kề bằng nhau",
+    "Hình chữ nhật có bốn góc vuông bằng nhau"
+   ],
+   "a": "C",
+   "why": "Theo dấu hiệu nhận biết: Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông.",
+   "svg": "<svg viewBox=\"0 0 240 180\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <rect x=\"45\" y=\"30\" width=\"130\" height=\"100\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- 3 góc vuông tại A, B, C -->\n  <path d=\"M 45 42 L 57 42 L 57 30\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <path d=\"M 163 30 L 163 42 L 175 42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <path d=\"M 175 118 L 163 118 L 163 130\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <!-- 1 tick on AB and BC -->\n  <line x1=\"110\" y1=\"26\" x2=\"110\" y2=\"34\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"171\" y1=\"80\" x2=\"179\" y2=\"80\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"32\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n  <text x=\"182\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n  <text x=\"182\" y=\"138\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n  <text x=\"32\" y=\"138\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">D</text>\n\n  </svg>"
+  },
+  {
+   "n": 33,
+   "q": "Cho tứ giác có bốn cạnh bằng nhau và có một góc vuông. Tứ giác đó là hình vuông theo dấu hiệu nào?",
+   "opts": [
+    "Hình thoi có một góc vuông",
+    "Tứ giác có hai đường chéo bằng nhau",
+    "Hình bình hành có hai đường chéo bằng nhau",
+    "Hình thoi có hai đường chéo bằng nhau"
+   ],
+   "a": "A",
+   "why": "Tứ giác có 4 cạnh bằng nhau là hình thoi. Hình thoi có 1 góc vuông là hình vuông.",
+   "svg": "<svg viewBox=\"0 0 220 180\" width=\"220\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: 'Plus Jakarta Sans', system-ui, sans-serif;\">\n    <defs>\n      <filter id=\"shadow\" x=\"-5%\" y=\"-5%\" width=\"110%\" height=\"110%\">\n        <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1\" flood-opacity=\"0.1\"/>\n      </filter>\n    </defs>\n    \n  <polygon points=\"50,135 150,135 150,35 50,35\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- 1 góc vuông -->\n  <path d=\"M 50 123 L 62 123 L 62 135\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <!-- 1 tick on 4 edges -->\n  <line x1=\"100\" y1=\"31\" x2=\"100\" y2=\"39\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"100\" y1=\"131\" x2=\"100\" y2=\"139\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"46\" y1=\"85\" x2=\"54\" y2=\"85\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  <line x1=\"146\" y1=\"85\" x2=\"154\" y2=\"85\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n\n  </svg>"
+  },
+  {
+   "n": 34,
+   "q": "Chọn khẳng định SAI. Tứ giác nào sau đây luôn có hai đường chéo bằng nhau?",
+   "opts": [
+    "Hình vuông",
+    "Hình thang cân",
+    "Hình chữ nhật",
+    "Hình thoi"
+   ],
+   "a": "D",
+   "why": "Hình thoi nói chung có hai đường chéo không bằng nhau (chỉ bằng nhau khi nó là hình vuông)."
+  },
+  {
+   "n": 35,
+   "q": "Cho hình vuông có chu vi 28cm. Độ dài cạnh hình vuông là:",
+   "opts": [
+    "4cm",
+    "7cm",
+    "14cm",
+    "8cm"
+   ],
+   "a": "B",
+   "why": "Cạnh hình vuông = 28 : 4 = 7 (cm)."
+  },
+  {
+   "n": 36,
+   "q": "Một hình vuông có chu vi là 32 cm. Hỏi diện tích hình vuông bằng bao nhiêu?",
+   "opts": [
+    "49 cm²",
+    "64 cm²",
+    "14 cm²",
+    "32 cm²"
+   ],
+   "a": "B",
+   "why": "Cạnh hình vuông = 32 : 4 = 8 (cm). Diện tích = 8 . 8 = 64 (cm²)."
+  },
+  {
+   "n": 37,
+   "q": "Cho tam giác ABC vuông ở A, trung tuyến AM. Gọi D là trung điểm của AB, M' là điểm đối xứng với M qua D. Tứ giác AMBM' là hình gì?",
+   "opts": [
+    "Hình thoi",
+    "Hình bình hành",
+    "Hình chữ nhật",
+    "Hình thang"
+   ],
+   "a": "A",
+   "why": "Tứ giác AMBM' có 2 đường chéo cắt nhau tại trung điểm D nên là hình bình hành. MD là đường trung bình tam giác ABC => MD // AC mà AC ⊥ AB => MM' ⊥ AB. Hình bình hành có 2 đường chéo vuông góc là hình thoi."
+  },
+  {
+   "n": 38,
+   "q": "Cho hình thoi ABCD, gọi O là giao điểm của hai đường chéo. Qua B vẽ đường thẳng song song với AC, qua C vẽ đường thẳng song song với BD, hai đường này cắt nhau ở K. Hình thoi ABCD cần thỏa mãn điều kiện gì để tứ giác BOCK là hình vuông?",
+   "opts": [
+    "Hình thoi ABCD là hình vuông",
+    "Hình thoi ABCD là hình chữ nhật",
+    "Hình thoi ABCD có một góc vuông",
+    "Hình thoi ABCD có hai đường chéo vuông góc"
+   ],
+   "a": "A",
+   "why": "Tứ giác BOCK là hình chữ nhật có hai kích thước là OB và OC. Để BOCK là hình vuông thì OB = OC => BD = AC => Hình thoi ABCD là hình vuông."
+  },
+  {
+   "n": 39,
+   "q": "Cho hình vuông ABCD. Trên cạnh AB, BC, CD, DA lần lượt lấy các điểm E, F, G, H sao cho AE = BF = CG = DH. Tứ giác EFGH là hình gì?",
+   "opts": [
+    "Hình bình hành",
+    "Hình chữ nhật",
+    "Hình thoi",
+    "Hình vuông"
+   ],
+   "a": "D",
+   "why": "Bốn tam giác vuông AEH, BFE, CGF, DHG bằng nhau => EH = FE = GF = HG (hình thoi). Góc FEH = 180° - 90° = 90° => EFGH là hình vuông."
+  },
+  {
+   "n": 40,
+   "q": "Cho hình chữ nhật ABCD có AB = 2AD. Gọi E, F theo thứ tự là trung điểm của AB, CD. Gọi M là giao điểm của AF và DE, N là giao điểm của BF và CE. Tứ giác EMFN là hình gì?",
+   "opts": [
+    "Hình bình hành",
+    "Hình chữ nhật",
+    "Hình thoi",
+    "Hình vuông"
+   ],
+   "a": "D",
+   "why": "ADFE và BCFE là 2 hình vuông. M và N là tâm đối xứng. Tam giác EMF và ENF là các tam giác vuông cân tại M và N => Tứ giác EMFN là hình vuông."
+  }
+ ]
+}
