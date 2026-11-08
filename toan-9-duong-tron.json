@@ -1,0 +1,269 @@
+{
+  "id": "toan-9-duong-tron",
+  "grade": 9,
+  "gradeName": "Khối 9",
+  "title": "Độ dài & Diện tích liên quan đến đường tròn – Hình học 9",
+  "description": "Chương 5: Độ dài cung tròn, chu vi, diện tích hình tròn, hình quạt tròn & hình vành khuyên (20 câu trọn vẹn kèm hình vẽ và lời giải chi tiết)",
+  "questions": [
+    {
+      "n": 1,
+      "q": "Số đo n° của cung tròn có độ dài 30,8 cm trên đường tròn có bán kính 22 cm là (lấy π ≈ 3,14 và làm tròn đến độ):",
+      "svg": "",
+      "opts": [
+        "70°",
+        "80°",
+        "65°",
+        "85°"
+      ],
+      "a": "B",
+      "why": "Công thức độ dài cung tròn: l = (π·R·n) / 180 = 30,8. Suy ra n = (30,8 × 180) / (3,14 × 22) ≈ 80,3° ≈ 80°."
+    },
+    {
+      "n": 2,
+      "q": "Số đo n° của cung tròn có độ dài 40,2 cm trên đường tròn có bán kính 16 cm là (lấy π ≈ 3,14 và làm tròn đến độ):",
+      "svg": "",
+      "opts": [
+        "144°",
+        "145°",
+        "124°",
+        "72°"
+      ],
+      "a": "A",
+      "why": "Công thức độ dài cung tròn: l = (π·R·n) / 180 = 40,2. Suy ra n = (40,2 × 180) / (3,14 × 16) ≈ 144,03° ≈ 144°."
+    },
+    {
+      "n": 3,
+      "q": "Tính độ dài cung 30° của một đường tròn có bán kính 4 dm.",
+      "svg": "",
+      "opts": [
+        "(4π / 3) dm",
+        "(π / 3) dm",
+        "(π / 6) dm",
+        "(2π / 3) dm"
+      ],
+      "a": "D",
+      "why": "Độ dài cung 30°: l = (π·R·n) / 180 = (π × 4 × 30) / 180 = (2π / 3) dm."
+    },
+    {
+      "n": 4,
+      "q": "Tính độ dài cung 40° của đường tròn bán kính 9 cm.",
+      "svg": "",
+      "opts": [
+        "π cm",
+        "2π cm",
+        "3π cm",
+        "(3π / 2) cm"
+      ],
+      "a": "B",
+      "why": "Độ dài cung 40°: l = (π·R·n) / 180 = (π × 9 × 40) / 180 = 2π cm."
+    },
+    {
+      "n": 5,
+      "q": "Chu vi đường tròn có bán kính R = 9 là:",
+      "svg": "",
+      "opts": [
+        "9π",
+        "12π",
+        "18π",
+        "27π"
+      ],
+      "a": "C",
+      "why": "Chu vi đường tròn: C = 2π·R = 2π × 9 = 18π."
+    },
+    {
+      "n": 6,
+      "q": "Chu vi đường tròn bán kính R = 6 là:",
+      "svg": "",
+      "opts": [
+        "9π",
+        "12π",
+        "18π",
+        "27π"
+      ],
+      "a": "B",
+      "why": "Chu vi đường tròn: C = 2π·R = 2π × 6 = 12π."
+    },
+    {
+      "n": 7,
+      "q": "Biết chu vi đường tròn là C = 48π cm. Tính đường kính của đường tròn.",
+      "svg": "",
+      "opts": [
+        "48 cm",
+        "24 cm",
+        "36 cm",
+        "18 cm"
+      ],
+      "a": "A",
+      "why": "Chu vi C = π·d = 48π cm => đường kính d = 48 cm."
+    },
+    {
+      "n": 8,
+      "q": "Biết chu vi đường tròn là C = 36π cm. Tính đường kính của đường tròn.",
+      "svg": "",
+      "opts": [
+        "18 cm",
+        "14 cm",
+        "20 cm",
+        "36 cm"
+      ],
+      "a": "D",
+      "why": "Chu vi C = π·d = 36π cm => đường kính d = 36 cm."
+    },
+    {
+      "n": 9,
+      "q": "Chu vi đường tròn đi qua ba đỉnh của tam giác đều cạnh a (cm) là:",
+      "svg": "",
+      "opts": [
+        "(4π a√3) / 3 cm",
+        "(2π a√3) / 3 cm",
+        "(π a√3) / 3 cm",
+        "(5π a√3) / 3 cm"
+      ],
+      "a": "B",
+      "why": "Bán kính đường tròn ngoại tiếp tam giác đều cạnh a là R = (a√3) / 3. Chu vi đường tròn: C = 2π·R = 2π × (a√3 / 3) = (2π a√3) / 3 cm."
+    },
+    {
+      "n": 10,
+      "q": "Chu vi đường tròn đi qua ba đỉnh của tam giác đều cạnh 3 cm là:",
+      "svg": "",
+      "opts": [
+        "(4π√3) / 3 cm",
+        "π√3 cm",
+        "(2π√3) / 3 cm",
+        "2π√3 cm"
+      ],
+      "a": "D",
+      "why": "Bán kính đường tròn ngoại tiếp tam giác đều cạnh 3 cm là R = (3√3) / 3 = √3 cm. Chu vi C = 2π·R = 2π√3 cm."
+    },
+    {
+      "n": 11,
+      "q": "Một hình tròn có diện tích S = 225π cm². Bán kính của hình tròn đó là:",
+      "svg": "",
+      "opts": [
+        "14 cm",
+        "16 cm",
+        "12 cm",
+        "15 cm"
+      ],
+      "a": "D",
+      "why": "Diện tích hình tròn: S = π·R² = 225π => R² = 225 => R = 15 cm."
+    },
+    {
+      "n": 12,
+      "q": "Diện tích hình tròn bán kính R = 8 cm là:",
+      "svg": "",
+      "opts": [
+        "8π cm²",
+        "64π cm²",
+        "16π cm²",
+        "32π² cm²"
+      ],
+      "a": "B",
+      "why": "Diện tích hình tròn: S = π·R² = π × 8² = 64π cm²."
+    },
+    {
+      "n": 13,
+      "q": "Diện tích hình tròn có đường kính 20 cm là:",
+      "svg": "",
+      "opts": [
+        "100π cm²",
+        "10π cm²",
+        "20π cm²",
+        "100π² cm²"
+      ],
+      "a": "A",
+      "why": "Bán kính R = d / 2 = 20 / 2 = 10 cm. Diện tích S = π·R² = π × 10² = 100π cm²."
+    },
+    {
+      "n": 14,
+      "q": "Cho đường tròn (O; 10cm), đường kính AB. Điểm M thuộc (O) sao cho góc BAM = 45° (hình vẽ bên dưới). Tính diện tích hình quạt AOM.",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Shaded sector AOM -->\n  <path d=\"M 120 100 L 50 100 A 70 70 0 0 1 120 30 Z\" fill=\"#fbcfe8\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <!-- Full circle outline -->\n  <circle cx=\"120\" cy=\"100\" r=\"70\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Diameter AB -->\n  <line x1=\"50\" y1=\"100\" x2=\"190\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Line OM -->\n  <line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"30\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <!-- Line AM and MB -->\n  <line x1=\"50\" y1=\"100\" x2=\"120\" y2=\"30\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <line x1=\"120\" y1=\"30\" x2=\"190\" y2=\"100\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n  <!-- Points -->\n  <circle cx=\"120\" cy=\"100\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"50\" cy=\"100\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"190\" cy=\"100\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"120\" cy=\"30\" r=\"3.5\" fill=\"#ec4899\"/>\n  <!-- Angle BAM = 45° arc -->\n  <path d=\"M 70 100 A 20 20 0 0 0 64 86\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"73\" y=\"93\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">45°</text>\n  <!-- Labels -->\n  <text x=\"36\" y=\"105\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"195\" y=\"105\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"116\" y=\"122\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <text x=\"115\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#ec4899\">M</text>\n</svg>",
+      "opts": [
+        "5π cm²",
+        "25π cm²",
+        "50π cm²",
+        "(25π / 2) cm²"
+      ],
+      "a": "B",
+      "why": "Xét đường tròn (O): Vì OA = OM = R = 10 cm nên tam giác AOM cân tại O. Vì góc MAO = 45° nên tam giác AOM vuông cân tại O, suy ra góc MOA = 90°. Diện tích hình quạt AOM là: S = (π·R²·n) / 360 = (π × 10² × 90) / 360 = 25π cm²."
+    },
+    {
+      "n": 15,
+      "q": "Hãy tính diện tích hình tròn (O) đi qua bốn đỉnh của hình vuông ABCD có cạnh 6 cm (hình vẽ bên dưới).",
+      "svg": "<svg viewBox=\"0 0 240 190\" width=\"240\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Circle -->\n  <circle cx=\"120\" cy=\"95\" r=\"60\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Inscribed square ABCD -->\n  <polygon points=\"78,53 162,53 162,137 78,137\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Diagonals AC and BD -->\n  <line x1=\"78\" y1=\"53\" x2=\"162\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"162\" y1=\"53\" x2=\"78\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Center O -->\n  <circle cx=\"120\" cy=\"95\" r=\"3.5\" fill=\"#dc2626\"/>\n  <!-- Labels -->\n  <text x=\"66\" y=\"50\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"166\" y=\"50\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"166\" y=\"150\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"66\" y=\"150\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"124\" y=\"93\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">O</text>\n</svg>",
+      "opts": [
+        "18π cm²",
+        "36π cm²",
+        "18 cm²",
+        "36 cm²"
+      ],
+      "a": "A",
+      "why": "Tâm O của đường tròn ngoại tiếp hình vuông là giao điểm hai đường chéo AC và BD. Đường chéo hình vuông: AC = √(6² + 6²) = 6√2 cm. Bán kính đường tròn: R = AC / 2 = 3√2 cm. Diện tích hình tròn (O) là: S = π·R² = π × (3√2)² = 18π cm²."
+    },
+    {
+      "n": 16,
+      "q": "Công thức tính diện tích hình vành khuyên tạo bởi hai đường tròn đồng tâm có bán kính R và r (với R > r) là:",
+      "svg": "",
+      "opts": [
+        "Sv = π(R² - r²)",
+        "Sv = π(r² - R²)",
+        "Sv = π(R - r)²",
+        "Sv = 2π(R² - r²)"
+      ],
+      "a": "A",
+      "why": "Diện tích hình vành khuyên bằng diện tích hình tròn lớn (bán kính R) trừ đi diện tích hình tròn nhỏ (bán kính r): Sv = S_lớn - S_nhỏ = π·R² - π·r² = π(R² - r²)."
+    },
+    {
+      "n": 17,
+      "q": "Cho hai đường tròn đồng tâm (O; 2cm) và (O; 3cm) (hình vẽ bên dưới). Diện tích hình vành khuyên là:",
+      "svg": "<svg viewBox=\"0 0 220 180\" width=\"220\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Outer circle filled with yellow -->\n  <circle cx=\"110\" cy=\"90\" r=\"65\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <!-- Inner circle filled with white -->\n  <circle cx=\"110\" cy=\"90\" r=\"43\" fill=\"#ffffff\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <!-- Center O -->\n  <circle cx=\"110\" cy=\"90\" r=\"3.5\" fill=\"#0f172a\"/>\n  <text x=\"106\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n</svg>",
+      "opts": [
+        "1,5π cm²",
+        "2π cm²",
+        "3π cm²",
+        "5π cm²"
+      ],
+      "a": "D",
+      "why": "Áp dụng công thức tính diện tích hình vành khuyên: Sv = π(R² - r²) = π(3² - 2²) = π(9 - 4) = 5π cm²."
+    },
+    {
+      "n": 18,
+      "q": "Tính diện tích của hình vành khuyên giới hạn bởi hai đường tròn (O; 5cm) và (O; 8cm) (hình vẽ bên dưới).",
+      "svg": "<svg viewBox=\"0 0 220 180\" width=\"220\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <circle cx=\"110\" cy=\"90\" r=\"70\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <circle cx=\"110\" cy=\"90\" r=\"44\" fill=\"#ffffff\" stroke=\"#ca8a04\" stroke-width=\"2\"/>\n  <circle cx=\"110\" cy=\"90\" r=\"3.5\" fill=\"#0f172a\"/>\n  <text x=\"106\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n</svg>",
+      "opts": [
+        "3π cm²",
+        "39π cm²",
+        "78π cm²",
+        "9π cm²"
+      ],
+      "a": "B",
+      "why": "Diện tích hình vành khuyên nằm giữa hai đường tròn đồng tâm bán kính 5 cm và 8 cm là: Sv = π(R² - r²) = π(8² - 5²) = π(64 - 25) = 39π cm²."
+    },
+    {
+      "n": 19,
+      "q": "Cho ba điểm A, B, C thẳng hàng sao cho B nằm giữa A và C (hình vẽ bên dưới). Chọn khẳng định ĐÚNG.",
+      "svg": "<svg viewBox=\"0 0 260 150\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Semicircle AC -->\n  <path d=\"M 30 110 A 100 100 0 0 1 230 110\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Semicircle AB -->\n  <path d=\"M 30 110 A 45 45 0 0 1 120 110\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <!-- Semicircle BC -->\n  <path d=\"M 120 110 A 55 55 0 0 1 230 110\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <!-- Baseline AC -->\n  <line x1=\"20\" y1=\"110\" x2=\"240\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Points -->\n  <circle cx=\"30\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"230\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <!-- Labels -->\n  <text x=\"24\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">A</text>\n  <text x=\"116\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">B</text>\n  <text x=\"226\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">C</text>\n</svg>",
+      "opts": [
+        "Độ dài nửa đường tròn đường kính AC bằng hiệu các độ dài của hai nửa đường tròn đường kính AB và BC.",
+        "Độ dài nửa đường tròn đường kính AC bằng tổng các độ dài của hai nửa đường tròn đường kính AB và BC.",
+        "Độ dài nửa đường tròn đường kính BC bằng tổng các độ dài của hai nửa đường tròn đường kính AB và AC.",
+        "Độ dài nửa đường tròn đường kính AB bằng tổng các độ dài của hai nửa đường tròn đường kính AC và BC."
+      ],
+      "a": "B",
+      "why": "Gọi l_AC, l_AB, l_BC lần lượt là độ dài nửa đường tròn đường kính AC, AB, BC. Ta có: l_AC = π·AC / 2. Vì B nằm giữa A và C nên AC = AB + BC. Suy ra l_AC = π·(AB + BC) / 2 = (π·AB / 2) + (π·BC / 2) = l_AB + l_BC. Vậy độ dài nửa đường tròn đường kính AC bằng tổng các độ dài của hai nửa đường tròn đường kính AB và BC."
+    },
+    {
+      "n": 20,
+      "q": "Cho ba điểm A, B, C thẳng hàng sao cho C nằm giữa A và B, đồng thời AB = 3AC (hình vẽ bên dưới). Chọn khẳng định SAI.",
+      "svg": "<svg viewBox=\"0 0 260 150\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Semicircle AB -->\n  <path d=\"M 30 110 A 100 100 0 0 1 230 110\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Semicircle AC (1/3 of AB = 66.6px) -->\n  <path d=\"M 30 110 A 33.3 33.3 0 0 1 96.6 110\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <!-- Semicircle CB (2/3 of AB = 133.3px) -->\n  <path d=\"M 96.6 110 A 66.7 66.7 0 0 1 230 110\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2\"/>\n  <!-- Baseline AB -->\n  <line x1=\"20\" y1=\"110\" x2=\"240\" y2=\"110\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <!-- Points -->\n  <circle cx=\"30\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"96.6\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <circle cx=\"230\" cy=\"110\" r=\"3.5\" fill=\"#1e293b\"/>\n  <!-- Labels -->\n  <text x=\"24\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">A</text>\n  <text x=\"92\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">C</text>\n  <text x=\"226\" y=\"128\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\">B</text>\n</svg>",
+      "opts": [
+        "Độ dài nửa đường tròn đường kính AB gấp ba lần độ dài của nửa đường tròn đường kính AC.",
+        "Độ dài nửa đường tròn đường kính AB gấp 1,5 lần độ dài của nửa đường tròn đường kính BC.",
+        "Độ dài nửa đường tròn đường kính AB bằng tổng các độ dài của hai nửa đường tròn đường kính BC và AC.",
+        "Độ dài nửa đường tròn đường kính BC bằng tổng các độ dài của hai nửa đường tròn đường kính AC và AB."
+      ],
+      "a": "D",
+      "why": "Vì C nằm giữa A và B nên AB = AC + CB. Ta có: l_AB = l_AC + l_BC (C đúng). Vì AB = 3AC nên l_AB = 3 l_AC (A đúng). Vì CB = 2AC nên AB = 1,5 CB, do đó l_AB = 1,5 l_BC (B đúng). Khẳng định D 'l_BC = l_AC + l_AB' là SAI vì l_BC luôn nhỏ hơn l_AB."
+    }
+  ]
+}
