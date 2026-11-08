@@ -1,0 +1,273 @@
+{
+  "id": "toan-12-ck1-nguyen-trai",
+  "grade": 12,
+  "gradeName": "Khối 12",
+  "title": "Kiểm tra cuối kỳ 1 Toán 12 - THPT Nguyễn Trãi (Đà Nẵng)",
+  "description": "Đề kiểm tra chuẩn cấu trúc mới 2025-2026: Ứng dụng đạo hàm, Khảo sát hàm số, Vectơ & Tọa độ trong không gian Oxyz, Thống kê ghép nhóm",
+  "questions": [
+    {
+      "n": 1,
+      "q": "Cho hình hộp chữ nhật $ABCD.A'B'C'D'$ (hình vẽ bên dưới). Khẳng định nào dưới đây là <b>SAI</b>?\n<div style=\"text-align:center;margin:14px 0;\">\n<svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"max-width:100%;height:auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;\">\n  <line x1=\"40\" y1=\"130\" x2=\"40\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"40\" y1=\"130\" x2=\"80\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"40\" y1=\"130\" x2=\"160\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"80\" y1=\"150\" x2=\"200\" y2=\"150\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"200\" y1=\"150\" x2=\"160\" y2=\"130\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"150\" x2=\"80\" y2=\"90\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"200\" y1=\"150\" x2=\"200\" y2=\"90\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"70\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"70\" x2=\"80\" y2=\"90\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <polygon points=\"40,70 80,90 200,90 160,70\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <text x=\"26\" y=\"68\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"75\" y=\"106\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"93\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"162\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"24\" y=\"138\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A'</text>\n  <text x=\"75\" y=\"168\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B'</text>\n  <text x=\"206\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C'</text>\n  <text x=\"166\" y=\"132\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D'</text>\n</svg>\n</div>",
+      "opts": [
+        "$\\vec{AB} = \\vec{D'C'}$",
+        "$\\vec{AB} = \\vec{CD}$",
+        "$\\vec{AC'}$ không cùng phương với $\\vec{AB}$",
+        "$|\\vec{CB}| = |\\vec{AD}|$"
+      ],
+      "a": "B",
+      "why": "Trong hình hộp chữ nhật $ABCD.A'B'C'D'$, mặt $ABCD$ là hình chữ nhật nên $\\vec{AB}$ và $\\vec{CD}$ là hai vectơ ngược hướng (đối nhau: $\\vec{AB} = -\\vec{CD} = \\vec{DC}$). Do đó khẳng định $\\vec{AB} = \\vec{CD}$ là SAI."
+    },
+    {
+      "n": 2,
+      "q": "Cho hàm số $y = f(x)$ có đồ thị là đường cong trong hình vẽ bên dưới. Giá trị cực tiểu của hàm số bằng:\n<div style=\"text-align:center;margin:14px 0;\">\n<svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"max-width:100%;height:auto;background:#ffffff;border-radius:10px;border:1px solid #e2e8f0;\">\n  <line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"100\" y1=\"190\" x2=\"100\" y2=\"15\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"215\" y=\"115\" font-size=\"12\" fill=\"#64748b\">x</text>\n  <text x=\"106\" y=\"24\" font-size=\"12\" fill=\"#64748b\">y</text>\n  <text x=\"104\" y=\"114\" font-size=\"12\" fill=\"#64748b\">0</text>\n  <line x1=\"70\" y1=\"100\" x2=\"70\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"100\" y1=\"40\" x2=\"70\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"130\" y1=\"100\" x2=\"130\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"100\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <text x=\"64\" y=\"115\" font-size=\"11\" fill=\"#475569\">-1</text>\n  <text x=\"127\" y=\"93\" font-size=\"11\" fill=\"#475569\">1</text>\n  <text x=\"105\" y=\"44\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\">2</text>\n  <text x=\"103\" y=\"164\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">-2</text>\n  <path d=\"M 45 190 C 55 70, 60 40, 70 40 C 85 40, 90 90, 100 100 C 110 110, 115 160, 130 160 C 140 160, 145 130, 155 10\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"70\" cy=\"40\" r=\"3.5\" fill=\"#2563eb\"/>\n  <circle cx=\"130\" cy=\"160\" r=\"3.5\" fill=\"#dc2626\"/>\n</svg>\n</div>",
+      "opts": [
+        "-3",
+        "2",
+        "-1",
+        "-2"
+      ],
+      "a": "D",
+      "why": "Quan sát đồ thị hàm số, điểm cực tiểu của đồ thị là điểm $(1; -2)$. Do đó, giá trị cực tiểu của hàm số là $y_{CT} = -2$ (đạt tại $x = 1$)."
+    },
+    {
+      "n": 3,
+      "q": "Cho hình hộp $ABCD.A'B'C'D'$. Tổng vectơ $\\vec{AB} + \\vec{BB'} + \\vec{A'D'}$ bằng:",
+      "opts": [
+        "$\\vec{AD'}$",
+        "$\\vec{A'C}$",
+        "$\\vec{0}$",
+        "$\\vec{AC'}$"
+      ],
+      "a": "D",
+      "why": "Theo quy tắc tam giác và tính chất hình hộp: $\\vec{AB} + \\vec{BB'} = \\vec{AB'}$. Vì các mặt bên là hình bình hành nên $\\vec{A'D'} = \\vec{B'C'}$. Suy ra: $\\vec{AB} + \\vec{BB'} + \\vec{A'D'} = \\vec{AB'} + \\vec{B'C'} = \\vec{AC'}$."
+    },
+    {
+      "n": 4,
+      "q": "Cho hàm số $y = f(x)$ liên tục trên $[0; 4]$ có đồ thị như hình vẽ bên dưới. Giá trị lớn nhất và giá trị nhỏ nhất của hàm số trên đoạn $[0; 4]$ lần lượt là $M$ và $m$. Tính giá trị của biểu thức $M + 2m$.\n<div style=\"text-align:center;margin:14px 0;\">\n<svg width=\"240\" height=\"190\" viewBox=\"0 0 240 190\" style=\"max-width:100%;height:auto;background:#ffffff;border-radius:10px;border:1px solid #e2e8f0;\">\n  <line x1=\"30\" y1=\"150\" x2=\"220\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"50\" y1=\"185\" x2=\"50\" y2=\"20\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"215\" y=\"165\" font-size=\"12\" fill=\"#64748b\">x</text>\n  <text x=\"56\" y=\"28\" font-size=\"12\" fill=\"#64748b\">y</text>\n  <text x=\"36\" y=\"164\" font-size=\"12\" fill=\"#64748b\">O</text>\n  <line x1=\"110\" y1=\"150\" x2=\"110\" y2=\"125\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"125\" x2=\"110\" y2=\"125\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"170\" y1=\"150\" x2=\"170\" y2=\"30\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"50\" y1=\"30\" x2=\"170\" y2=\"30\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <text x=\"106\" y=\"166\" font-size=\"11\" fill=\"#475569\">2</text>\n  <text x=\"166\" y=\"166\" font-size=\"11\" fill=\"#475569\">4</text>\n  <text x=\"36\" y=\"104\" font-size=\"11\" fill=\"#475569\">2</text>\n  <text x=\"36\" y=\"129\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">1</text>\n  <text x=\"36\" y=\"34\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\">6</text>\n  <path d=\"M 50 100 Q 80 125 110 125 Q 140 125 170 30\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"50\" cy=\"100\" r=\"3\" fill=\"#2563eb\"/>\n  <circle cx=\"110\" cy=\"125\" r=\"3.5\" fill=\"#dc2626\"/>\n  <circle cx=\"170\" cy=\"30\" r=\"3.5\" fill=\"#16a34a\"/>\n</svg>\n</div>",
+      "opts": [
+        "6",
+        "8",
+        "1",
+        "-7"
+      ],
+      "a": "B",
+      "why": "Dựa vào đồ thị trên đoạn $[0; 4]$: Giá trị lớn nhất đạt tại $x = 4$ là $M = 6$. Giá trị nhỏ nhất đạt tại điểm cực tiểu $x = 2$ là $m = 1$. Suy ra: $M + 2m = 6 + 2 \\times 1 = 8$."
+    },
+    {
+      "n": 5,
+      "q": "Cho hàm số $y = f(x)$ có bảng biến thiên như sau:\n<div style=\"overflow-x:auto;margin:12px 0;\">\n<table style=\"width:100%;max-width:480px;margin:0 auto;border-collapse:collapse;font-size:13px;text-align:center;background:#fff;border:1px solid #cbd5e1;\">\n  <tr style=\"background:#f1f5f9;border-bottom:1px solid #cbd5e1;\">\n    <td style=\"padding:6px;width:60px;font-weight:bold;border-right:1px solid #cbd5e1;\">$x$</td>\n    <td style=\"padding:6px;\">$-\\infty$</td>\n    <td style=\"padding:6px;\">$3$</td>\n    <td style=\"padding:6px;\">$4$</td>\n    <td style=\"padding:6px;\">$8$</td>\n    <td style=\"padding:6px;\">$+\\infty$</td>\n  </tr>\n  <tr style=\"border-bottom:1px solid #cbd5e1;\">\n    <td style=\"padding:6px;font-weight:bold;border-right:1px solid #cbd5e1;\">$f'(x)$</td>\n    <td colspan=\"2\" style=\"color:#16a34a;font-weight:bold;\">+ 0 -</td>\n    <td style=\"border-left:2px solid #ef4444;border-right:2px solid #ef4444;\">||</td>\n    <td colspan=\"2\" style=\"color:#16a34a;font-weight:bold;\">0 +</td>\n  </tr>\n  <tr>\n    <td style=\"padding:8px;font-weight:bold;border-right:1px solid #cbd5e1;\">$y$</td>\n    <td colspan=\"5\" style=\"padding:8px;text-align:left;line-height:1.8;\">\n      Đồ thị đi lên từ $-\\infty$ đến cực đại $4$ tại $x=3$, sau đó giảm xuống $-\\infty$ khi $x \\to 4^-$.\n    </td>\n  </tr>\n</table>\n</div>\nHàm số $y = f(x)$ đồng biến trên khoảng nào dưới đây?",
+      "opts": [
+        "$(4; +\\infty)$",
+        "$(-\\infty; 3)$",
+        "$(3; 8)$",
+        "$(3; 4)$"
+      ],
+      "a": "B",
+      "why": "Quan sát bảng biến thiên: Trên khoảng $(-\\infty; 3)$, dấu của đạo hàm $f'(x) > 0$ và chiều mũi tên của $y$ đi lên từ $-\\infty$ đến $4$. Do đó hàm số đồng biến trên khoảng $(-\\infty; 3)$."
+    },
+    {
+      "n": 6,
+      "q": "Chiều cao của học sinh một lớp được thống kê trong bảng sau:\n<div style=\"overflow-x:auto;margin:12px 0;\">\n<table style=\"width:100%;max-width:520px;margin:0 auto;border-collapse:collapse;font-size:13px;text-align:center;background:#fff;border:1px solid #cbd5e1;\">\n  <tr style=\"background:#f1f5f9;border-bottom:1px solid #cbd5e1;\">\n    <th style=\"padding:6px;border-right:1px solid #cbd5e1;\">Chiều cao (cm)</th>\n    <th style=\"padding:6px;\">[145; 150)</th>\n    <th style=\"padding:6px;\">[150; 155)</th>\n    <th style=\"padding:6px;\">[155; 160)</th>\n    <th style=\"padding:6px;\">[160; 165)</th>\n    <th style=\"padding:6px;\">[165; 170)</th>\n    <th style=\"padding:6px;\">[170; 175)</th>\n  </tr>\n  <tr>\n    <td style=\"padding:6px;font-weight:bold;border-right:1px solid #cbd5e1;\">Số học sinh</td>\n    <td style=\"padding:6px;\">1</td>\n    <td style=\"padding:6px;\">9</td>\n    <td style=\"padding:6px;\">11</td>\n    <td style=\"padding:6px;\">9</td>\n    <td style=\"padding:6px;background:#fef3c7;font-weight:bold;\">9</td>\n    <td style=\"padding:6px;\">4</td>\n  </tr>\n</table>\n</div>\nTứ phân vị thứ ba $Q_3$ của mẫu số liệu thuộc nhóm nào?",
+      "opts": [
+        "[160; 165)",
+        "[165; 170)",
+        "[155; 160)",
+        "[170; 175)"
+      ],
+      "a": "B",
+      "why": "Tổng số học sinh là $n = 1 + 9 + 11 + 9 + 9 + 4 = 43$. Tứ phân vị thứ ba $Q_3$ ứng với giá trị vị trí $\\frac{3n}{4} = \\frac{3 \\times 43}{4} = 32,25$. Tần số tích lũy của 4 nhóm đầu là $1 + 9 + 11 + 9 = 30$. Nhóm thứ 5 $[165; 170)$ có tần số tích lũy từ $31$ đến $39$, do đó chứa giá trị thứ $32,25$. Vậy $Q_3$ thuộc nhóm $[165; 170)$."
+    },
+    {
+      "n": 7,
+      "q": "Trong không gian $Oxyz$, cho $A(3; 2; -1)$, $B(1; -2; 2)$ và $C(-2; 1; 3)$. Khi đó tích vô hướng $\\vec{AB} \\cdot \\vec{AC}$ bằng:",
+      "opts": [
+        "-3",
+        "12",
+        "-5",
+        "26"
+      ],
+      "a": "D",
+      "why": "Ta có: $\\vec{AB} = (1-3; -2-2; 2-(-1)) = (-2; -4; 3)$ và $\\vec{AC} = (-2-3; 1-2; 3-(-1)) = (-5; -1; 4)$. Tích vô hướng: $\\vec{AB} \\cdot \\vec{AC} = (-2)(-5) + (-4)(-1) + 3(4) = 10 + 4 + 12 = 26$."
+    },
+    {
+      "n": 8,
+      "q": "Trong không gian $Oxyz$, cho hai vectơ $\\vec{u} = (-2; -1; 2)$ và $\\vec{v} = (0; 1; -1)$. Góc giữa hai vectơ $\\vec{u}$ và $\\vec{v}$ là:",
+      "opts": [
+        "$135^\\circ$",
+        "$-45^\\circ$",
+        "$60^\\circ$",
+        "$45^\\circ$"
+      ],
+      "a": "A",
+      "why": "Ta có: $\\cos(\\vec{u}, \\vec{v}) = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|} = \\frac{(-2)(0) + (-1)(1) + 2(-1)}{\\sqrt{(-2)^2 + (-1)^2 + 2^2} \\cdot \\sqrt{0^2 + 1^2 + (-1)^2}} = \\frac{-3}{3\\sqrt{2}} = -\\frac{\\sqrt{2}}{2}$. Do đó góc giữa hai vectơ là $135^\\circ$."
+    },
+    {
+      "n": 9,
+      "q": "Trong không gian $Oxyz$, cho hai điểm $A(2; -5; 2)$ và $B(1; -2; 3)$. Khoảng cách giữa hai điểm $A$ và $B$ bằng:",
+      "opts": [
+        "$\\sqrt{83}$",
+        "$\\sqrt{33}$",
+        "3",
+        "$\\sqrt{11}$"
+      ],
+      "a": "D",
+      "why": "Khoảng cách $AB = \\sqrt{(1 - 2)^2 + (-2 - (-5))^2 + (3 - 2)^2} = \\sqrt{(-1)^2 + 3^2 + 1^2} = \\sqrt{1 + 9 + 1} = \\sqrt{11}$."
+    },
+    {
+      "n": 10,
+      "q": "Đồ thị hàm số $y = \\frac{3x + 2}{1 - x}$ có tâm đối xứng là điểm nào sau đây?",
+      "opts": [
+        "$M(-3; 1)$",
+        "$P(1; -3)$",
+        "$I(1; 3)$",
+        "$N(3; 1)$"
+      ],
+      "a": "B",
+      "why": "Hàm số phân thức $y = \\frac{3x + 2}{-x + 1}$ có đường tiệm cận đứng $x = 1$ và tiệm cận ngang $y = \\frac{3}{-1} = -3$. Tâm đối xứng của đồ thị là giao điểm của hai đường tiệm cận, tức là điểm $P(1; -3)$."
+    },
+    {
+      "n": 11,
+      "q": "Cho hình lăng trụ $ABC.A'B'C'$, đáy là các tam giác đều cạnh bằng 4 (như hình vẽ bên dưới). Góc giữa hai vectơ $\\vec{CA}$ và $\\vec{C'B'}$ bằng:\n<div style=\"text-align:center;margin:14px 0;\">\n<svg width=\"220\" height=\"190\" viewBox=\"0 0 220 190\" style=\"max-width:100%;height:auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;\">\n  <line x1=\"30\" y1=\"140\" x2=\"110\" y2=\"170\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"110\" y1=\"170\" x2=\"180\" y2=\"140\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"30\" y1=\"140\" x2=\"180\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"30\" y1=\"140\" x2=\"45\" y2=\"50\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"110\" y1=\"170\" x2=\"125\" y2=\"80\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <line x1=\"180\" y1=\"140\" x2=\"195\" y2=\"50\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <polygon points=\"45,50 125,80 195,50\" fill=\"rgba(37,99,235,0.08)\" stroke=\"#1e3a8a\" stroke-width=\"2\"/>\n  <text x=\"32\" y=\"44\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"122\" y=\"98\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"200\" y=\"48\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"16\" y=\"146\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A'</text>\n  <text x=\"106\" y=\"186\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B'</text>\n  <text x=\"185\" y=\"146\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C'</text>\n</svg>\n</div>",
+      "opts": [
+        "$45^\\circ$",
+        "$60^\\circ$",
+        "$120^\\circ$",
+        "$90^\\circ$"
+      ],
+      "a": "B",
+      "why": "Vì $BCC'B'$ là hình bình hành nên $\\vec{C'B'} = \\vec{CB}$. Do đó: $(\\vec{CA}, \\vec{C'B'}) = (\\vec{CA}, \\vec{CB}) = \\widehat{ACB}$. Vì $\\triangle ABC$ là tam giác đều nên $\\widehat{ACB} = 60^\\circ$."
+    },
+    {
+      "n": 12,
+      "q": "Trong không gian $Oxyz$, cho $\\vec{u} = 2\\vec{i} + \\vec{k}$. Toạ độ của vectơ $\\vec{u}$ là:",
+      "opts": [
+        "$(-2; 0; -1)$",
+        "$(2; 1; 0)$",
+        "$(2; 0; 1)$",
+        "$(-2; -1; 0)$"
+      ],
+      "a": "C",
+      "why": "Theo định nghĩa hệ trục $Oxyz$: $\\vec{u} = x\\vec{i} + y\\vec{j} + z\\vec{k}$. Ở đây $\\vec{u} = 2\\vec{i} + 0\\vec{j} + 1\\vec{k} \\Rightarrow \\vec{u} = (2; 0; 1)$."
+    },
+    {
+      "n": 13,
+      "q": "Bảng dưới đây thống kê cân nặng (kg) của 45 học sinh lớp 12A:\n<div style=\"overflow-x:auto;margin:12px 0;\">\n<table style=\"width:100%;max-width:440px;margin:0 auto;border-collapse:collapse;font-size:13px;text-align:center;background:#fff;border:1px solid #cbd5e1;\">\n  <tr style=\"background:#f1f5f9;border-bottom:1px solid #cbd5e1;\"><th style=\"padding:6px;border-right:1px solid #cbd5e1;\">Nhóm cân nặng (kg)</th><th style=\"padding:6px;\">Tần số lớp 12A</th></tr>\n  <tr><td style=\"padding:5px;border-right:1px solid #cbd5e1;\">[40; 44)</td><td>8</td></tr>\n  <tr><td style=\"padding:5px;border-right:1px solid #cbd5e1;background:#fef3c7;\">[44; 48)</td><td style=\"background:#fef3c7;font-weight:bold;\">12</td></tr>\n  <tr><td style=\"padding:5px;border-right:1px solid #cbd5e1;\">[48; 52)</td><td>8</td></tr>\n  <tr><td style=\"padding:5px;border-right:1px solid #cbd5e1;\">[52; 56)</td><td>10</td></tr>\n  <tr><td style=\"padding:5px;border-right:1px solid #cbd5e1;\">[56; 60)</td><td>7</td></tr>\n</table>\n</div>\nGiá trị đại diện $x_2$ của nhóm 2 $[44; 48)$ và số cân nặng trung bình $\\bar{x}$ của học sinh lớp 12A lần lượt là:",
+      "opts": [
+        "$x_2 = 50$ và $\\bar{x} \\approx 49,65\\text{ kg}$",
+        "$x_2 = 46$ và $\\bar{x} \\approx 49,64\\text{ kg}$",
+        "$x_2 = 46$ và $\\bar{x} \\approx 52,10\\text{ kg}$",
+        "$x_2 = 48$ và $\\bar{x} \\approx 48,50\\text{ kg}$"
+      ],
+      "a": "B",
+      "why": "Giá trị đại diện nhóm 2 là $x_2 = \\frac{44 + 48}{2} = 46$. Số trung bình $\\bar{x} = \\frac{8 \\times 42 + 12 \\times 46 + 8 \\times 50 + 10 \\times 54 + 7 \\times 58}{45} = \\frac{2234}{45} \\approx 49,64\\text{ kg}$."
+    },
+    {
+      "n": 14,
+      "q": "So sánh mức độ phân tán về cân nặng giữa học sinh lớp 12A (phương sai $s_A^2 \\approx 29,8$) và lớp 12B (phương sai $s_B^2 \\approx 32,28$), kết luận nào sau đây là <b>ĐÚNG</b>?",
+      "opts": [
+        "Cân nặng của học sinh lớp 12B đồng đều hơn lớp 12A vì phương sai lớn hơn.",
+        "Cân nặng của học sinh lớp 12A đồng đều hơn lớp 12B vì phương sai nhỏ hơn.",
+        "Độ phân tán cân nặng của hai lớp là hoàn toàn tương đương nhau.",
+        "Không thể so sánh độ đồng đều qua phương sai mẫu số liệu ghép nhóm."
+      ],
+      "a": "B",
+      "why": "Phương sai đặc trưng cho độ phân tán của mẫu số liệu quanh giá trị trung bình. Vì $s_A^2 < s_B^2$ ($29,8 < 32,28$) nên mẫu số liệu của lớp 12A ít phân tán hơn, tức là cân nặng học sinh lớp 12A đồng đều hơn học sinh lớp 12B."
+    },
+    {
+      "n": 15,
+      "q": "Trong không gian cho hình lập phương $ABCD.A'B'C'D'$, gọi $I$ là tâm của đáy $ABCD$ và $G$ là trọng tâm của tam giác $A'BC$. Khẳng định nào sau đây là <b>ĐÚNG</b>?",
+      "opts": [
+        "$\\vec{AC'} = \\vec{AB} + \\vec{AD} + \\vec{AA'}$",
+        "$\\vec{B'G} = 3\\vec{GI}$",
+        "$\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0}$",
+        "$\\vec{ID} = \\vec{IC}$"
+      ],
+      "a": "A",
+      "why": "Theo quy tắc hình hộp: đường chéo $\\vec{AC'} = \\vec{AB} + \\vec{AD} + \\vec{AA'}$ là mệnh đề luôn đúng. Các mệnh đề còn lại: $G$ là trọng tâm $\\triangle A'BC$ chứ không phải $\\triangle ABC$ nên C sai; $\\vec{ID}$ và $\\vec{IC}$ vuông góc nhau nên D sai; tỉ lệ đúng là $\\vec{B'G} = 2\\vec{GI}$ nên B sai."
+    },
+    {
+      "n": 16,
+      "q": "Cho hình lập phương $ABCD.A'B'C'D'$. Gọi $G$ là trọng tâm của tam giác $A'AC$. Khi đó $\\vec{AG} = \\frac{a}{b} \\vec{AC'}$ với $\\frac{a}{b}$ là phân số tối giản ($a, b \\in \\mathbb{N}^*$). Tính $M = a^2 + b^2$.",
+      "opts": [
+        "$M = 5$",
+        "$M = 10$",
+        "$M = 13$",
+        "$M = 25$"
+      ],
+      "a": "B",
+      "why": "Ta có $\\vec{AG} = \\frac{1}{3}(\\vec{AA'} + \\vec{AA} + \\vec{AC}) = \\frac{1}{3}(\\vec{AA'} + \\vec{AB} + \\vec{AD}) = \\frac{1}{3}\\vec{AC'}$. Do đó $\\frac{a}{b} = \\frac{1}{3} \\Rightarrow a = 1, b = 3$. Vậy $M = a^2 + b^2 = 1^2 + 3^2 = 10$."
+    },
+    {
+      "n": 17,
+      "q": "Một người thợ muốn làm một chiếc thùng hình hộp chữ nhật không nắp từ $216\\text{ cm}^2$ vật liệu nhôm cao cấp. Biết đáy thùng là hình chữ nhật có chiều dài gấp đôi chiều rộng. Thể tích lớn nhất của thùng đạt được là bao nhiêu $\\text{cm}^3$?",
+      "opts": [
+        "$144\\text{ cm}^3$",
+        "$216\\text{ cm}^3$",
+        "$288\\text{ cm}^3$",
+        "$360\\text{ cm}^3$"
+      ],
+      "a": "C",
+      "why": "Gọi chiều rộng đáy là $x > 0 \\Rightarrow$ chiều dài đáy là $2x$, chiều cao thùng là $h$. Diện tích nhôm: $S = S_{đáy} + S_{xq} = 2x^2 + 2(x + 2x)h = 2x^2 + 6xh = 216 \\Rightarrow h = \\frac{216 - 2x^2}{6x} = \\frac{36}{x} - \\frac{x}{3}$. Thể tích thùng: $V(x) = 2x^2 \\cdot h = 72x - \\frac{2x^3}{3}$. Đạo hàm: $V'(x) = 72 - 2x^2 = 0 \\Leftrightarrow x = 6\\text{ cm}$. Khi đó thể tích cực đại $V_{max} = 72(6) - \\frac{2(6^3)}{3} = 432 - 144 = 288\\text{ cm}^3$."
+    },
+    {
+      "n": 18,
+      "q": "Thời gian (phút) di chuyển đến trường của nhóm 40 học sinh trường THPT Nguyễn Trãi – Hội An được ghi lại trong bảng:\n<div style=\"overflow-x:auto;margin:12px 0;\">\n<table style=\"width:100%;max-width:520px;margin:0 auto;border-collapse:collapse;font-size:13px;text-align:center;background:#fff;border:1px solid #cbd5e1;\">\n  <tr style=\"background:#f1f5f9;border-bottom:1px solid #cbd5e1;\"><th style=\"padding:6px;border-right:1px solid #cbd5e1;\">Thời gian (phút)</th><th>[30;40)</th><th>[40;50)</th><th>[50;60)</th><th>[60;70)</th><th>[70;80)</th><th>[80;90)</th></tr>\n  <tr><td style=\"padding:6px;font-weight:bold;border-right:1px solid #cbd5e1;\">Số học sinh</td><td>2</td><td>10</td><td>16</td><td>8</td><td>2</td><td>2</td></tr>\n</table>\n</div>\nKhoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1$ của mẫu số liệu ghép nhóm trên bằng:",
+      "opts": [
+        "$10,5$",
+        "$14,5$",
+        "$16,0$",
+        "$20,5$"
+      ],
+      "a": "B",
+      "why": "Cỡ mẫu $n = 40$. Vị trí $Q_1$ là $\\frac{n}{4} = 10 \\Rightarrow Q_1$ thuộc nhóm $[40; 50)$ với $Q_1 = 40 + \\frac{10 - 2}{10} \\times 10 = 48$. Vị trí $Q_3$ là $\\frac{3n}{4} = 30 \\Rightarrow Q_3$ thuộc nhóm $[60; 70)$ với $Q_3 = 60 + \\frac{30 - 28}{8} \\times 10 = 62,5$. Khoảng tứ phân vị: $\\Delta_Q = Q_3 - Q_1 = 62,5 - 48 = 14,5$."
+    },
+    {
+      "n": 19,
+      "q": "Rađa của một trung tâm kiểm soát không lưu sân bay có bán kính phát hiện mục tiêu tối đa là $400\\text{ km}$. Chọn hệ trục tọa độ $Oxyz$ có gốc $O$ tại tâm rađa trên mặt đất $(Oxy)$, trục $Oz$ hướng thẳng đứng lên trời (đơn vị: km). Một máy bay đang ở tọa độ $A(185; 290; z)$. Độ cao lớn nhất $z$ mà rađa vẫn có thể phát hiện được máy bay là bao nhiêu km (làm tròn đến hàng đơn vị)?",
+      "opts": [
+        "$185\\text{ km}$",
+        "$204\\text{ km}$",
+        "$290\\text{ km}$",
+        "$400\\text{ km}$"
+      ],
+      "a": "B",
+      "why": "Khoảng cách từ máy bay đến rađa $O$ không vượt quá tầm quét: $OA^2 \\le 400^2 \\Leftrightarrow 185^2 + 290^2 + z^2 \\le 400^2$. Suy ra $z^2 \\le 160000 - 34225 - 84100 = 41675 \\Rightarrow z \\le \\sqrt{41675} \\approx 204,14\\text{ km}$. Làm tròn đến hàng đơn vị là $204\\text{ km}$."
+    },
+    {
+      "n": 20,
+      "q": "Trong một căn phòng, hai bức tường vuông góc nhau và cùng vuông góc với sàn nhà. Người ta căng một sợi dây đèn LED nối từ điểm $M$ trên bức tường thứ nhất đến điểm $N$ trên bức tường thứ hai. Biết điểm $M$ cách bức tường thứ hai $2,5\\text{m}$ và cách sàn $1,5\\text{m}$; điểm $N$ cách bức tường thứ nhất $1,2\\text{m}$ và cách sàn $2,4\\text{m}$.\n<div style=\"text-align:center;margin:14px 0;\">\n<svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"max-width:100%;height:auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;\">\n  <line x1=\"80\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"130\" x2=\"30\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"130\" x2=\"80\" y2=\"20\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <text x=\"215\" y=\"145\" font-size=\"12\" fill=\"#0f172a\">y</text>\n  <text x=\"20\" y=\"180\" font-size=\"12\" fill=\"#0f172a\">x</text>\n  <text x=\"86\" y=\"25\" font-size=\"12\" fill=\"#0f172a\">z</text>\n  <text x=\"70\" y=\"142\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <!-- Point M on Wall 1 (Oxz plane): x=2.5, y=0, z=1.5 -->\n  <!-- Point N on Wall 2 (Oyz plane): x=0, y=1.2, z=2.4 -->\n  <line x1=\"50\" y1=\"160\" x2=\"50\" y2=\"105\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"50\" cy=\"105\" r=\"4\" fill=\"#2563eb\"/>\n  <text x=\"32\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <line x1=\"130\" y1=\"130\" x2=\"130\" y2=\"55\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"130\" cy=\"55\" r=\"4\" fill=\"#dc2626\"/>\n  <text x=\"138\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">N</text>\n  <!-- LED wire MN -->\n  <line x1=\"50\" y1=\"105\" x2=\"130\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/>\n</svg>\n</div>\nChiều dài của sợi dây đèn LED $MN$ bằng:",
+      "opts": [
+        "$2,5\\text{ m}$",
+        "$\\frac{\\sqrt{34}}{2}\\text{ m} \\approx 2,92\\text{ m}$",
+        "$3,5\\text{ m}$",
+        "$3,7\\text{ m}$"
+      ],
+      "a": "B",
+      "why": "Chọn hệ tọa độ $Oxyz$ với mặt tường 1 là $(Oxz)$, tường 2 là $(Oyz)$, sàn là $(Oxy)$. Điểm $M$ thuộc tường 1 nên $y_M = 0 \\Rightarrow M(2,5; 0; 1,5)$. Điểm $N$ thuộc tường 2 nên $x_N = 0 \\Rightarrow N(0; 1,2; 2,4)$. Chiều dài dây: $MN = \\sqrt{(0 - 2,5)^2 + (1,2 - 0)^2 + (2,4 - 1,5)^2} = \\sqrt{2,5^2 + 1,2^2 + 0,9^2} = \\sqrt{8,5} = \\frac{\\sqrt{34}}{2} \\approx 2,915\\text{ m}$."
+    },
+    {
+      "n": 21,
+      "q": "Trong không gian $Oxyz$, cho 4 điểm $A(1; 2; 3)$, $B(3; 0; 1)$, $C(5; -1; 2)$, $D(3; 7; 4)$. Biết điểm $M$ di động trên mặt phẳng tọa độ $(Oxy)$ để biểu thức $P = \\vec{MA} \\cdot \\vec{MB} + 2MC^2 + 3MD^2$ đạt giá trị nhỏ nhất. Giá trị nhỏ nhất của $P$ bằng:",
+      "opts": [
+        "$\\frac{887}{6}$",
+        "$\\frac{512}{3}$",
+        "$144$",
+        "$\\frac{725}{6}$"
+      ],
+      "a": "A",
+      "why": "Vì $M \\in (Oxy)$ nên $M(x; y; 0)$. Biến đổi biểu thức: $P = 6x^2 + 6y^2 - 42x - 40y + 288 = 6\\left(x - \\frac{7}{2}\\right)^2 + 6\\left(y - \\frac{10}{3}\\right)^2 + \\frac{887}{6} \\ge \\frac{887}{6}$. Đạt được khi $M\\left(\\frac{7}{2}; \\frac{10}{3}; 0\\right)$. Vậy giá trị nhỏ nhất của $P$ là $\\frac{887}{6}$."
+    },
+    {
+      "n": 22,
+      "q": "Tìm toạ độ điểm cực đại của đồ thị hàm số $y = \\frac{x^2 - 3x + 3}{x - 2}$.",
+      "opts": [
+        "$(1; -1)$",
+        "$(3; 3)$",
+        "$(2; 0)$",
+        "$(1; 1)$"
+      ],
+      "a": "A",
+      "why": "Tập xác định: $D = \\mathbb{R} \\setminus \\{2\\}$. Đạo hàm: $y' = \\frac{(2x - 3)(x - 2) - (x^2 - 3x + 3)}{(x - 2)^2} = \\frac{x^2 - 4x + 3}{(x - 2)^2} = 0 \\Leftrightarrow x = 1$ hoặc $x = 3$. Lập bảng xét dấu, đạo hàm đổi dấu từ dương sang âm qua $x = 1$ nên hàm số đạt cực đại tại $x = 1$, giá trị cực đại $y(1) = \\frac{1 - 3 + 3}{1 - 2} = -1$. Điểm cực đại của đồ thị là $(1; -1)$."
+    }
+  ]
+}
