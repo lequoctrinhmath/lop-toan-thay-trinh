@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lớp Toán Thầy Trịnh - Ôn Tập Giữa Kì 1 Toán 7 (Kahoot Math)</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX for Beautiful LaTeX Math Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- PDF.js for parsing PDF exam files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- Mammoth.js for parsing Word (.docx) exam files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo-icon">📐</span>
+      <div>
+        <span class="logo-text">LỚP TOÁN THẦY TRỊNH</span>
+        <span class="logo-subtext">ÔN TẬP GIỮA KÌ 1 TOÁN 7</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <button id="btn-open-upload" class="header-action-btn upload-btn" title="Tạo đề thi từ file Word / PDF">
+        📤 Tải đề Word / PDF
+      </button>
+      <button id="btn-sound" class="icon-btn" title="Bật/Tắt âm thanh">🔊</button>
+      <button id="btn-config" class="config-btn" title="Cài đặt Google Sheet">⚙️ Cài đặt Sheet</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    
+    <!-- SCREEN 1: WELCOME & STUDENT INFO -->
+    <section id="screen-welcome" class="screen active">
+      <div class="card welcome-card">
+        <div class="badge-tag">TRẮC NGHIỆM TƯƠNG TÁC KAHOOT • TOÁN 7</div>
+        <h1 class="main-title" id="quiz-display-title">ÔN TẬP GIỮA KÌ 1 TOÁN 7</h1>
+        <p class="subtitle" id="quiz-display-subtitle">12 câu hỏi chuẩn GDPT 2018 • Tương thích LaTeX • Điểm số theo tốc độ</p>
+        
+        <!-- Active Quiz Banner -->
+        <div class="active-quiz-badge">
+          <span class="badge-icon">📚</span>
+          <span class="badge-info">Đang dùng bộ đề: <strong id="lbl-active-quiz">Đề chuẩn Giữa Kì 1 (12 câu)</strong></span>
+          <button id="btn-change-quiz" class="btn-sm-text" title="Đổi đề hoặc tải đề mới">Thay đổi đề ➔</button>
+        </div>
+
+        <div class="banner-hero">
+          <div class="hero-shape shape-triangle">▲</div>
+          <div class="hero-shape shape-diamond">◆</div>
+          <div class="hero-shape shape-circle">●</div>
+          <div class="hero-shape shape-square">■</div>
+        </div>
+
+        <form id="form-student" class="student-form">
+          <div class="form-group">
+            <label for="student-name">Họ và tên học sinh <span class="required">*</span></label>
+            <input type="text" id="student-name" placeholder="Ví dụ: Nguyễn Văn An" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="student-class">Lớp học <span class="required">*</span></label>
+            <input type="text" id="student-class" placeholder="Ví dụ: 7A1, 7A2, 7C..." required>
+          </div>
+
+          <button type="submit" class="btn-start">
+            <span>BẮT ĐẦU VÀO THI!</span>
+            <span class="arrow">➜</span>
+          </button>
+        </form>
+
+        <div class="rules-box">
+          <div class="rule-item">⏱ <strong>30 giây</strong> cho mỗi câu hỏi</div>
+          <div class="rule-item">⚡ Trả lời càng nhanh <strong>điểm càng cao</strong> (Tối đa 1000đ/câu)</div>
+          <div class="rule-item">🔥 Đúng liên tiếp nhận <strong>thưởng chuỗi thắng (Streak)</strong></div>
+          <div class="rule-item">📊 Kết quả sẽ được <strong>tự động gửi về Google Sheet của Thầy Trịnh</strong></div>
+          <div class="rule-item">📐 Hiển thị <strong>công thức toán LaTeX sắc nét</strong> mọi màn hình</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: GAMEPLAY -->
+    <section id="screen-game" class="screen">
+      <!-- Top info bar -->
+      <div class="game-topbar">
+        <div class="q-progress">
+          Câu <span id="current-q-index">1</span>/<span id="total-q-count">12</span>
+        </div>
+        <div class="timer-box">
+          <div class="timer-circle">
+            <svg class="timer-svg" viewBox="0 0 100 100">
+              <circle class="timer-bg" cx="50" cy="50" r="42"></circle>
+              <circle id="timer-bar" class="timer-fg" cx="50" cy="50" r="42"></circle>
+            </svg>
+            <span id="timer-num">30</span>
+          </div>
+        </div>
+        <div class="score-display">
+          <span class="score-label">Điểm</span>
+          <span id="player-score">0</span>
+        </div>
+      </div>
+
+      <!-- Streak Banner -->
+      <div id="streak-banner" class="streak-banner hidden">
+        🔥 Chuỗi <span id="streak-count">0</span> câu đúng!
+      </div>
+
+      <!-- Question Card -->
+      <div class="card question-card">
+        <div class="q-topic-badge" id="q-topic">Số hữu tỉ</div>
+        <div class="q-text" id="q-text">Đang tải câu hỏi...</div>
+      </div>
+
+      <!-- 4 Kahoot Answer Buttons -->
+      <div class="answers-grid" id="answers-grid">
+        <button class="ans-btn ans-red" data-index="0">
+          <span class="ans-shape">▲</span>
+          <span class="ans-text">Đáp án A</span>
+        </button>
+        <button class="ans-btn ans-blue" data-index="1">
+          <span class="ans-shape">◆</span>
+          <span class="ans-text">Đáp án B</span>
+        </button>
+        <button class="ans-btn ans-yellow" data-index="2">
+          <span class="ans-shape">●</span>
+          <span class="ans-text">Đáp án C</span>
+        </button>
+        <button class="ans-btn ans-green" data-index="3">
+          <span class="ans-shape">■</span>
+          <span class="ans-text">Đáp án D</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: ROUND FEEDBACK (After each question) -->
+    <section id="screen-feedback" class="screen">
+      <div class="card feedback-card" id="feedback-card">
+        <div class="feedback-icon" id="feedback-icon">🎉</div>
+        <h2 class="feedback-title" id="feedback-title">Chính xác!</h2>
+        <div class="feedback-points" id="feedback-points">+950 điểm</div>
+        
+        <div class="feedback-details">
+          <div class="fb-explanation-box">
+            <span class="fb-exp-title">💡 Lời giải của Thầy Trịnh:</span>
+            <div id="feedback-explanation">Giải thích chi tiết...</div>
+          </div>
+        </div>
+
+        <div class="feedback-footer">
+          <div class="current-total">Tổng điểm hiện tại: <strong id="feedback-total-score">0</strong></div>
+          <button id="btn-next-question" class="btn-next">CÂU TIẾP THEO ➜</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: FINAL RESULT / PODIUM -->
+    <section id="screen-result" class="screen">
+      <div class="card result-card">
+        <div class="trophy-wrapper">
+          <div class="trophy-icon" id="trophy-icon">🏆</div>
+        </div>
+        <h2 class="result-headline" id="result-headline">XUẤT SẮC HOÀN THÀNH!</h2>
+        <p class="student-congrats">
+          Chúc mừng học trò <strong id="res-student-name">Em</strong> - Lớp <strong id="res-student-class">7A</strong>
+        </p>
+
+        <!-- Big Score Board -->
+        <div class="final-score-podium">
+          <div class="score-stat">
+            <span class="stat-number" id="res-total-score">0</span>
+            <span class="stat-label">Tổng Điểm</span>
+          </div>
+          <div class="score-stat highlight">
+            <span class="stat-number" id="res-correct-count">0/12</span>
+            <span class="stat-label">Số Câu Đúng</span>
+          </div>
+          <div class="score-stat">
+            <span class="stat-number" id="res-accuracy">0%</span>
+            <span class="stat-label">Độ Chính Xác</span>
+          </div>
+        </div>
+
+        <!-- Grade / Rating Badge -->
+        <div class="rank-badge" id="res-rank-badge">
+          Hạng: BẬC THẦY TOÁN HỌC 🌟
+        </div>
+
+        <!-- Google Sheet Sync Status -->
+        <div id="sync-status" class="sync-status syncing">
+          <span class="sync-spinner">⏳</span>
+          <span id="sync-msg">Đang tự động gửi kết quả về Google Sheet của Thầy Trịnh...</span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="result-actions">
+          <button id="btn-review" class="btn-secondary">📋 Xem lại câu hỏi & Lời giải</button>
+          <button id="btn-restart" class="btn-primary">🔄 Chơi lại lần nữa</button>
+        </div>
+
+        <!-- Detailed Review Section (Collapsible) -->
+        <div id="review-container" class="review-container hidden">
+          <h3 class="review-title">Đáp án chi tiết các câu</h3>
+          <div id="review-list" class="review-list"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL 1: UPLOAD ĐỀ THI TỪ FILE (WORD / PDF / TEXT) & BỘ SOẠN THẢO
+       ========================================================================= -->
+  <div id="modal-upload" class="modal-backdrop hidden">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3>📤 Tạo Đề Thi Từ File Word / PDF (Có hỗ trợ LaTeX)</h3>
+        <button id="btn-close-upload" class="btn-close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Tabs: Tải File vs Dán Văn Bản -->
+        <div class="tabs-nav">
+          <button id="tab-btn-file" class="tab-item active">📁 Tải File (Word .docx / PDF / .txt)</button>
+          <button id="tab-btn-text" class="tab-item">✏️ Dán Nội Dung Văn Bản Trực Tiếp</button>
+        </div>
+
+        <!-- TAB CONTENT 1: UPLOAD FILE -->
+        <div id="tab-content-file" class="tab-content active">
+          <div class="drop-zone" id="drop-zone">
+            <div class="drop-icon">📄</div>
+            <h4>Kéo thả file Word (.docx) hoặc PDF vào đây</h4>
+            <p>Hoặc nhấp vào nút bên dưới để chọn file từ máy tính của Thầy</p>
+            <input type="file" id="file-input" accept=".docx, .pdf, .txt" class="hidden-input">
+            <button type="button" id="btn-browse-file" class="btn-browse">📂 Chọn File Từ Máy Tính</button>
+            <div id="file-info" class="file-info hidden"></div>
+          </div>
+        </div>
+
+        <!-- TAB CONTENT 2: PASTE TEXT -->
+        <div id="tab-content-text" class="tab-content">
+          <div class="text-paste-box">
+            <div class="paste-header">
+              <label for="raw-quiz-text">Dán toàn bộ nội dung đề thi của Thầy vào đây:</label>
+              <button id="btn-load-sample" class="btn-link">📋 Dán mẫu thử xem trước</button>
+            </div>
+            <textarea id="raw-quiz-text" rows="8" placeholder="Câu 1: Số đối của số hữu tỉ $-\frac{3}{5}$ là:
+A. $\frac{3}{5}$
+*B. $-\frac{5}{3}$
+C. $\frac{5}{3}$
+D. $-\frac{3}{5}$
+Lời giải: Số đối là...
+
+(Thầy có thể đặt dấu * trước đáp án đúng, hoặc chọn trực tiếp bên dưới)"></textarea>
+          </div>
+        </div>
+
+        <!-- Loading spinner -->
+        <div id="parse-loading" class="parse-loading hidden">
+          <div class="spinner"></div>
+          <span id="parse-loading-text">Đang trích xuất câu hỏi và công thức Toán từ file...</span>
+        </div>
+
+        <!-- PREVIEW & INTERACTIVE EDITOR (BỘ DUYỆT ĐỀ) -->
+        <div id="preview-section" class="preview-section hidden">
+          <div class="preview-header">
+            <h4>🎯 Danh Sách Câu Hỏi Đã Nhận Diện (<span id="parsed-count">0</span> câu)</h4>
+            <p class="preview-hint">Thầy hãy bấm chọn trực tiếp vào <strong>A, B, C hoặc D</strong> để đặt đáp án đúng (ô màu xanh lá là đáp án đúng).</p>
+          </div>
+
+          <div id="parsed-questions-list" class="parsed-list"></div>
+
+          <div class="editor-actions">
+            <button id="btn-add-question" class="btn-secondary-sm">➕ Thêm câu hỏi mới</button>
+          </div>
+        </div>
+
+        <!-- FORMAT GUIDE -->
+        <div class="guide-box mt-16">
+          <h4>💡 Mẹo định dạng file để phần mềm tự nhận diện chuẩn 100%:</h4>
+          <ul>
+            <li>Mỗi câu bắt đầu bằng: <code>Câu 1:</code>, <code>Câu 2:</code> hoặc <code>Bài 1.</code></li>
+            <li>Các phương án bắt đầu bằng: <code>A.</code>, <code>B.</code>, <code>C.</code>, <code>D.</code></li>
+            <li><strong>Đánh dấu đáp án đúng:</strong> Thầy chỉ cần thêm dấu sao <code>*</code> trước đáp án (Ví dụ: <code>*A.</code>) HOẶC ghi <code>Đáp án: A</code>, hoặc nhấp chuột chọn trực tiếp trong bảng duyệt phía trên!</li>
+            <li><strong>Công thức LaTeX:</strong> Đặt công thức trong cặp dấu <code>$...$</code> (Ví dụ: <code>$\frac{a}{b}$</code>, <code>$\sqrt{x}$</code>, <code>$\widehat{xOy} = 70^\circ$</code>, <code>$x \in \mathbb{Q}$</code>).</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button id="btn-reset-default" class="btn-text-danger">Quay về Đề Mặc Định</button>
+        <button id="btn-apply-quiz" class="btn-primary" disabled>Áp Dụng Bộ Đề Này Cho Học Sinh</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: CONFIG GOOGLE SHEET
+       ========================================================================= -->
+  <div id="modal-config" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>⚙️ Cài Đặt Kết Nối Google Sheet</h3>
+        <button id="btn-close-modal" class="btn-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-intro">
+          Dành riêng cho <strong>Thầy Trịnh</strong>: Dán link Web App từ Google Apps Script vào đây để học sinh làm bài xong điểm số sẽ tự động lưu vào trang tính của Thầy!
+        </p>
+
+        <div class="form-group">
+          <label for="input-sheet-url">URL Google Apps Script Web App:</label>
+          <input type="url" id="input-sheet-url" placeholder="https://script.google.com/macros/s/.../exec">
+          <small class="hint-text">Link này bắt đầu bằng <code>https://script.google.com/macros/s/</code> và kết thúc bằng <code>/exec</code>.</small>
+        </div>
+
+        <div class="guide-box">
+          <h4>📌 Hướng dẫn 3 bước cực dễ tạo Google Sheet nhận điểm:</h4>
+          <ol>
+            <li>Tạo một <strong>Google Sheet</strong> mới, đặt tên <em>"Ket_Qua_Toan_7_Thay_Trinh"</em>.</li>
+            <li>Vào menu <strong>Tiện ích mở rộng (Extensions)</strong> ➔ chọn <strong>Apps Script</strong>.</li>
+            <li>Xóa hết mã cũ, dán đoạn mã bên dưới vào rồi bấm <strong>Triển khai (Deploy) ➔ Tùy chọn triển khai mới (New deployment) ➔ Chọn loại Web app ➔ Ai cũng có quyền truy cập (Anyone)</strong> ➔ Copy link Web App dán vào ô bên trên!</li>
+          </ol>
+          <button id="btn-copy-script" class="btn-copy">📋 Sao chép mã Google Apps Script</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-save-config" class="btn-primary">Lưu cấu hình</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
