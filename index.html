@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lớp Toán Thầy Trịnh – Kho đề thi Đà Nẵng</title>
+<style>
+:root{--bg:#f5f8fc;--card:#fff;--text:#1b2733;--muted:#5b6b7a;--main:#1F4E79;--line:#d8e1ea}
+@media (prefers-color-scheme:dark){:root{--bg:#10161d;--card:#18212b;--text:#e8eef4;--muted:#9fb0c0;--main:#6fb1ea;--line:#2a3745}}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+header{background:#1F4E79;color:#fff;padding:28px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:1.7rem}
+header p{margin:0;opacity:.92}
+header a{color:#fff;font-weight:700;text-decoration:none;border:1px solid #fff;border-radius:20px;padding:4px 14px;display:inline-block;margin-top:10px}
+main{max-width:900px;margin:0 auto;padding:18px 14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.filters input,.filters select{flex:1 1 130px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:1rem}
+.filters input{flex:2 1 240px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.item h3{margin:0 0 4px;font-size:1.05rem}
+.tag{display:inline-block;font-size:.8rem;color:var(--main);border:1px solid var(--main);border-radius:12px;padding:0 8px;margin-right:4px}
+.btn{background:#1F4E79;color:#fff;text-decoration:none;padding:8px 16px;border-radius:8px;font-weight:600;white-space:nowrap}
+.btns{display:flex;gap:8px}
+.btn.alt{background:transparent;color:var(--main);border:1px solid var(--main)}
+.empty{text-align:center;color:var(--muted);padding:30px}
+footer{text-align:center;color:var(--muted);padding:20px 10px 30px;font-size:.95rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>Lớp Toán Thầy Trịnh</h1>
+  <p>Kho đề thi – đề cương Toán các trường tại Đà Nẵng (xem PDF, tải Word miễn phí)</p>
+  <a href="tel:0936032378">Liên hệ: 0936032378</a>
+</header>
+
+<main>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Tìm theo tên trường, năm học...">
+    <select id="fGrade"><option value="">Tất cả khối</option></select>
+    <select id="fType"><option value="">Tất cả loại đề</option></select>
+    <select id="fYear"><option value="">Tất cả năm học</option></select>
+  </div>
+  <div id="list"></div>
+</main>
+
+<footer>© Lớp Toán Thầy Trịnh – 0936032378</footer>
+
+<script>
+/* ============================================================
+   CÁCH THÊM ĐỀ MỚI: sao chép nguyên một khối { ... }, dán thêm
+   xuống dưới (nhớ có dấu phẩy cuối khối), rồi sửa nội dung.
+   Đặt file PDF và Word vào thư mục "tai-lieu" cùng chỗ với trang này.
+   ============================================================ */
+const DE = [
+  {
+    ten: "Đề thi giữa kì 1 Toán 10 Trường THPT Phan Châu Trinh năm học 2025-2026",
+    truong: "THPT Phan Châu Trinh",
+    khoi: "Lớp 10",
+    loai: "Giữa kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_10_Phan_Chau_Trinh_2025-2026_Ma_de_101.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_10_Phan_Chau_Trinh_2025-2026_Ma_de_101.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 8 Trường THCS Trưng Vương năm học 2026-2027",
+    truong: "THCS Trưng Vương",
+    khoi: "Lớp 8",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Kiem_Tra_Toan_8_Trung_Vuong_2026-2027.pdf",
+    file: "tai-lieu/De_Kiem_Tra_Toan_8_Trung_Vuong_2026-2027.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 12 Trường THPT Trần Phú năm học 2026-2027",
+    truong: "THPT Trần Phú",
+    khoi: "Lớp 12",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_12_Tran_Phu_2026-2027_Ma_de_426.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_12_Tran_Phu_2026-2027_Ma_de_426.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 7 Trường TH&THCS Hòa Cường năm học 2026-2027",
+    truong: "TH&THCS Hòa Cường",
+    khoi: "Lớp 7",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_7_Hoa_Cuong_2026-2027_De_A.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_7_Hoa_Cuong_2026-2027_De_A.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 7 Trường THCS Huỳnh Thúc Kháng năm học 2026-2027",
+    truong: "THCS Huỳnh Thúc Kháng",
+    khoi: "Lớp 7",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_7_Huynh_Thuc_Khang_2026-2027_De_2.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_7_Huynh_Thuc_Khang_2026-2027_De_2.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 9 Trường THCS Kim Đồng năm học 2026-2027",
+    truong: "THCS Kim Đồng",
+    khoi: "Lớp 9",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_9_Kim_Dong_2026-2027_De_B.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_9_Kim_Dong_2026-2027_De_B.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 9 Trường THCS Lê Độ năm học 2026-2027",
+    truong: "THCS Lê Độ",
+    khoi: "Lớp 9",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_9_Le_Do_2026-2027_De_B.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_9_Le_Do_2026-2027_De_B.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 9 Trường THCS Trưng Vương năm học 2025-2026",
+    truong: "THCS Trưng Vương",
+    khoi: "Lớp 9",
+    loai: "Giữa kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_9_Trung_Vuong_2025-2026.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_9_Trung_Vuong_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi giữa kì 1 Toán 7 Trường THCS Nguyễn Huệ năm học 2026-2027",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 7",
+    loai: "Giữa kì I",
+    nam: "2026-2027",
+    pdf: "tai-lieu/De_Giua_Ki_1_Toan_7_Nguyen_Hue_2026-2027_De_A.pdf",
+    file: "tai-lieu/De_Giua_Ki_1_Toan_7_Nguyen_Hue_2026-2027_De_A.docx"
+  },
+  {
+    ten: "Đề thi học sinh giỏi cấp trường Toán 8 Trường THCS Nguyễn Huệ năm học 2025-2026",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 8",
+    loai: "Học sinh giỏi",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_HSG_Cap_Truong_Toan_8_Nguyen_Hue_2025-2026.pdf",
+    file: "tai-lieu/De_HSG_Cap_Truong_Toan_8_Nguyen_Hue_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 7 Trường THCS Nguyễn Huệ năm học 2025-2026",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 7",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_7_Nguyen_Hue_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_7_Nguyen_Hue_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 8 Trường THCS Tây Sơn năm học 2025-2026",
+    truong: "THCS Tây Sơn",
+    khoi: "Lớp 8",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Tay_Son_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Tay_Son_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 8 Trường THCS Trưng Vương năm học 2025-2026",
+    truong: "THCS Trưng Vương",
+    khoi: "Lớp 8",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Trung_Vuong_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Trung_Vuong_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Nguyễn Huệ năm học 2025-2026",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Hue_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Hue_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Tây Sơn năm học 2025-2026",
+    truong: "THCS Tây Sơn",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Tay_Son_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Tay_Son_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Lý Thường Kiệt năm học 2025-2026",
+    truong: "THCS Lý Thường Kiệt",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Ly_Thuong_Kiet_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Ly_Thuong_Kiet_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Trần Hưng Đạo năm học 2025-2026",
+    truong: "THCS Trần Hưng Đạo",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Tran_Hung_Dao_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Tran_Hung_Dao_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Nguyễn Trãi năm học 2025-2026",
+    truong: "THCS Nguyễn Trãi",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Trai_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Trai_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Lê Hồng Phong năm học 2025-2026",
+    truong: "THCS Lê Hồng Phong",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Le_Hong_Phong_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Le_Hong_Phong_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Trưng Vương năm học 2025-2026",
+    truong: "THCS Trưng Vương",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Trung_Vuong_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Trung_Vuong_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Nguyễn Thị Minh Khai năm học 2025-2026",
+    truong: "THCS Nguyễn Thị Minh Khai",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Thi_Minh_Khai_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Nguyen_Thi_Minh_Khai_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Chu Văn An năm học 2025-2026",
+    truong: "THCS Chu Văn An",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Chu_Van_An_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Chu_Van_An_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Đỗ Đăng Tuyển năm học 2025-2026",
+    truong: "THCS Đỗ Đăng Tuyển",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Do_Dang_Tuyen_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Do_Dang_Tuyen_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 8 Trường THCS&THPT Nguyễn Khuyến năm học 2025-2026",
+    truong: "THCS&THPT Nguyễn Khuyến",
+    khoi: "Lớp 8",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Nguyen_Khuyen_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Nguyen_Khuyen_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Huỳnh Thúc Kháng năm học 2025-2026",
+    truong: "THCS Huỳnh Thúc Kháng",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Huynh_Thuc_Khang_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Huynh_Thuc_Khang_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 9 Trường THCS Lê Thánh Tôn năm học 2025-2026",
+    truong: "THCS Lê Thánh Tôn",
+    khoi: "Lớp 9",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Le_Thanh_Ton_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_9_Le_Thanh_Ton_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 8 Trường THCS Nguyễn Thị Minh Khai năm học 2025-2026",
+    truong: "THCS Nguyễn Thị Minh Khai",
+    khoi: "Lớp 8",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Nguyen_Thi_Minh_Khai_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Nguyen_Thi_Minh_Khai_2025-2026.docx"
+  },
+  {
+    ten: "Đề cương ôn tập cuối kì 1 Toán 9 Trường THCS Trưng Vương năm học 2025-2026",
+    truong: "THCS Trưng Vương",
+    khoi: "Lớp 9",
+    loai: "Đề cương",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_9_Trung_Vuong_2025-2026.pdf",
+    file: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_9_Trung_Vuong_2025-2026.docx"
+  },
+  {
+    ten: "Đề thi cuối kì 1 Toán 8 Trường THCS Lê Thánh Tôn năm học 2025-2026",
+    truong: "THCS Lê Thánh Tôn",
+    khoi: "Lớp 8",
+    loai: "Cuối kì I",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Le_Thanh_Ton_2025-2026.pdf",
+    file: "tai-lieu/De_Cuoi_Ki_1_Toan_8_Le_Thanh_Ton_2025-2026.docx"
+  },
+  {
+    ten: "Đề cương ôn tập cuối kì 1 Toán 8 Trường THCS Nguyễn Huệ năm học 2025-2026",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 8",
+    loai: "Đề cương",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_8_Nguyen_Hue_2025-2026.pdf",
+    file: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_8_Nguyen_Hue_2025-2026.docx"
+  },
+  {
+    ten: "Đề cương ôn tập cuối kì 1 Toán 9 Trường THCS Nguyễn Huệ năm học 2025-2026",
+    truong: "THCS Nguyễn Huệ",
+    khoi: "Lớp 9",
+    loai: "Đề cương",
+    nam: "2025-2026",
+    pdf: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_9_Nguyen_Hue_2025-2026.pdf",
+    file: "tai-lieu/De_Cuong_On_Tap_Cuoi_Ki_1_Toan_9_Nguyen_Hue_2025-2026.docx"
+  },
+];
+
+const $ = id => document.getElementById(id);
+const uniq = k => [...new Set(DE.map(d => d[k]))].sort();
+uniq("khoi").forEach(v => $("fGrade").add(new Option(v, v)));
+uniq("loai").forEach(v => $("fType").add(new Option(v, v)));
+uniq("nam").reverse().forEach(v => $("fYear").add(new Option("Năm học " + v, v)));
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function render(){
+  const q = $("q").value.trim().toLowerCase();
+  const g = $("fGrade").value, t = $("fType").value, y = $("fYear").value;
+  const rows = DE.filter(d =>
+    (!g || d.khoi === g) && (!t || d.loai === t) && (!y || d.nam === y) &&
+    (!q || [d.ten,d.truong,d.nam,d.khoi,d.loai].join(" ").toLowerCase().includes(q))
+  );
+  $("list").innerHTML = rows.length ? rows.map(d => `
+    <div class="item">
+      <div>
+        <h3>${esc(d.ten)}</h3>
+        <span class="tag">${esc(d.truong)}</span><span class="tag">${esc(d.khoi)}</span>
+        <span class="tag">${esc(d.loai)}</span><span class="tag">${esc(d.nam)}</span>
+      </div>
+      <div class="btns">
+        ${d.pdf ? `<a class="btn alt" href="${esc(d.pdf)}" target="_blank" rel="noopener">Xem PDF</a>` : ""}
+        ${d.file ? `<a class="btn" href="${esc(d.file)}" download>Tải Word</a>` : ""}
+      </div>
+    </div>`).join("") : '<div class="empty">Chưa có đề phù hợp.</div>';
+}
+["q","fGrade","fType","fYear"].forEach(id => $(id).addEventListener("input", render));
+render();
+</script>
+</body>
+</html>
