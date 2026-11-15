@@ -1,0 +1,153 @@
+{
+ "id": "toan-7-gk1",
+ "grade": 7,
+ "gradeName": "Khối 7",
+ "title": "Ôn tập giữa kì 1 Toán 7 - THCS Nguyễn Huệ",
+ "description": "Số hữu tỉ, số thực, góc kề bù & đường thẳng song song (12 câu chuẩn kiến thức)",
+ "questions": [
+  {
+   "n": 1,
+   "q": "Khẳng định nào sau đây là đúng?",
+   "opts": [
+    "4 ∉ ℕ",
+    "-2,3 ∈ ℤ",
+    "5/4 ∉ ℚ",
+    "7 ∈ ℚ"
+   ],
+   "a": "D",
+   "why": "7 là số nguyên, mà mọi số nguyên đều là số hữu tỉ (7 = 7/1) nên 7 ∈ ℚ là khẳng định đúng."
+  },
+  {
+   "n": 2,
+   "q": "Tập hợp số hữu tỉ kí hiệu là:",
+   "opts": [
+    "ℕ",
+    "ℤ",
+    "ℚ",
+    "ℝ"
+   ],
+   "a": "C",
+   "why": "Tập hợp các số hữu tỉ được kí hiệu chuẩn là ℚ."
+  },
+  {
+   "n": 3,
+   "q": "Số đối của số hữu tỉ 3,5 là:",
+   "opts": [
+    "5,3",
+    "-3,5",
+    "-5,3",
+    "3"
+   ],
+   "a": "B",
+   "why": "Hai số đối nhau có tổng bằng 0. Số đối của a là -a, vậy số đối của 3,5 là -3,5."
+  },
+  {
+   "n": 4,
+   "q": "Cho các số hữu tỉ: -3/19; 7/19; -9/19; 0. Sắp xếp các số trên theo thứ tự giảm dần là:",
+   "opts": [
+    "-3/19; -9/19; 0; 7/19",
+    "-9/19; -3/19; 0; 7/19",
+    "7/19; 0; -3/19; -9/19",
+    "7/19; 0; -9/19; -3/19"
+   ],
+   "a": "C",
+   "why": "Vì 7/19 > 0 > -3/19 > -9/19 nên khi sắp xếp giảm dần từ lớn đến bé, thứ tự đúng là 7/19; 0; -3/19; -9/19."
+  },
+  {
+   "n": 5,
+   "q": "Căn bậc hai số học của 7 được kí hiệu là:",
+   "opts": [
+    "7",
+    "√7",
+    "7²",
+    "-√7"
+   ],
+   "a": "B",
+   "why": "Căn bậc hai số học của số dương a được kí hiệu là √a. Vậy với 7 kí hiệu là √7."
+  },
+  {
+   "n": 6,
+   "q": "Số nào sau đây là số vô tỉ?",
+   "opts": [
+    "√6",
+    "3/5",
+    "0",
+    "-1,2"
+   ],
+   "a": "A",
+   "why": "6 không phải là số chính phương nên √6 là số thập phân vô hạn không tuần hoàn (số vô tỉ). Các số còn lại đều là số hữu tỉ."
+  },
+  {
+   "n": 7,
+   "q": "Trong các khẳng định sau, khẳng định nào là đúng?",
+   "opts": [
+    "0,3(29) là số thập phân vô hạn không tuần hoàn",
+    "√5 là số hữu tỉ",
+    "0,123 là số thập phân vô hạn tuần hoàn",
+    "√3 là số vô tỉ"
+   ],
+   "a": "D",
+   "why": "√3 là số vô tỉ vì 3 không phải số chính phương. 0,3(29) là số thập phân vô hạn tuần hoàn chu kỳ 29; √5 là số vô tỉ; 0,123 là số thập phân hữu hạn."
+  },
+  {
+   "n": 8,
+   "q": "|+3,21| bằng:",
+   "opts": [
+    "-3,21",
+    "3,21",
+    "3",
+    "3,12"
+   ],
+   "a": "B",
+   "why": "Giá trị tuyệt đối của một số dương bằng chính nó: |+3,21| = 3,21."
+  },
+  {
+   "n": 9,
+   "q": "Điền một cụm từ thích hợp vào chỗ trống: 'Qua một điểm nằm ngoài đường thẳng, … đường thẳng song song với đường thẳng đã cho'.",
+   "opts": [
+    "chỉ có một",
+    "có hai",
+    "có ba",
+    "có vô số"
+   ],
+   "a": "A",
+   "why": "Theo tiên đề Euclid về đường thẳng song song: Qua một điểm nằm ngoài đường thẳng chỉ có một đường thẳng song song với đường thẳng đã cho."
+  },
+  {
+   "n": 10,
+   "q": "Cho đường thẳng xy đi qua điểm O và tia Oa nằm giữa hai tia Ox, Oy. Khẳng định nào sau đây là đúng?",
+   "opts": [
+    "aOy và xOy là hai góc kề bù",
+    "aOy và xOa là hai góc kề bù",
+    "xOa và xOy là hai góc kề bù",
+    "aOy và xOa là hai góc đối đỉnh"
+   ],
+   "a": "B",
+   "why": "Hai góc aOy và xOa có chung cạnh Oa và hai cạnh Ox, Oy là hai tia đối nhau tạo thành góc bẹt xOy nên chúng là hai góc kề bù."
+  },
+  {
+   "n": 11,
+   "q": "Hai đường thẳng mm' và nn' cắt nhau tại O. Góc đối đỉnh với góc m'On là:",
+   "opts": [
+    "mOn",
+    "m'On'",
+    "mOn'",
+    "mOm'"
+   ],
+   "a": "C",
+   "why": "Tia Om là tia đối của Om', tia On' là tia đối của On, do đó góc đối đỉnh với góc m'On là góc mOn'."
+  },
+  {
+   "n": 12,
+   "q": "Biết góc xOm = 100°, Ot là tia phân giác của góc xOm. Số đo của góc tOm bằng bao nhiêu?",
+   "opts": [
+    "150°",
+    "100°",
+    "50°",
+    "25°"
+   ],
+   "a": "C",
+   "why": "Vì Ot là tia phân giác của góc xOm nên số đo góc tOm = góc xOm / 2 = 100° / 2 = 50°."
+  }
+ ]
+}
