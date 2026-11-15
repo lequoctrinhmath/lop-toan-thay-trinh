@@ -6,7 +6,11 @@
 <title>Lớp Toán Thầy Trịnh – Hiểu bản chất, giỏi tự nhiên</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- KaTeX Mathematical Typography -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <style>
 :root {
@@ -471,14 +475,173 @@ input:focus {
 .q-badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   background: var(--primary-light);
   color: var(--primary-dark);
   font-weight: 800;
   font-size: 0.88rem;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 10px;
   margin-bottom: 12px;
+}
+.badge-type {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.2px;
+}
+.badge-mc { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.badge-tf { background: #faf5ff; color: #7c3aed; border: 1px solid #e9d5ff; }
+.badge-sa { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+
+/* KaTeX mathematical typography tweaks */
+.katex {
+  font-size: 1.08em !important;
+  font-weight: 500;
+}
+.katex-display {
+  margin: 10px 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+
+/* True / False layout */
+.tf-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+.tf-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tf-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+.tf-row:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+.tf-statement {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+.tf-letter {
+  font-weight: 800;
+  color: #2563eb;
+  min-width: 22px;
+}
+.tf-text {
+  flex: 1;
+}
+.tf-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.tf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1.5px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.tf-btn input { display: none; }
+.tf-btn:hover {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+.tf-btn.selected-true {
+  background: #10b981;
+  border-color: #059669;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+.tf-btn.selected-false {
+  background: #ef4444;
+  border-color: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.35);
+}
+
+/* Short answer layout */
+.sa-box {
+  margin-top: 14px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1.5px dashed #cbd5e1;
+}
+.sa-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 4px 14px;
+  transition: all 0.2s;
+}
+.sa-input-wrap:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.sa-icon { font-size: 1.2rem; }
+.sa-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 10px 0;
+  background: transparent;
+  font-family: inherit;
+}
+.sa-unit {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #64748b;
+}
+.sa-hint {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 8px;
+  font-style: italic;
 }
 .q-title {
   font-size: 1.1rem;
@@ -770,8 +933,9 @@ th { background: #f8fafc; font-weight: 700; }
     <button class="btn btn-primary" onclick="upload()">Tải PDF tạo đề</button>
     <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
       <button class="btn btn-secondary" style="flex:1; min-width:140px; margin:0;" onclick="results()">📊 Xem Bảng Điểm</button>
-      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#4f46e5;" onclick="manageExams()">📁 Quản Lý & Xóa Đề Thi</button>
-      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#dc2626;" onclick="clearAllResults()">🗑️ Xóa Tất Cả Điểm</button>
+      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#16a34a; color:#fff;" onclick="exportCSV()">📥 Xuất Excel (.CSV)</button>
+      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#4f46e5; color:#fff;" onclick="manageExams()">📁 Quản Lý & Xóa Đề Thi</button>
+      <button class="btn" style="flex:1; min-width:140px; margin:0; background:#dc2626; color:#fff;" onclick="clearAllResults()">🗑️ Xóa Tất Cả Điểm</button>
     </div>
     <p id="amsg" style="margin-top: 10px; font-weight: 600;"></p>
     <div id="rtable" style="overflow-x:auto;"></div>
@@ -968,13 +1132,119 @@ function updateProgress() {
   }
   
   currentExamData.questions.forEach(q => {
-    const isAnswered = !!document.querySelector(`input[name=q${q.n}]:checked`);
+    const isAnswered = isQuestionAnswered(q);
     const bubble = $(`bubble-${q.n}`);
     if (bubble) {
       if (isAnswered) bubble.classList.add('answered');
       else bubble.classList.remove('answered');
     }
   });
+}
+
+function isQuestionAnswered(q) {
+  if (!q) return false;
+  if (q.type === 'tf') {
+    const items = q.items || [];
+    if (!items.length) return false;
+    return items.every(it => document.querySelector(`input[name="q${q.n}_${it.id}"]:checked`));
+  } else if (q.type === 'sa') {
+    const inp = document.querySelector(`input[name="q${q.n}"]`);
+    return !!(inp && inp.value.trim().length > 0);
+  } else {
+    return !!document.querySelector(`input[name="q${q.n}"]:checked`);
+  }
+}
+
+function renderMath(el) {
+  if (typeof renderMathInElement === 'function' && el) {
+    try {
+      renderMathInElement(el, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        throwOnError: false
+      });
+    } catch (e) {
+      console.warn('KaTeX render warning:', e);
+    }
+  }
+}
+
+function renderQuestionHtml(q, total) {
+  let typeBadge = '<span class="badge-type badge-mc">🔘 Trắc nghiệm 4 lựa chọn</span>';
+  if (q.type === 'tf') typeBadge = '<span class="badge-type badge-tf">⚖️ Đúng / Sai</span>';
+  else if (q.type === 'sa') typeBadge = '<span class="badge-type badge-sa">✍️ Trả lời ngắn</span>';
+
+  let bodyHtml = '';
+  if (q.type === 'tf') {
+    bodyHtml = `
+      <div class="tf-wrap">
+        <div class="tf-header">
+          <span>Ý khẳng định / Mệnh đề</span>
+          <span>Chọn Đúng / Sai</span>
+        </div>
+        ${(q.items || []).map(it => `
+          <div class="tf-row" id="tf-row-${q.n}-${it.id}">
+            <div class="tf-statement">
+              <span class="tf-letter">${it.id})</span>
+              <span class="tf-text">${esc(it.text)}</span>
+            </div>
+            <div class="tf-actions">
+              <label class="tf-btn tf-btn-true" data-q="${q.n}" data-item="${it.id}" data-val="Đ" onclick="selectTF(${q.n}, '${it.id}', 'Đ', this)">
+                <input type="radio" name="q${q.n}_${it.id}" value="Đ">
+                <span>Đúng</span>
+              </label>
+              <label class="tf-btn tf-btn-false" data-q="${q.n}" data-item="${it.id}" data-val="S" onclick="selectTF(${q.n}, '${it.id}', 'S', this)">
+                <input type="radio" name="q${q.n}_${it.id}" value="S">
+                <span>Sai</span>
+              </label>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } else if (q.type === 'sa') {
+    bodyHtml = `
+      <div class="sa-box">
+        <div class="sa-input-wrap">
+          <span class="sa-icon">✍️</span>
+          <input type="text" class="sa-input" name="q${q.n}" id="sa-input-${q.n}" placeholder="Nhập đáp số (ví dụ: 10, 288 hoặc 14.5)..." autocomplete="off" oninput="onInputSA(${q.n}, this)">
+          ${q.unit ? `<span class="sa-unit">${esc(q.unit)}</span>` : ''}
+        </div>
+        <div class="sa-hint">💡 Em có thể nhập số nguyên, số thập phân (dùng dấu chấm hoặc phẩy) hoặc phân số.</div>
+      </div>
+    `;
+  } else {
+    bodyHtml = `
+      <div class="options-list">
+        ${(q.opts || []).map((o, i) => {
+          const letter = 'ABCD'[i];
+          return `
+            <label class="option-label" data-q="${q.n}" data-l="${letter}" onclick="selectOption(${q.n}, '${letter}', this)">
+              <input type="radio" name="q${q.n}" value="${letter}">
+              <div class="opt-circle">${letter}</div>
+              <div class="opt-content">${esc(o)}</div>
+            </label>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  return `
+    <div class="q-card" id="card-q-${q.n}">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+        <div class="q-badge">Câu ${q.n} / ${total}</div>
+        ${typeBadge}
+      </div>
+      <div class="q-title">${esc(q.q)}</div>
+      ${q.svg ? `<div class="q-fig-wrap">${q.svg}</div>` : ''}
+      ${bodyHtml}
+    </div>
+  `;
 }
 
 async function start() {
@@ -1000,29 +1270,14 @@ async function start() {
   ).join('');
 
   // Render Questions
-  $('quiz').innerHTML = currentExamData.questions.map(q => `
-    <div class="q-card" id="card-q-${q.n}">
-      <div class="q-badge">Câu ${q.n} / ${currentExamData.questions.length}</div>
-      <div class="q-title">${esc(q.q)}</div>
-      ${q.svg ? `<div class="q-fig-wrap">${q.svg}</div>` : ''}
-      <div class="options-list">
-        ${q.opts.map((o, i) => {
-          const letter = 'ABCD'[i];
-          return `
-            <label class="option-label" data-q="${q.n}" data-l="${letter}" onclick="selectOption(${q.n}, '${letter}', this)">
-              <input type="radio" name="q${q.n}" value="${letter}">
-              <div class="opt-circle">${letter}</div>
-              <div class="opt-content">${esc(o)}</div>
-            </label>
-          `;
-        }).join('')}
-      </div>
-    </div>
-  `).join('') + `
+  $('quiz').innerHTML = currentExamData.questions.map(q => renderQuestionHtml(q, currentExamData.questions.length)).join('') + `
     <button class="btn btn-primary" style="margin-top: 26px; padding: 18px; font-size: 1.2rem;">
       <span>📥 NỘP BÀI THI</span>
     </button>
   `;
+
+  // Render KaTeX Formulas
+  renderMath($('quiz'));
 
   $('quizContainer').classList.remove('hide');
   startTimer();
@@ -1040,16 +1295,44 @@ function selectOption(qNum, letter, labelEl) {
   updateProgress();
 }
 
+function selectTF(qNum, itemId, val, labelEl) {
+  const row = labelEl.closest('.tf-row');
+  row.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('selected-true', 'selected-false'));
+  if (val === 'Đ') labelEl.classList.add('selected-true');
+  else labelEl.classList.add('selected-false');
+  const input = labelEl.querySelector('input');
+  if (input) input.checked = true;
+  playSound('select');
+  updateProgress();
+}
+
+function onInputSA(qNum, inputEl) {
+  updateProgress();
+}
+
 async function submitQuiz(ev) {
   ev.preventDefault();
   const answers = {};
   currentExamData.questions.forEach(q => {
-    const c = document.querySelector(`input[name=q${q.n}]:checked`);
-    if (c) answers[q.n] = c.value;
+    if (q.type === 'tf') {
+      const tfAns = {};
+      (q.items || []).forEach(it => {
+        const c = document.querySelector(`input[name="q${q.n}_${it.id}"]:checked`);
+        if (c) tfAns[it.id] = c.value;
+      });
+      if (Object.keys(tfAns).length > 0) answers[q.n] = tfAns;
+    } else if (q.type === 'sa') {
+      const inp = document.querySelector(`input[name="q${q.n}"]`);
+      if (inp && inp.value.trim().length > 0) answers[q.n] = inp.value.trim();
+    } else {
+      const c = document.querySelector(`input[name="q${q.n}"]:checked`);
+      if (c) answers[q.n] = c.value;
+    }
   });
   
-  const left = currentExamData.questions.length - Object.keys(answers).length;
-  if (left > 0 && !confirm(`Em còn ${left} câu chưa làm. Em có chắc chắn muốn nộp bài luôn không?`)) {
+  const answeredCount = currentExamData.questions.filter(isQuestionAnswered).length;
+  const left = currentExamData.questions.length - answeredCount;
+  if (left > 0 && !confirm(`Em còn ${left} câu chưa hoàn thành đầy đủ. Em có chắc chắn muốn nộp bài luôn không?`)) {
     return false;
   }
   
@@ -1063,29 +1346,77 @@ async function submitQuiz(ev) {
     });
 
     // Review questions
-    r.review.forEach(({ n, a, why }) => {
-      document.querySelectorAll(`label[data-q="${n}"]`).forEach(l => {
-        if (l.dataset.l === a) {
-          l.classList.add('ok');
-        } else if (l.querySelector('input').checked) {
-          l.classList.add('bad');
+    r.review.forEach(item => {
+      const qCard = $(`card-q-${item.n}`);
+      if (!qCard) return;
+
+      if (item.type === 'tf') {
+        (item.itemResults || []).forEach(it => {
+          const row = $(`tf-row-${item.n}-${it.id}`);
+          if (row) {
+            const trueBtn = row.querySelector('.tf-btn-true');
+            const falseBtn = row.querySelector('.tf-btn-false');
+            if (it.correctAnswer === 'Đ' && trueBtn) trueBtn.style.outline = '2px solid #059669';
+            if (it.correctAnswer === 'S' && falseBtn) falseBtn.style.outline = '2px solid #059669';
+
+            const statusTag = document.createElement('div');
+            statusTag.style.cssText = `margin-top:6px; font-size:0.84rem; font-weight:700; color:${it.isCorrect ? '#065f46' : '#991b1b'};`;
+            statusTag.innerHTML = `${it.isCorrect ? '✔ Đúng' : '✘ Chưa đúng'} (Em chọn: <b>${esc(it.userChoice || 'Chưa chọn')}</b> | Chuẩn: <b>${esc(it.correctAnswer)}</b>)${it.why ? ` - ${esc(it.why)}` : ''}`;
+            row.appendChild(statusTag);
+          }
+        });
+
+        const whyDiv = document.createElement('div');
+        whyDiv.className = 'why-box';
+        whyDiv.innerHTML = `
+          <div style="font-weight: 700; margin-bottom: 6px; color: ${item.isCorrect ? '#065f46' : '#991b1b'}">
+            ${item.isCorrect ? '✔ Toàn bộ các ý đều chính xác!' : `⚡ Kết quả câu: Đúng ${item.itemResults ? item.itemResults.filter(i => i.isCorrect).length : 0}/${item.itemResults ? item.itemResults.length : 4} ý`}
+          </div>
+          ${item.why ? `<div><b>💡 Hướng dẫn giải chi tiết:</b> ${esc(item.why)}</div>` : ''}
+        `;
+        qCard.appendChild(whyDiv);
+
+      } else if (item.type === 'sa') {
+        const inp = document.querySelector(`input[name="q${item.n}"]`);
+        if (inp) {
+          inp.style.borderColor = item.isCorrect ? '#10b981' : '#ef4444';
+          inp.style.background = item.isCorrect ? '#ecfdf5' : '#fef2f2';
         }
-      });
 
-      const qCard = $(`card-q-${n}`);
-      const userChoice = answers[n] || 'Chưa chọn';
-      const isCorrect = answers[n] === a;
+        const whyDiv = document.createElement('div');
+        whyDiv.className = 'why-box';
+        whyDiv.innerHTML = `
+          <div style="font-weight: 700; margin-bottom: 6px; color: ${item.isCorrect ? '#065f46' : '#991b1b'}">
+            ${item.isCorrect ? '✔ Đáp số chính xác!' : '✘ Đáp số chưa chính xác!'} (Đáp số của em: <b>${esc(item.userChoice || 'Chưa nhập')}</b> | Đáp số chuẩn: <b>${esc(item.a)}</b>)
+          </div>
+          ${item.why ? `<div><b>💡 Hướng dẫn giải chi tiết:</b> ${esc(item.why)}</div>` : ''}
+        `;
+        qCard.appendChild(whyDiv);
 
-      const whyDiv = document.createElement('div');
-      whyDiv.className = 'why-box';
-      whyDiv.innerHTML = `
-        <div style="font-weight: 700; margin-bottom: 4px; color: ${isCorrect ? '#065f46' : '#991b1b'}">
-          ${isCorrect ? '✔ Làm đúng!' : '✘ Làm chưa đúng!'} (Đáp án của em: <b>${userChoice}</b> | Đáp án chuẩn: <b>${a}</b>)
-        </div>
-        <div><b>💡 Hướng dẫn giải chi tiết:</b> ${esc(why)}</div>
-      `;
-      qCard.appendChild(whyDiv);
+      } else {
+        document.querySelectorAll(`label[data-q="${item.n}"]`).forEach(l => {
+          if (l.dataset.l === item.a) {
+            l.classList.add('ok');
+          } else if (l.querySelector('input') && l.querySelector('input').checked) {
+            l.classList.add('bad');
+          }
+        });
+
+        const userChoice = answers[item.n] || 'Chưa chọn';
+        const whyDiv = document.createElement('div');
+        whyDiv.className = 'why-box';
+        whyDiv.innerHTML = `
+          <div style="font-weight: 700; margin-bottom: 6px; color: ${item.isCorrect ? '#065f46' : '#991b1b'}">
+            ${item.isCorrect ? '✔ Làm đúng!' : '✘ Làm chưa đúng!'} (Đáp án của em: <b>${userChoice}</b> | Đáp án chuẩn: <b>${esc(item.a)}</b>)
+          </div>
+          ${item.why ? `<div><b>💡 Hướng dẫn giải chi tiết:</b> ${esc(item.why)}</div>` : ''}
+        `;
+        qCard.appendChild(whyDiv);
+      }
     });
+
+    // Render KaTeX for review boxes
+    renderMath($('quiz'));
 
     // Disable all inputs & remove submit button
     document.querySelectorAll('#quiz input').forEach(i => i.disabled = true);
@@ -1214,6 +1545,67 @@ async function results() {
   }
 }
 
+async function exportCSV() {
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs || !rs.length) {
+      alert('Chưa có kết quả học sinh nào để xuất file!');
+      return;
+    }
+    let csv = '\uFEFFSTT,Họ và tên,Lớp,Khối,Bài kiểm tra,Số câu đúng,Tổng số câu,Điểm hệ 10,Thời gian nộp\n';
+    rs.forEach((r, i) => {
+      const name = `"${(r.name || '').replace(/"/g, '""')}"`;
+      const cls = `"${(r.cls || '').replace(/"/g, '""')}"`;
+      const grade = `"${(r.gradeName || ('Khối ' + (r.grade || ''))).replace(/"/g, '""')}"`;
+      const title = `"${(r.examTitle || r.exam || '').replace(/"/g, '""')}"`;
+      const score = r.score !== undefined ? r.score : 0;
+      const total = r.total !== undefined ? r.total : 0;
+      const tenPoint = total > 0 ? ((score / total) * 10).toFixed(1) : '0.0';
+      const date = `"${new Date(r.at).toLocaleString('vi-VN')}"`;
+      csv += `${i + 1},${name},${cls},${grade},${title},${score},${total},${tenPoint},${date}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Bang_Diem_Lop_Toan_Thay_Trinh_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Lỗi xuất bảng điểm: ' + e.message);
+  }
+}
+
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs || !rs.length) {
+      alert('Chưa có kết quả học sinh nào để xuất file!');
+      return;
+    }
+    let csv = '\uFEFFSTT,Họ và tên,Lớp,Khối,Bài kiểm tra,Số câu đúng,Tổng số câu,Điểm hệ 10,Thời gian nộp\n';
+    rs.forEach((r, i) => {
+      const name = `"${(r.name || '').replace(/"/g, '""')}"`;
+      const cls = `"${(r.cls || '').replace(/"/g, '""')}"`;
+      const grade = `"${(r.gradeName || ('Khối ' + (r.grade || ''))).replace(/"/g, '""')}"`;
+      const title = `"${(r.examTitle || r.exam || '').replace(/"/g, '""')}"`;
+      const score = r.score !== undefined ? r.score : 0;
+      const total = r.total !== undefined ? r.total : 0;
+      const tenPoint = total > 0 ? ((score / total) * 10).toFixed(1) : '0.0';
+      const date = `"${new Date(r.at).toLocaleString('vi-VN')}"`;
+      csv += `${i + 1},${name},${cls},${grade},${title},${score},${total},${tenPoint},${date}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Bang_Diem_Lop_Toan_Thay_Trinh_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Lỗi xuất bảng điểm: ' + e.message);
+  }
+}
+
 async function clearAllResults() {
   if (!confirm('Thầy có chắc chắn muốn XÓA TOÀN BỘ kết quả thi của tất cả học sinh không?')) return;
   try {
@@ -1225,6 +1617,37 @@ async function clearAllResults() {
   }
 }
 
+
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs || !rs.length) {
+      alert('Chưa có kết quả học sinh nào để xuất file!');
+      return;
+    }
+    let csv = '\uFEFFSTT,Họ và tên,Lớp,Khối,Bài kiểm tra,Số câu đúng,Tổng số câu,Điểm hệ 10,Thời gian nộp\n';
+    rs.forEach((r, i) => {
+      const name = `"${(r.name || '').replace(/"/g, '""')}"`;
+      const cls = `"${(r.cls || '').replace(/"/g, '""')}"`;
+      const grade = `"${(r.gradeName || ('Khối ' + (r.grade || ''))).replace(/"/g, '""')}"`;
+      const title = `"${(r.examTitle || r.exam || '').replace(/"/g, '""')}"`;
+      const score = r.score !== undefined ? r.score : 0;
+      const total = r.total !== undefined ? r.total : 0;
+      const tenPoint = total > 0 ? ((score / total) * 10).toFixed(1) : '0.0';
+      const date = `"${new Date(r.at).toLocaleString('vi-VN')}"`;
+      csv += `${i + 1},${name},${cls},${grade},${title},${score},${total},${tenPoint},${date}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Bang_Diem_Lop_Toan_Thay_Trinh_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Lỗi xuất bảng điểm: ' + e.message);
+  }
+}
+
 async function deleteResult(idx) {
   if (!confirm('Thầy có chắc muốn xóa kết quả của học sinh này không?')) return;
   try {
@@ -1233,6 +1656,37 @@ async function deleteResult(idx) {
     results();
   } catch (e) {
     $('amsg').textContent = e.message;
+  }
+}
+
+
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs || !rs.length) {
+      alert('Chưa có kết quả học sinh nào để xuất file!');
+      return;
+    }
+    let csv = '\uFEFFSTT,Họ và tên,Lớp,Khối,Bài kiểm tra,Số câu đúng,Tổng số câu,Điểm hệ 10,Thời gian nộp\n';
+    rs.forEach((r, i) => {
+      const name = `"${(r.name || '').replace(/"/g, '""')}"`;
+      const cls = `"${(r.cls || '').replace(/"/g, '""')}"`;
+      const grade = `"${(r.gradeName || ('Khối ' + (r.grade || ''))).replace(/"/g, '""')}"`;
+      const title = `"${(r.examTitle || r.exam || '').replace(/"/g, '""')}"`;
+      const score = r.score !== undefined ? r.score : 0;
+      const total = r.total !== undefined ? r.total : 0;
+      const tenPoint = total > 0 ? ((score / total) * 10).toFixed(1) : '0.0';
+      const date = `"${new Date(r.at).toLocaleString('vi-VN')}"`;
+      csv += `${i + 1},${name},${cls},${grade},${title},${score},${total},${tenPoint},${date}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Bang_Diem_Lop_Toan_Thay_Trinh_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Lỗi xuất bảng điểm: ' + e.message);
   }
 }
 
@@ -1272,6 +1726,37 @@ async function manageExams() {
     $('amsg').textContent = '';
   } catch (e) {
     $('amsg').textContent = e.message;
+  }
+}
+
+
+  try {
+    const rs = await api('/api/results', { headers: H() });
+    if (!rs || !rs.length) {
+      alert('Chưa có kết quả học sinh nào để xuất file!');
+      return;
+    }
+    let csv = '\uFEFFSTT,Họ và tên,Lớp,Khối,Bài kiểm tra,Số câu đúng,Tổng số câu,Điểm hệ 10,Thời gian nộp\n';
+    rs.forEach((r, i) => {
+      const name = `"${(r.name || '').replace(/"/g, '""')}"`;
+      const cls = `"${(r.cls || '').replace(/"/g, '""')}"`;
+      const grade = `"${(r.gradeName || ('Khối ' + (r.grade || ''))).replace(/"/g, '""')}"`;
+      const title = `"${(r.examTitle || r.exam || '').replace(/"/g, '""')}"`;
+      const score = r.score !== undefined ? r.score : 0;
+      const total = r.total !== undefined ? r.total : 0;
+      const tenPoint = total > 0 ? ((score / total) * 10).toFixed(1) : '0.0';
+      const date = `"${new Date(r.at).toLocaleString('vi-VN')}"`;
+      csv += `${i + 1},${name},${cls},${grade},${title},${score},${total},${tenPoint},${date}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Bang_Diem_Lop_Toan_Thay_Trinh_${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    alert('Lỗi xuất bảng điểm: ' + e.message);
   }
 }
 
