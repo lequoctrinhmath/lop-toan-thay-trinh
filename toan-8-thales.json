@@ -1,0 +1,297 @@
+{
+  "id": "toan-8-thales",
+  "grade": 8,
+  "gradeName": "Khối 8",
+  "title": "Luyện tập Trắc nghiệm Định lý Thalès trong tam giác – Toán 8",
+  "description": "Trọn bộ Định lý Thalès (thuận & đảo), đoạn thẳng tỉ lệ chuẩn format 3 phần mới (Trắc nghiệm 4 lựa chọn, Trắc nghiệm Đúng/Sai, Trả lời ngắn) kèm hình vẽ & lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Phát biểu nào sau đây là định nghĩa đúng về hai cặp đoạn thẳng tỉ lệ?",
+      "svg": "",
+      "opts": [
+        "Hai đoạn thẳng $AB$ và $CD$ gọi là tỉ lệ với hai đoạn thẳng $A_1B_1$ và $C_1D_1$ nếu có hệ thức $AB \\cdot CD = A_1B_1 \\cdot C_1D_1$.",
+        "Hai đoạn thẳng $AB$ và $CD$ gọi là tỉ lệ với hai đoạn thẳng $A_1B_1$ và $C_1D_1$ nếu có hệ thức $\\frac{AB}{A_1B_1} = \\frac{CD}{C_1D_1}$.",
+        "Hai đoạn thẳng $AB$ và $CD$ gọi là tỉ lệ với hai đoạn thẳng $A_1B_1$ và $C_1D_1$ nếu có hệ thức $AB + CD = A_1B_1 + C_1D_1$.",
+        "Hai đoạn thẳng $AB$ và $CD$ gọi là tỉ lệ với hai đoạn thẳng $A_1B_1$ và $C_1D_1$ nếu có hệ thức $\\frac{AB}{CD} = \\frac{C_1D_1}{A_1B_1}$."
+      ],
+      "a": "B",
+      "why": "Định nghĩa SGK: Hai đoạn thẳng $AB$ và $CD$ gọi là tỉ lệ với hai đoạn thẳng $A_1B_1$ và $C_1D_1$ nếu có hệ thức $\\frac{AB}{A_1B_1} = \\frac{CD}{C_1D_1}$ (hoặc $\\frac{AB}{CD} = \\frac{A_1B_1}{C_1D_1}$)."
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Cho các đoạn thẳng $AB = 6\\text{ cm}$, $CD = 9\\text{ cm}$, $PQ = 8\\text{ cm}$, $EF = 12\\text{ cm}$. Khẳng định nào sau đây là đúng?",
+      "svg": "",
+      "opts": [
+        "Đoạn thẳng $PQ$ và $AB$ tỉ lệ với hai đoạn thẳng $CD$ và $EF$.",
+        "Đoạn thẳng $AB$ và $CD$ tỉ lệ với hai đoạn thẳng $EF$ và $PQ$.",
+        "Đoạn thẳng $AB$ và $PQ$ tỉ lệ với hai đoạn thẳng $EF$ và $CD$.",
+        "Đoạn thẳng $AB$ và $PQ$ tỉ lệ với hai đoạn thẳng $CD$ và $EF$."
+      ],
+      "a": "D",
+      "why": "Ta có tỉ số: $\\frac{AB}{CD} = \\frac{6}{9} = \\frac{2}{3}$ và $\\frac{PQ}{EF} = \\frac{8}{12} = \\frac{2}{3}$. Suy ra $\\frac{AB}{CD} = \\frac{PQ}{EF}$, hay $\\frac{AB}{PQ} = \\frac{CD}{EF}$. Do đó đoạn thẳng $AB$ và $PQ$ tỉ lệ với hai đoạn thẳng $CD$ và $EF$."
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Tỉ số của cặp đoạn thẳng có độ dài $AB = 4\\text{ dm}$ và $CD = 20\\text{ dm}$ bằng:",
+      "svg": "",
+      "opts": [
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{5}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{7}$"
+      ],
+      "a": "B",
+      "why": "Tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng đơn vị đo: $\\frac{AB}{CD} = \\frac{4}{20} = \\frac{1}{5}$."
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Cho các đoạn thẳng ở hình vẽ bên dưới. Nếu chọn độ dài đoạn thẳng trên cùng làm đơn vị ($1$) thì tỉ số $\\frac{AB}{CD}$ bằng bao nhiêu?",
+      "svg": "<svg viewBox=\"0 0 320 150\" width=\"300\" height=\"140\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Unit segment = 50px -->\n  <line x1=\"80\" y1=\"25\" x2=\"130\" y2=\"25\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"80\" cy=\"25\" r=\"3.5\" fill=\"#2563eb\"/>\n  <circle cx=\"130\" cy=\"25\" r=\"3.5\" fill=\"#2563eb\"/>\n  <text x=\"100\" y=\"18\" font-size=\"12\" font-style=\"italic\" fill=\"#2563eb\" font-weight=\"bold\">1</text>\n  \n  <!-- Segment AB = 3 units = 150px -->\n  <line x1=\"80\" y1=\"65\" x2=\"230\" y2=\"65\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <circle cx=\"80\" cy=\"65\" r=\"3.5\" fill=\"#0f172a\"/>\n  <circle cx=\"130\" cy=\"65\" r=\"2.5\" fill=\"#64748b\"/>\n  <circle cx=\"180\" cy=\"65\" r=\"2.5\" fill=\"#64748b\"/>\n  <circle cx=\"230\" cy=\"65\" r=\"3.5\" fill=\"#0f172a\"/>\n  <text x=\"60\" y=\"70\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"238\" y=\"70\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  \n  <!-- Segment CD = 4 units = 200px -->\n  <line x1=\"80\" y1=\"110\" x2=\"280\" y2=\"110\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <circle cx=\"80\" cy=\"110\" r=\"3.5\" fill=\"#0f172a\"/>\n  <circle cx=\"130\" cy=\"110\" r=\"2.5\" fill=\"#64748b\"/>\n  <circle cx=\"180\" cy=\"110\" r=\"2.5\" fill=\"#64748b\"/>\n  <circle cx=\"230\" cy=\"110\" r=\"2.5\" fill=\"#64748b\"/>\n  <circle cx=\"280\" cy=\"110\" r=\"3.5\" fill=\"#0f172a\"/>\n  <text x=\"60\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"288\" y=\"115\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n</svg>",
+      "opts": [
+        "$\\frac{4}{3}$",
+        "$\\frac{3}{4}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{3}{2}$"
+      ],
+      "a": "B",
+      "why": "Đoạn thẳng $AB$ gồm 3 đoạn đơn vị nên $AB = 3$. Đoạn thẳng $CD$ gồm 4 đoạn đơn vị nên $CD = 4$. Do đó tỉ số $\\frac{AB}{CD} = \\frac{3}{4}$."
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Cho đoạn thẳng $AB = 16\\text{ cm}$ và $CD = 3\\text{ dm}$. Tỉ số $\\frac{AB}{CD}$ bằng:",
+      "svg": "",
+      "opts": [
+        "$\\frac{3}{16}$",
+        "$\\frac{15}{8}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{16}{3}$"
+      ],
+      "a": "C",
+      "why": "Đổi về cùng đơn vị đo: $CD = 3\\text{ dm} = 30\\text{ cm}$. Khi đó: $\\frac{AB}{CD} = \\frac{16}{30} = \\frac{8}{15}$."
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Cho biết độ dài của $AB$ gấp 7 lần độ dài của $CD$ và độ dài của $A'B'$ gấp 12 lần độ dài của $CD$. Tỉ số của hai đoạn thẳng $AB$ và $A'B'$ là:",
+      "svg": "",
+      "opts": [
+        "$\\frac{1}{12}$",
+        "$\\frac{1}{7}$",
+        "$\\frac{7}{12}$",
+        "$\\frac{12}{7}$"
+      ],
+      "a": "C",
+      "why": "Ta có $AB = 7CD$ và $A'B' = 12CD$. Suy ra: $\\frac{AB}{A'B'} = \\frac{7CD}{12CD} = \\frac{7}{12}$."
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Cho hình vẽ bên dưới, biết $BC \\parallel DE$. Hãy chỉ ra tỉ số SAI khi áp dụng định lí Thalès:",
+      "svg": "<svg viewBox=\"0 0 280 160\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Triangle ABC: A(100,20), B(220,135), C(30,135) inverted orientation -->\n  <polygon points=\"40,30 200,30 140,140\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Line DE parallel to BC: D on AC, E on AB -->\n  <line x1=\"85\" y1=\"80\" x2=\"173\" y2=\"80\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"30\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"206\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"138\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"70\" y=\"85\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"180\" y=\"85\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n</svg>",
+      "opts": [
+        "$\\frac{AD}{DC} = \\frac{AE}{AB}$",
+        "$\\frac{AD}{CD} = \\frac{AE}{BE}$",
+        "$\\frac{AD}{AC} = \\frac{AE}{AB}$",
+        "$\\frac{CD}{AC} = \\frac{EB}{AB}$"
+      ],
+      "a": "A",
+      "why": "Theo định lí Thalès, khi $DE \\parallel BC$ ta có các tỉ số đúng là: $\\frac{AD}{CD} = \\frac{AE}{BE}$, $\\frac{AD}{AC} = \\frac{AE}{AB}$, $\\frac{CD}{AC} = \\frac{EB}{AB}$. Do đó tỉ số $\\frac{AD}{DC} = \\frac{AE}{AB}$ là sai (vế trái là đoạn/đoạn còn vế phải là đoạn/cả cạnh)."
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Cho tam giác $ABC$, vẽ $MN \\parallel BC$ ($M \\in AB, N \\in AC$) sao cho $\\frac{AM}{AB} = \\frac{2}{3}$. Áp dụng định lí Thalès ta tính được:",
+      "svg": "",
+      "opts": [
+        "$\\frac{AN}{AC} = \\frac{2}{5}$",
+        "$\\frac{AN}{AC} = \\frac{3}{2}$",
+        "$\\frac{AN}{AC} = \\frac{2}{3}$",
+        "$\\frac{AN}{AC} = \\frac{3}{5}$"
+      ],
+      "a": "C",
+      "why": "Vì $MN \\parallel BC$, áp dụng định lí Thalès ta có: $\\frac{AN}{AC} = \\frac{AM}{AB} = \\frac{2}{3}$."
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Cho hình vẽ tam giác $ABC$ với $B' \\in AB$ và $C' \\in AC$. Khẳng định nào sau đây là điều kiện theo định lí Thalès đảo để suy ra $B'C' \\parallel BC$?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,150 200,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"72\" y1=\"100\" x2=\"168\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"50\" y=\"102\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">B'</text>\n  <text x=\"175\" y=\"102\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">C'</text>\n</svg>",
+      "opts": [
+        "$\\frac{B'B}{AB} = \\frac{AC'}{AC} \\Rightarrow B'C' \\parallel BC$",
+        "$\\frac{AB'}{B'B} = \\frac{AC'}{AC} \\Rightarrow B'C' \\parallel BC$",
+        "$\\frac{AB}{AB'} = \\frac{AC}{AC'} \\Rightarrow B'C' \\parallel BC$",
+        "$\\frac{AB'}{B'C'} = \\frac{AC'}{B'C'} \\Rightarrow B'C' \\parallel BC$"
+      ],
+      "a": "C",
+      "why": "Theo định lí Thalès đảo: Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ (ví dụ $\\frac{AB}{AB'} = \\frac{AC}{AC'}$, hoặc $\\frac{AB'}{B'B} = \\frac{AC'}{C'C}$) thì đường thẳng đó song song với cạnh còn lại của tam giác."
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Cho hình vẽ tam giác $ABC$ biết $B'C' \\parallel BC$ ($B' \\in AB, C' \\in AC$). Khẳng định nào sau đây là SAI?",
+      "svg": "",
+      "opts": [
+        "$\\frac{B'B}{AB'} = \\frac{C'C}{AC'}$",
+        "$\\frac{AB'}{AC'} = \\frac{B'B}{C'C}$",
+        "$\\frac{AB}{AB'} = \\frac{AC'}{AC}$",
+        "$\\frac{AB'}{AB} = \\frac{B'C'}{BC}$"
+      ],
+      "a": "C",
+      "why": "Khi $B'C' \\parallel BC$, theo định lí Thalès ta có $\\frac{AB}{AB'} = \\frac{AC}{AC'}$. Do đó hệ thức $\\frac{AB}{AB'} = \\frac{AC'}{AC}$ là sai vì bị đảo ngược tỉ số ở vế phải."
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Cho tam giác $ABC$ vuông tại $A$. Trên cạnh $AC$ lấy điểm $H$, trên cạnh $BC$ lấy điểm $Q$ sao cho $QH \\perp AC$. Hệ thức nào sau đây là SAI?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"40,140 200,140 200,30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Right angle at A(200,140) -->\n  <polyline points=\"188,140 188,128 200,128\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n  <!-- Line QH perp AC(horizontal) -->\n  <line x1=\"140\" y1=\"140\" x2=\"140\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Right angle at H(140,140) -->\n  <polyline points=\"128,140 128,128 140,128\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"25\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"206\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"206\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"135\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">H</text>\n  <text x=\"145\" y=\"66\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">Q</text>\n</svg>",
+      "opts": [
+        "$\\frac{CH}{CA} = \\frac{CQ}{CB}$",
+        "$\\frac{HA}{CA} = \\frac{QB}{CB}$",
+        "$\\frac{CB}{CQ} = \\frac{CH}{CA}$",
+        "$\\frac{CH}{HA} = \\frac{CQ}{QB}$"
+      ],
+      "a": "C",
+      "why": "Vì $QH \\perp AC$ và $AB \\perp AC$ nên $QH \\parallel AB$. Theo định lí Thalès: $\\frac{CH}{CA} = \\frac{CQ}{CB} \\Rightarrow \\frac{CB}{CQ} = \\frac{CA}{CH}$. Do đó hệ thức $\\frac{CB}{CQ} = \\frac{CH}{CA}$ là sai."
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Cho bốn đoạn thẳng $AB = 2\\text{ cm}, CD = 4\\text{ cm}, EF = 5\\text{ cm}, MN = 10\\text{ cm}$. Hệ thức nào sau đây SAI?",
+      "svg": "",
+      "opts": [
+        "$\\frac{AB}{CD} = \\frac{EF}{MN}$",
+        "$\\frac{CD}{AB} = \\frac{MN}{EF}$",
+        "$\\frac{EF}{AB} = \\frac{MN}{CD}$",
+        "$\\frac{EF}{CD} = \\frac{MN}{AB}$"
+      ],
+      "a": "D",
+      "why": "Ta có $\\frac{EF}{CD} = \\frac{5}{4} = 1.25$, còn $\\frac{MN}{AB} = \\frac{10}{2} = 5$. Vì $1.25 \\ne 5$ nên hệ thức $\\frac{EF}{CD} = \\frac{MN}{AB}$ là sai."
+    },
+    {
+      "n": 13,
+      "type": "tf",
+      "q": "Cho tam giác $ABC$ có $D \\in AB, E \\in AC$ sao cho $DE \\parallel BC$ (như hình vẽ bên dưới). Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"230\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 35,150 205,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"69\" y1=\"100\" x2=\"171\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"20\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"210\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"50\" y=\"103\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"178\" y=\"103\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\frac{AD}{AB} = \\frac{AE}{AC}$.",
+          "a": "Đ",
+          "why": "Đúng theo định lí Thalès: đường thẳng $DE \\parallel BC$ định ra trên hai cạnh những đoạn thẳng tương ứng tỉ lệ."
+        },
+        {
+          "id": "b",
+          "text": "$\\frac{AD}{DB} = \\frac{AE}{EC}$.",
+          "a": "Đ",
+          "why": "Đúng theo định lí Thalès: tỉ số giữa đoạn trên và đoạn dưới trên cạnh $AB$ bằng tỉ số tương ứng trên cạnh $AC$."
+        },
+        {
+          "id": "c",
+          "text": "$\\frac{DB}{AB} = \\frac{EC}{AC}$.",
+          "a": "Đ",
+          "why": "Đúng theo tính chất tỉ số đoạn thẳng: $\\frac{DB}{AB} = 1 - \\frac{AD}{AB} = 1 - \\frac{AE}{AC} = \\frac{EC}{AC}$."
+        },
+        {
+          "id": "d",
+          "text": "$\\frac{AD}{DB} = \\frac{EC}{AE}$.",
+          "a": "S",
+          "why": "Sai vì vế phải bị nghịch đảo tỉ số, hệ thức đúng phải là $\\frac{AD}{DB} = \\frac{AE}{EC}$."
+        }
+      ],
+      "why": "Theo định lí Thalès, khi $DE \\parallel BC$ thì các cặp tỉ số tương ứng luôn bằng nhau: $\\frac{AD}{AB} = \\frac{AE}{AC}$, $\\frac{AD}{DB} = \\frac{AE}{EC}$, $\\frac{DB}{AB} = \\frac{EC}{AC}$."
+    },
+    {
+      "n": 14,
+      "type": "tf",
+      "q": "Cho tam giác $ABC$ vuông tại $A$. Lấy điểm $H \\in AB$, điểm $M \\in BC$ sao cho $HM \\perp AB$ (như hình vẽ bên dưới). Biết $BH = 2\\text{ cm}, HA = 4\\text{ cm}, BM = 3\\text{ cm}$. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"230\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"40,30 40,150 200,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Right angle at A(40,150) -->\n  <polyline points=\"40,138 52,138 52,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n  <!-- Line HM perp AB(vertical) -->\n  <line x1=\"40\" y1=\"70\" x2=\"93\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Right angle at H(40,70) -->\n  <polyline points=\"40,82 52,82 52,70\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"34\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"24\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"206\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"20\" y=\"75\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">H</text>\n  <text x=\"98\" y=\"68\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <!-- Measurements -->\n  <text x=\"44\" y=\"52\" font-size=\"11\" fill=\"#475569\">2</text>\n  <text x=\"44\" y=\"115\" font-size=\"11\" fill=\"#475569\">4</text>\n  <text x=\"75\" y=\"48\" font-size=\"11\" fill=\"#2563eb\">3</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$HM \\parallel AC$.",
+          "a": "Đ",
+          "why": "Vì $HM \\perp AB$ và $AC \\perp AB$ (do tam giác $ABC$ vuông tại $A$) nên $HM \\parallel AC$."
+        },
+        {
+          "id": "b",
+          "text": "Độ dài đoạn thẳng $AB = 6\\text{ cm}$.",
+          "a": "Đ",
+          "why": "Vì $H$ nằm giữa $A$ và $B$ nên $AB = BH + HA = 2 + 4 = 6\\text{ cm}$."
+        },
+        {
+          "id": "c",
+          "text": "Độ dài đoạn thẳng $MC = 6\\text{ cm}$.",
+          "a": "Đ",
+          "why": "Áp dụng định lí Thalès cho $HM \\parallel AC$: $\\frac{BH}{HA} = \\frac{BM}{MC} \\Rightarrow \\frac{2}{4} = \\frac{3}{MC} \\Rightarrow MC = \\frac{3 \\cdot 4}{2} = 6\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài cạnh huyền $BC = 8\\text{ cm}$.",
+          "a": "S",
+          "why": "Vì $M$ nằm giữa $B$ và $C$ nên $BC = BM + MC = 3 + 6 = 9\\text{ cm} \\ne 8\\text{ cm}$."
+        }
+      ],
+      "why": "Tam giác $ABC$ có $HM \\parallel AC$. Đoạn $AB = 6\\text{ cm}$, áp dụng Thalès tính được $MC = 6\\text{ cm}$ và cạnh huyền $BC = 9\\text{ cm}$."
+    },
+    {
+      "n": 15,
+      "type": "sa",
+      "q": "Cho biết $\\frac{EF}{GH} = \\frac{4}{5}$ và $GH = 10\\text{ cm}$. Tính độ dài của đoạn thẳng $EF$ (theo đơn vị cm)?",
+      "unit": "cm",
+      "svg": "",
+      "a": "8",
+      "why": "Ta có $\\frac{EF}{GH} = \\frac{4}{5} \\Rightarrow EF = \\frac{4 \\cdot GH}{5} = \\frac{4 \\cdot 10}{5} = 8\\text{ cm}$."
+    },
+    {
+      "n": 16,
+      "type": "sa",
+      "q": "Cho các đoạn thẳng $AB = 6\\text{ cm}, CD = 8\\text{ cm}, MN = 12\\text{ cm}$. Tìm $x$ (cm) để đoạn thẳng $AB$ và $CD$ tỉ lệ với $MN$ và đoạn thẳng $PQ = x$?",
+      "unit": "cm",
+      "svg": "",
+      "a": "16",
+      "why": "Để $AB$ và $CD$ tỉ lệ với $MN$ và $PQ$, ta có: $\\frac{AB}{CD} = \\frac{MN}{PQ} \\Rightarrow \\frac{6}{8} = \\frac{12}{x} \\Rightarrow x = \\frac{8 \\cdot 12}{6} = 16\\text{ cm}$."
+    },
+    {
+      "n": 17,
+      "type": "sa",
+      "q": "Tính độ dài $x$ trong hình vẽ bên dưới, biết rằng $MN \\parallel BC$:",
+      "unit": "",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,150 200,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"67\" y1=\"108\" x2=\"173\" y2=\"108\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"45\" y=\"108\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <text x=\"180\" y=\"108\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">N</text>\n  <!-- Measurements -->\n  <text x=\"80\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">12</text>\n  <text x=\"42\" y=\"132\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">6</text>\n  <text x=\"150\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">15</text>\n  <text x=\"188\" y=\"132\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n</svg>",
+      "a": "7.5",
+      "why": "Vì $MN \\parallel BC$, áp dụng định lí Thalès ta có: $\\frac{AM}{MB} = \\frac{AN}{NC} \\Rightarrow \\frac{12}{6} = \\frac{15}{x} \\Rightarrow 2 = \\frac{15}{x} \\Rightarrow x = \\frac{15}{2} = 7.5$."
+    },
+    {
+      "n": 18,
+      "type": "sa",
+      "q": "Tính độ dài đoạn thẳng $NC$ trong hình vẽ bên dưới, biết $MN \\parallel BC$, $AM = 9$, $MB = 6$ và $AC = 25$:",
+      "unit": "",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,150 200,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"72\" y1=\"100\" x2=\"168\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"50\" y=\"102\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <text x=\"175\" y=\"102\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">N</text>\n  <!-- Measurements -->\n  <text x=\"84\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">9</text>\n  <text x=\"44\" y=\"130\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">6</text>\n  <!-- Arrow for AC = 25 -->\n  <line x1=\"205\" y1=\"35\" x2=\"225\" y2=\"145\" stroke=\"#dc2626\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <text x=\"220\" y=\"90\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">25</text>\n</svg>",
+      "a": "10",
+      "why": "Ta có $AB = AM + MB = 9 + 6 = 15$. Vì $MN \\parallel BC$, theo định lí Thalès ta có: $\\frac{MB}{AB} = \\frac{NC}{AC} \\Rightarrow \\frac{6}{15} = \\frac{NC}{25} \\Rightarrow NC = \\frac{6 \\cdot 25}{15} = 10$."
+    },
+    {
+      "n": 19,
+      "type": "sa",
+      "q": "Tìm giá trị của $x$ trong hình vẽ bên dưới, biết rằng $EF \\parallel BC$, $AE = 2, EB = 1, FC = 1$ và $AF = x$:",
+      "unit": "",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,150 200,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"67\" y1=\"108\" x2=\"173\" y2=\"108\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"155\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"48\" y=\"108\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <text x=\"178\" y=\"108\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">F</text>\n  <!-- Measurements -->\n  <text x=\"86\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">2</text>\n  <text x=\"48\" y=\"132\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">1</text>\n  <text x=\"150\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"190\" y=\"132\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">1</text>\n</svg>",
+      "a": "2",
+      "why": "Vì $EF \\parallel BC$, theo định lí Thalès ta có: $\\frac{AE}{EB} = \\frac{AF}{FC} \\Rightarrow \\frac{2}{1} = \\frac{x}{1} \\Rightarrow x = 2$."
+    },
+    {
+      "n": 20,
+      "type": "sa",
+      "q": "Cho hình vẽ biết $\\widehat{NMA} = \\widehat{MAC}$ (hai góc so le trong). Biết $BN = x, NA = 3, BM = 3, MC = 4$. Hãy tìm giá trị của $x$ (viết kết quả dưới dạng số thập phân)?",
+      "unit": "",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 60,155 180,155\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Line NM: N on AB, M on BC -->\n  <line x1=\"90\" y1=\"90\" x2=\"150\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"90\" y1=\"90\" x2=\"180\" y2=\"155\" stroke=\"#64748b\" stroke-dasharray=\"3 3\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"45\" y=\"162\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"186\" y=\"162\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"70\" y=\"92\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">N</text>\n  <text x=\"156\" y=\"92\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <text x=\"96\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"68\" y=\"125\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">3</text>\n  <text x=\"140\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">3</text>\n  <text x=\"170\" y=\"125\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">4</text>\n</svg>",
+      "a": "2.25",
+      "why": "Vì $\\widehat{NMA} = \\widehat{MAC}$ ở vị trí so le trong nên $MN \\parallel AC$. Áp dụng định lí Thalès cho tam giác $BAC$ với $MN \\parallel AC$ ta có: $\\frac{BN}{NA} = \\frac{BM}{MC} \\Rightarrow \\frac{x}{3} = \\frac{3}{4} \\Rightarrow x = \\frac{3 \\cdot 3}{4} = \\frac{9}{4} = 2.25$."
+    }
+  ]
+}
