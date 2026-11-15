@@ -366,7 +366,15 @@ app.get('/api/exam', (req, res) => {
     gradeName: e.gradeName || `Khối ${e.grade}`,
     title: e.title,
     description: e.description || '',
-    questions: (e.questions || []).map(({ n, q, opts, svg }) => ({ n, q, opts, svg: svg || '' }))
+    questions: (e.questions || []).map(q => ({
+      n: q.n,
+      type: q.type || 'mc',
+      q: q.q,
+      opts: q.opts || [],
+      items: (q.items || []).map(it => ({ id: it.id, text: it.text })),
+      unit: q.unit || '',
+      svg: q.svg || ''
+    }))
   });
 });
 
@@ -375,7 +383,90 @@ app.post('/api/submit', (req, res) => {
   const e = getExamById(examId);
   if (!e) return res.status(404).json({ error: 'Không tìm thấy đề thi' });
   if (!name || !cls) return res.status(400).json({ error: 'Thiếu họ tên / lớp' });
-  const score = (e.questions || []).filter(q => (answers || {})[q.n] === q.a).length;
+
+  const norm = s => String(s || '').trim().replace(/,/g, '.').toLowerCase();
+
+  let earnedScore = 0;
+  const review = (e.questions || []).map(q => {
+    const type = q.type || 'mc';
+    const userAns = (answers || {})[q.n];
+    let isCorrect = false;
+
+    if (type === 'tf') {
+      const items = q.items || [];
+      const itemResults = items.map(it => {
+        const userChoice = (userAns || {})[it.id] || '';
+        const itCorrect = String(userChoice).toUpperCase() === String(it.a).toUpperCase();
+        return {
+          id: it.id,
+          text: it.text,
+          userChoice,
+          correctAnswer: it.a,
+          isCorrect: itCorrect,
+          why: it.why || ''
+        };
+      });
+      const correctCount = itemResults.filter(it => it.isCorrect).length;
+      let qPoints = 0;
+      if (items.length === 4) {
+        if (correctCount === 4) qPoints = 1.0;
+        else if (correctCount === 3) qPoints = 0.5;
+        else if (correctCount === 2) qPoints = 0.25;
+        else if (correctCount === 1) qPoints = 0.1;
+      } else {
+        qPoints = items.length > 0 ? (correctCount / items.length) : 0;
+      }
+      earnedScore += qPoints;
+      isCorrect = correctCount === items.length;
+
+      return {
+        n: q.n,
+        type: 'tf',
+        isCorrect,
+        points: qPoints,
+        itemResults,
+        why: q.why || ''
+      };
+    } else if (type === 'sa') {
+      const uNorm = norm(userAns);
+      const cNorm = norm(q.a);
+      if (uNorm && cNorm) {
+        if (uNorm === cNorm) {
+          isCorrect = true;
+        } else {
+          const uNum = parseFloat(uNorm);
+          const cNum = parseFloat(cNorm);
+          if (!isNaN(uNum) && !isNaN(cNum) && Math.abs(uNum - cNum) < 0.001) {
+            isCorrect = true;
+          }
+        }
+      }
+      if (isCorrect) earnedScore += 1;
+      return {
+        n: q.n,
+        type: 'sa',
+        userChoice: userAns || '',
+        a: q.a,
+        isCorrect,
+        why: q.why || ''
+      };
+    } else {
+      isCorrect = String(userAns || '').toUpperCase() === String(q.a || '').toUpperCase();
+      if (isCorrect) earnedScore += 1;
+      return {
+        n: q.n,
+        type: 'mc',
+        userChoice: userAns || '',
+        a: q.a,
+        isCorrect,
+        why: q.why || ''
+      };
+    }
+  });
+
+  const finalScore = Math.round(earnedScore * 10) / 10;
+  const total = e.questions.length;
+
   const all = read(RESULTS, []);
   all.push({
     examId: e.id || examId || '',
@@ -384,15 +475,16 @@ app.post('/api/submit', (req, res) => {
     gradeName: e.gradeName || `Khối ${e.grade || 8}`,
     name,
     cls,
-    score,
-    total: e.questions.length,
+    score: finalScore,
+    total,
     at: new Date().toISOString()
   });
   write(RESULTS, all);
+
   res.json({
-    score,
-    total: e.questions.length,
-    review: (e.questions || []).map(q => ({ n: q.n, a: q.a, why: q.why || '' }))
+    score: finalScore,
+    total,
+    review
   });
 });
 
