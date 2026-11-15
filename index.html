@@ -136,6 +136,279 @@ body {
   color: #ffffff;
 }
 
+/* Kho De Thi Da Nang Chip in Header */
+.kho-de-chip {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.45);
+}
+.kho-de-chip:hover {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.6);
+}
+
+/* Kho Hoc Lieu Showcase Card */
+.khl-showcase-card {
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid #bfdbfe;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%);
+  margin-bottom: 22px;
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.12);
+  transition: all 0.25s ease;
+}
+.khl-showcase-card:hover {
+  box-shadow: 0 14px 30px -4px rgba(37, 99, 235, 0.2);
+  border-color: #93c5fd;
+}
+.khl-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.khl-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.khl-pill-main {
+  background: #1e40af;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.khl-pill-free {
+  background: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.khl-link-top {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+.khl-link-top:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.khl-heading {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.khl-description {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.khl-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.khl-feat-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s;
+}
+.khl-feat-item:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+.khl-feat-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.khl-feat-item b {
+  display: block;
+  font-size: 0.9rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+.khl-feat-item p {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0;
+}
+.khl-btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-khl-open {
+  flex: 1.3;
+  min-width: 220px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transition: all 0.2s;
+}
+.btn-khl-open:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+}
+.btn-khl-preview {
+  flex: 1;
+  min-width: 170px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #1e40af;
+  border: 1.5px solid #bfdbfe;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-khl-preview:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+}
+
+/* Modal Preview Kho De */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: opacity 0.25s ease;
+}
+.modal-overlay.hide {
+  display: none !important;
+}
+.modal-container {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 950px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  animation: modalScaleIn 0.25s ease-out;
+}
+@keyframes modalScaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.modal-header {
+  padding: 14px 20px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.modal-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-modal-open-ext {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-modal-open-ext:hover {
+  background: #dbeafe;
+}
+.btn-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  border: none;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.btn-modal-close:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+.modal-body {
+  flex: 1;
+  position: relative;
+  background: #f1f5f9;
+}
+.modal-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
 /* Cards */
 .card {
   background: var(--card-bg);
@@ -835,8 +1108,63 @@ th { background: #f8fafc; font-weight: 700; }
       <a href="https://zalo.me/0936032378" target="_blank" class="contact-chip zalo-chip">
         <span>💬 Nhắn Zalo Thầy</span>
       </a>
+      <a href="https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/" target="_blank" rel="noopener" class="contact-chip kho-de-chip">
+        <span>📚 Kho Đề Đà Nẵng ↗</span>
+      </a>
     </div>
   </header>
+
+  
+  <!-- Khung Giới Thiệu Kho Đề Thi & Đề Cương Đà Nẵng -->
+  <div class="card khl-showcase-card">
+    <div class="khl-card-header">
+      <div class="khl-badge-group">
+        <span class="khl-pill-main">🏛️ KHO HỌC LIỆU ĐÀ NẴNG</span>
+        <span class="khl-pill-free">✨ Miễn Phí 100%</span>
+      </div>
+      <a href="https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/" target="_blank" rel="noopener" class="khl-link-top">
+        Xem tất cả đề ↗
+      </a>
+    </div>
+    
+    <h2 class="khl-heading">📚 Thư Viện Đề Cương & Đề Thi Các Trường Tại Đà Nẵng</h2>
+    <p class="khl-description">
+      Tổng hợp đầy đủ đề kiểm tra Giữa kì, Cuối kì và Đề cương ôn tập Toán qua các năm học của các trường THCS & THPT tại Đà Nẵng <i>(Phan Châu Trinh, Nguyễn Trãi, Hoàng Hoa Thám, Nguyễn Huệ, Trưng Vương...)</i>. Hỗ trợ <b>xem trực tiếp file PDF</b> và <b>tải file Word (.docx)</b> chuẩn để in ấn, ôn luyện.
+    </p>
+
+    <div class="khl-feature-grid">
+      <div class="khl-feat-item">
+        <span class="khl-feat-icon">📑</span>
+        <div>
+          <b>Xem PDF trực tuyến</b>
+          <p>Mở đọc nhanh trên mọi thiết bị</p>
+        </div>
+      </div>
+      <div class="khl-feat-item">
+        <span class="khl-feat-icon">📥</span>
+        <div>
+          <b>Tải file Word (.docx)</b>
+          <p>Dễ dàng chỉnh sửa & in ấn</p>
+        </div>
+      </div>
+      <div class="khl-feat-item">
+        <span class="khl-feat-icon">🏫</span>
+        <div>
+          <b>Chuẩn trường Đà Nẵng</b>
+          <p>Cập nhật liên tục các năm học</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="khl-btn-row">
+      <a href="https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/" target="_blank" rel="noopener" class="btn-khl-open">
+        <span>🚀 Mở Kho Đề Thi Đà Nẵng (Xem & Tải File) ↗</span>
+      </a>
+      <button type="button" class="btn-khl-preview" onclick="toggleKhoDeModal(true)">
+        <span>👁️ Xem Nhanh Ngay Trên Web</span>
+      </button>
+    </div>
+  </div>
 
   <!-- 1. Catalog Section (Phân loại khối lớp & Danh sách đề thi) -->
   <div id="catalogSection">
@@ -942,14 +1270,68 @@ th { background: #f8fafc; font-weight: 700; }
   </div>
 
   <footer class="footer">
-    Lớp Toán Thầy Trịnh | Hotline: 0936.032.378
-    <br>
-    <span class="admin-trigger" onclick="toggleAdmin()">Dành cho Giáo viên</span>
+    <div style="margin-bottom: 6px;">
+      <b>Lớp Toán Thầy Trịnh</b> | Hotline: <a href="tel:0936032378" style="color:inherit; font-weight:700; text-decoration:none;">0936.032.378</a> | <i>Hiểu bản chất, giỏi tự nhiên.</i>
+    </div>
+    <div style="display:flex; justify-content:center; align-items:center; gap:16px; flex-wrap:wrap; font-size:0.86rem; margin-top:8px;">
+      <a href="https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/" target="_blank" rel="noopener" style="color:var(--primary); font-weight:800; text-decoration:none;">
+        📚 Kho Đề Thi & Đề Cương Đà Nẵng ↗
+      </a>
+      <span style="color:#cbd5e1;">•</span>
+      <span class="admin-trigger" onclick="toggleAdmin()">⚙️ Dành cho Giáo viên</span>
+    </div>
   </footer>
+</div>
+
+<!-- Modal Xem Nhanh Kho Đề Thi Đà Nẵng -->
+<div id="khoDeModal" class="modal-overlay hide" onclick="if(event.target===this) toggleKhoDeModal(false)">
+  <div class="modal-container">
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <span style="font-size: 1.3rem;">📚</span>
+        <div>
+          <h3 style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin: 0;">Kho Đề Thi & Đề Cương Đà Nẵng – Thầy Trịnh</h3>
+          <p style="font-size: 0.8rem; color: #64748b; margin: 0;">Trực tuyến từ lequoctrinhmath.github.io</p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a href="https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/" target="_blank" rel="noopener" class="btn-modal-open-ext">
+          Mở tab mới ↗
+        </a>
+        <button type="button" class="btn-modal-close" onclick="toggleKhoDeModal(false)" title="Đóng">✕</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <iframe id="khoDeIframe" src="" loading="lazy" title="Kho Đề Thi Đà Nẵng"></iframe>
+    </div>
+  </div>
 </div>
 
 <script>
 const $ = id => document.getElementById(id);
+
+function toggleKhoDeModal(show) {
+  const modal = $('khoDeModal');
+  const iframe = $('khoDeIframe');
+  if (show) {
+    if (!iframe.src || iframe.src === 'about:blank' || iframe.src.endsWith('/')) {
+      iframe.src = 'https://lequoctrinhmath.github.io/kho-hoc-lieu-de-cuong-de-thi-cac-nam-hoc-cua-cac-truong-tai-da-nang/';
+    }
+    modal.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+  } else {
+    modal.classList.add('hide');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    const modal = $('khoDeModal');
+    if (modal && !modal.classList.contains('hide')) toggleKhoDeModal(false);
+  }
+});
+
 let allExams = [];
 let selectedExamId = null;
 let currentExamData = null;
