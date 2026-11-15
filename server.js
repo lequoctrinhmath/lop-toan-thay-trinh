@@ -72,7 +72,23 @@ function parse(buffer) {
 
 const app = express();
 app.use(express.json());
+
+// Phục vụ trang chủ: tự động nhận index.html dù nằm ở thư mục public/ hay thư mục gốc
+app.get('/', (req, res) => {
+  const rootIndex = path.join(__dirname, 'index.html');
+  const pubIndex = path.join(__dirname, 'public', 'index.html');
+  if (fs.existsSync(rootIndex) && fs.existsSync(pubIndex)) {
+    const rootStat = fs.statSync(rootIndex);
+    const pubStat = fs.statSync(pubIndex);
+    return res.sendFile(rootStat.mtimeMs >= pubStat.mtimeMs ? rootIndex : pubIndex);
+  }
+  if (fs.existsSync(pubIndex)) return res.sendFile(pubIndex);
+  if (fs.existsSync(rootIndex)) return res.sendFile(rootIndex);
+  res.send('Lớp Toán Thầy Trịnh');
+});
+
 app.use(express.static('public'));
+app.use(express.static(__dirname));
 const up = multer({ limits: { fileSize: 20e6 } });
 
 const needAdmin = (req, res, next) =>
@@ -299,21 +315,8 @@ function getAllExamsMeta() {
       }
     }
   }
-  if (list.length === 0) {
-    const e = read(EXAM);
-    if (e && e.title) {
-      list.push({
-        id: 'default',
-        grade: 8,
-        gradeName: 'Khối 8',
-        title: e.title,
-        description: '',
-        count: e.questions ? e.questions.length : 0
-      });
-    }
-  }
 
-  // Quét thêm các file toan-*.json ở thư mục gốc (nếu có tải trực tiếp lên GitHub)
+  // Quét thêm các file toan-*.json ở thư mục gốc (phòng trường hợp thầy tải trực tiếp lên GitHub root)
   try {
     const rootFiles = fs.readdirSync(__dirname).filter(f => f.startsWith('toan-') && f.endsWith('.json'));
     for (const f of rootFiles) {
@@ -330,6 +333,21 @@ function getAllExamsMeta() {
       }
     }
   } catch (e) {}
+
+  // Đảm bảo bài kiểm tra Khối 8 (Tứ giác) từ exam.json luôn có mặt nếu chưa có
+  if (!list.find(item => item.id === 'toan-8-tu-giac' || item.grade === 8)) {
+    const e = read(EXAM);
+    if (e && e.title) {
+      list.push({
+        id: 'toan-8-tu-giac',
+        grade: 8,
+        gradeName: 'Khối 8',
+        title: e.title || 'Đấu trường tư duy trắc nghiệm Toán - Tứ Giác Hình Học 8',
+        description: 'Hình thoi & Hình vuông - 40 câu trắc nghiệm kèm hình vẽ chuẩn mực SGK',
+        count: e.questions ? e.questions.length : 0
+      });
+    }
+  }
 
   return list.sort((a, b) => a.grade - b.grade);
 }
