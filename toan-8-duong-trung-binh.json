@@ -1,0 +1,279 @@
+{
+  "id": "toan-8-duong-trung-binh",
+  "grade": 8,
+  "gradeName": "Khối 8",
+  "title": "Đường trung bình của tam giác – Toán 8",
+  "description": "Đề kiểm tra 18 câu chuẩn format 3 phần mới: 12 câu trắc nghiệm nhiều phương án lựa chọn, 2 câu Đúng/Sai (8 ý) và 4 câu Trả lời ngắn kèm hình vẽ trực quan & lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Đường trung bình của tam giác là đoạn thẳng:",
+      "svg": "",
+      "opts": [
+        "đi qua trung điểm một cạnh của tam giác.",
+        "vuông góc với đáy của tam giác.",
+        "nối trung điểm hai cạnh của tam giác.",
+        "có độ dài bằng cạnh lớn nhất của tam giác."
+      ],
+      "a": "C",
+      "why": "Định nghĩa SGK: Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác."
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, nếu $DE$ là đường trung bình với $D \\in AB, E \\in AC$ thì:",
+      "svg": "",
+      "opts": [
+        "$DE \\parallel BC$.",
+        "$DE \\perp BC$.",
+        "$DE = BC$.",
+        "$DE$ luôn nằm ngoài tam giác."
+      ],
+      "a": "A",
+      "why": "Định lí: Đường trung bình của tam giác thì song song với cạnh thứ ba và bằng một nửa cạnh ấy ($DE \\parallel BC$ và $DE = \\frac{1}{2}BC$)."
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình với $D \\in AB, E \\in AC$. Khẳng định nào sau đây đúng?",
+      "svg": "",
+      "opts": [
+        "$DE$ lớn hơn $BC$.",
+        "$DE$ bằng $BC$.",
+        "$DE = \\frac{1}{2}BC$.",
+        "$DE = \\frac{1}{3}BC$."
+      ],
+      "a": "C",
+      "why": "Theo tính chất đường trung bình của tam giác: $DE = \\frac{1}{2}BC$."
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, nếu $M$ là trung điểm của cạnh $AB$ và $MN \\parallel BC$ ($N \\in AC$) thì điểm $N$ là:",
+      "svg": "",
+      "opts": [
+        "trung điểm của $AB$.",
+        "trung điểm của $AC$.",
+        "một điểm tùy ý trên $AC$.",
+        "một điểm trên $BC$."
+      ],
+      "a": "B",
+      "why": "Định lí: Đường thẳng đi qua trung điểm một cạnh của tam giác và song song với cạnh thứ hai thì đi qua trung điểm của cạnh thứ ba. Do đó $N$ là trung điểm của $AC$."
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình. Khẳng định nào dưới đây đúng về vị trí của $D$ và $E$?",
+      "svg": "",
+      "opts": [
+        "$D$ là trung điểm $AC$ và $E$ là trung điểm $AB$.",
+        "$D$ là trung điểm $AB$ và $E$ là trung điểm $AC$.",
+        "$D$ là trung điểm $BC$ và $E$ là trung điểm $AB$.",
+        "$D$ không phải là trung điểm của $AB$."
+      ],
+      "a": "B",
+      "why": "Theo cách đặt tên thông thường: $D \\in AB, E \\in AC$, đường trung bình $DE$ nối trung điểm $D$ của $AB$ và trung điểm $E$ của $AC$."
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $MN$ là đường trung bình ($M \\in AB, N \\in AC$). Biết $AM = MB$. Kết luận nào sau đây đúng về điểm $M$?",
+      "svg": "",
+      "opts": [
+        "$M$ nằm trên $AC$.",
+        "$M$ không phải trung điểm.",
+        "$M$ là trung điểm của $AB$.",
+        "$M$ là trung điểm của $BC$."
+      ],
+      "a": "C",
+      "why": "Vì $M$ nằm giữa $A, B$ và $AM = MB$ nên $M$ là trung điểm của cạnh $AB$."
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình nối trung điểm của $AB$ và $AC$. Khẳng định nào sau đây diễn tả mối quan hệ song song đúng?",
+      "svg": "",
+      "opts": [
+        "$DE \\parallel AB$.",
+        "$DE \\parallel AC$.",
+        "$DE \\parallel BC$.",
+        "$DE \\perp BC$."
+      ],
+      "a": "C",
+      "why": "Đường trung bình nối hai cạnh $AB$ và $AC$ thì song song với cạnh còn lại là $BC$ ($DE \\parallel BC$)."
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình với $D \\in AB, E \\in AC$. Biết $BC = 10\\text{ cm}$. Độ dài của $DE$ là:",
+      "svg": "",
+      "opts": [
+        "$5\\text{ cm}$",
+        "$4\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$8\\text{ cm}$"
+      ],
+      "a": "A",
+      "why": "Ta có $DE = \\frac{1}{2}BC = \\frac{1}{2} \\cdot 10 = 5\\text{ cm}$."
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Cho hình vẽ bên dưới. Độ dài $x$ trong hình vẽ là:",
+      "svg": "<svg viewBox=\"0 0 260 200\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"130,25 40,170 220,170\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Segment DE -->\n  <line x1=\"85\" y1=\"97.5\" x2=\"175\" y2=\"97.5\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"126\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"226\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"68\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"182\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <!-- Lengths -->\n  <text x=\"160\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">12</text>\n  <text x=\"202\" y=\"140\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">12</text>\n  <text x=\"125\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"120\" y=\"190\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">36</text>\n</svg>",
+      "opts": [
+        "$12$",
+        "$18$",
+        "$6$",
+        "$24$"
+      ],
+      "a": "B",
+      "why": "Vì $AE = 12$ và $EC = 12$ nên $E$ là trung điểm của $AC$. $D$ là trung điểm của $AB$ nên $DE$ là đường trung bình của tam giác $ABC$. Do đó $x = DE = \\frac{BC}{2} = \\frac{36}{2} = 18$."
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Cho hình vẽ bên dưới. Độ dài $x$ trong hình vẽ là:",
+      "svg": "<svg viewBox=\"0 0 260 200\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"140,25 50,170 210,170\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- Segment DE -->\n  <line x1=\"95\" y1=\"97.5\" x2=\"175\" y2=\"97.5\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Marks on AD and DB -->\n  <line x1=\"114\" y1=\"60\" x2=\"122\" y2=\"62\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n  <line x1=\"69\" y1=\"132\" x2=\"77\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n  <text x=\"136\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"35\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"216\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"76\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"182\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <text x=\"162\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"200\" y=\"140\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">4</text>\n</svg>",
+      "opts": [
+        "$3$",
+        "$4$",
+        "$6$",
+        "$5$"
+      ],
+      "a": "B",
+      "why": "Hình vẽ cho thấy $D$ là trung điểm của $AB$ ($AD = DB$) và $DE \\parallel BC$. Theo định lí, đường thẳng đi qua trung điểm một cạnh và song song với cạnh thứ hai thì đi qua trung điểm cạnh thứ ba, nên $E$ là trung điểm của $AC$. Vậy $x = AE = EC = 4$."
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình với $D \\in AB, E \\in AC$. Biết $DE = 3.5\\text{ cm}$. Độ dài cạnh $BC$ là:",
+      "svg": "<svg viewBox=\"0 0 280 160\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"40,30 80,120 250,120\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"75\" x2=\"145\" y2=\"75\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"32\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"70\" y=\"138\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"255\" y=\"125\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"44\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"150\" y=\"75\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <text x=\"90\" y=\"70\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">3.5 cm</text>\n</svg>",
+      "opts": [
+        "$7\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$8\\text{ cm}$",
+        "$10\\text{ cm}$"
+      ],
+      "a": "A",
+      "why": "Vì $DE$ là đường trung bình nên $BC = 2 \\cdot DE = 2 \\cdot 3.5 = 7\\text{ cm}$."
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Cho hình vẽ, biết $DE$ là đường trung bình của tam giác $ABC$. Khi đó độ dài $x$ trong hình là:",
+      "svg": "<svg viewBox=\"0 0 260 200\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"140,25 50,170 210,170\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"95\" y1=\"97.5\" x2=\"175\" y2=\"97.5\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"136\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"35\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"216\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"76\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"182\" y=\"102\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <text x=\"50\" y=\"65\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">4 cm</text>\n  <text x=\"32\" y=\"140\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">4 cm</text>\n  <text x=\"162\" y=\"65\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">x</text>\n  <text x=\"195\" y=\"140\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">6 cm</text>\n</svg>",
+      "opts": [
+        "$4\\text{ cm}$",
+        "$3\\text{ cm}$",
+        "$8\\text{ cm}$",
+        "$6\\text{ cm}$"
+      ],
+      "a": "D",
+      "why": "Vì $DE$ là đường trung bình của tam giác $ABC$ nên $E$ là trung điểm của cạnh $AC$. Do đó $x = AE = EC = 6\\text{ cm}$."
+    },
+    {
+      "n": 13,
+      "type": "tf",
+      "q": "Cho tam giác $ABC$ với $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$. $P$ là trung điểm của $BC$ (hình vẽ bên dưới). Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 260 200\" width=\"240\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"130,25 40,170 220,170\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <polygon points=\"85,97.5 175,97.5 130,170\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"126\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"25\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"226\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"65\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <text x=\"182\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">N</text>\n  <text x=\"126\" y=\"190\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">P</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$MN$ song song với cạnh $BC$.",
+          "a": "Đ",
+          "why": "Đúng theo định lí đường trung bình của tam giác: $MN$ nối trung điểm $AB$ và $AC$ nên $MN \\parallel BC$."
+        },
+        {
+          "id": "b",
+          "text": "$MN$ bằng nửa cạnh $BC$.",
+          "a": "Đ",
+          "why": "Đúng theo tính chất: $MN = \\frac{1}{2}BC$."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $BC = 10\\text{ cm}$ thì $MN = 20\\text{ cm}$.",
+          "a": "S",
+          "why": "Sai vì $MN = \\frac{1}{2}BC = \\frac{10}{2} = 5\\text{ cm}$, không phải $20\\text{ cm}$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $AB = 4\\text{ cm}, AC = 6\\text{ cm}$ và $BC = 8\\text{ cm}$ thì chu vi tam giác $MNP$ bằng $12\\text{ cm}$.",
+          "a": "S",
+          "why": "Sai vì các cạnh của tam giác $MNP$ lần lượt bằng nửa các cạnh tam giác $ABC$: $MN = 4, NP = 2, MP = 3$. Chu vi $\\triangle MNP = 4 + 2 + 3 = 9\\text{ cm} \\ne 12\\text{ cm}$."
+        }
+      ],
+      "why": "Áp dụng định nghĩa và tính chất của các đường trung bình trong tam giác."
+    },
+    {
+      "n": 14,
+      "type": "tf",
+      "q": "Bác Toán có một thanh gỗ dài muốn làm một chiếc giá để đồ trang trí hình tam giác đều $ABC$ cạnh $80\\text{ cm}$ như hình vẽ bên dưới. Gọi $E, D$ lần lượt là trung điểm của $AC, AB$ và $F$ là trung điểm của $BC$. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 240 200\" width=\"220\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,170 200,170\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"4\"/>\n  <!-- Middle bar ED -->\n  <line x1=\"80\" y1=\"97.5\" x2=\"160\" y2=\"97.5\" stroke=\"#b45309\" stroke-width=\"3\"/>\n  <!-- Inner struts EF and DF -->\n  <line x1=\"80\" y1=\"97.5\" x2=\"120\" y2=\"170\" stroke=\"#b45309\" stroke-width=\"3\"/>\n  <line x1=\"160\" y1=\"97.5\" x2=\"120\" y2=\"170\" stroke=\"#b45309\" stroke-width=\"3\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">A</text>\n  <text x=\"24\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">B</text>\n  <text x=\"206\" y=\"178\" font-size=\"13\" font-weight=\"bold\" fill=\"#92400e\">C</text>\n  <text x=\"60\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">D</text>\n  <text x=\"168\" y=\"98\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">E</text>\n  <text x=\"116\" y=\"190\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\">F</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$ED$ là đường trung bình của tam giác $\\triangle ABC$.",
+          "a": "Đ",
+          "why": "Đúng vì $D$ và $E$ lần lượt là trung điểm của $AB$ và $AC$."
+        },
+        {
+          "id": "b",
+          "text": "$EF = \\frac{1}{2}AB$.",
+          "a": "Đ",
+          "why": "Đúng vì $EF$ là đường trung bình nối trung điểm $AC$ và $BC$ nên $EF = \\frac{1}{2}AB$."
+        },
+        {
+          "id": "c",
+          "text": "$ED + EF < 80\\text{ cm}$.",
+          "a": "S",
+          "why": "Sai vì $ED = \\frac{80}{2} = 40\\text{ cm}$ và $EF = \\frac{80}{2} = 40\\text{ cm} \\Rightarrow ED + EF = 80\\text{ cm}$ (không nhỏ hơn $80\\text{ cm}$)."
+        },
+        {
+          "id": "d",
+          "text": "Chiều dài thanh gỗ để làm được giá trên không nhỏ hơn $3.2\\text{ m}$.",
+          "a": "Đ",
+          "why": "Đúng vì tổng chiều dài gỗ gồm 3 cạnh tam giác lớn ($3 \\times 80 = 240\\text{ cm}$) và 3 đường trung bình bên trong ($3 \\times 40 = 120\\text{ cm}$). Tổng cộng là $240 + 120 = 360\\text{ cm} = 3.6\\text{ m} \\ge 3.2\\text{ m}$."
+        }
+      ],
+      "why": "Phân tích cấu trúc hình học của chiếc giá tam giác đều gồm các cạnh ngoài và các thanh giằng đường trung bình bên trong."
+    },
+    {
+      "n": 15,
+      "type": "sa",
+      "q": "Trong tam giác $ABC$, $DE$ là đường trung bình, $D$ là trung điểm của $AB$ và $DE \\parallel BC$ ($E \\in AC$). Khi đó tỉ số $\\frac{AE}{AC}$ bằng bao nhiêu (viết dưới dạng số thập phân)?",
+      "unit": "",
+      "svg": "",
+      "a": "0.5",
+      "why": "Vì $DE$ là đường trung bình nên $E$ là trung điểm của cạnh $AC$. Do đó $AE = \\frac{1}{2}AC \\Rightarrow \\frac{AE}{AC} = 0.5$."
+    },
+    {
+      "n": 16,
+      "type": "sa",
+      "q": "Trong tam giác $PQR$, $DE$ là đường trung bình với $D \\in PQ, E \\in PR$. Biết $DE = 5\\text{ cm}$. Tính độ dài của cạnh $QR$ (theo đơn vị cm)?",
+      "unit": "cm",
+      "svg": "",
+      "a": "10",
+      "why": "Áp dụng tính chất đường trung bình của tam giác: $QR = 2 \\cdot DE = 2 \\cdot 5 = 10\\text{ cm}$."
+    },
+    {
+      "n": 17,
+      "type": "sa",
+      "q": "Giữa hai điểm $B$ và $C$ bị ngăn cách bởi một hồ nước như hình vẽ. Để tính khoảng cách $BC$, người ta xác định $K$ là trung điểm của $AB$ và $I$ là trung điểm của $AC$. Biết rằng khoảng cách giữa hai điểm $K$ và $I$ đo được là $25\\text{ m}$. Hỏi khoảng cách $BC$ là bao nhiêu mét?",
+      "unit": "m",
+      "svg": "<svg viewBox=\"0 0 320 180\" width=\"300\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Lake -->\n  <path d=\"M 40,80 Q 90,60 160,70 T 290,65 Q 260,110 180,105 T 40,80 Z\" fill=\"#bae6fd\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <text x=\"140\" y=\"90\" font-size=\"11\" fill=\"#0369a1\" font-style=\"italic\">Hồ nước</text>\n  <!-- Triangle ABC -->\n  <line x1=\"160\" y1=\"160\" x2=\"60\" y2=\"70\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"160\" y1=\"160\" x2=\"260\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"60\" y1=\"70\" x2=\"260\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <!-- Segment KI -->\n  <line x1=\"110\" y1=\"115\" x2=\"210\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Labels -->\n  <text x=\"156\" y=\"175\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"40\" y=\"70\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"268\" y=\"60\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"96\" y=\"125\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">I</text>\n  <text x=\"215\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">K</text>\n  <text x=\"140\" y=\"128\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">25 m</text>\n</svg>",
+      "a": "50",
+      "why": "Vì $K$ là trung điểm $AB$ và $I$ là trung điểm $AC$ nên đoạn $KI$ là đường trung bình của tam giác $ABC$. Do đó khoảng cách $BC = 2 \\cdot KI = 2 \\cdot 25 = 50\\text{ m}$."
+    },
+    {
+      "n": 18,
+      "type": "sa",
+      "q": "Giá để đồ treo tường của Nga có dạng hình tam giác đều cạnh $90\\text{ cm}$. Nga muốn gắn đèn nhấp nháy theo các cạnh của tam giác và theo các đường trung bình của hình tam giác đó. Hỏi bạn Nga cần mua bao nhiêu mét dây đèn nhấp nháy (kết quả viết dưới dạng số thập phân)?",
+      "unit": "m",
+      "svg": "<svg viewBox=\"0 0 240 200\" width=\"220\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 40,170 200,170\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"3\"/>\n  <!-- 3 Midline segments -->\n  <polygon points=\"80,97.5 160,97.5 120,170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <text x=\"120\" y=\"115\" font-size=\"10\" font-weight=\"bold\" fill=\"#2563eb\">Đèn viền</text>\n</svg>",
+      "a": "4.05",
+      "why": "Chu vi tam giác đều ngoài: $3 \\cdot 90 = 270\\text{ cm}$. Mỗi đường trung bình có độ dài bằng nửa cạnh: $\\frac{90}{2} = 45\\text{ cm}$. Độ dài 3 đường trung bình bên trong: $3 \\cdot 45 = 135\\text{ cm}$. Tổng chiều dài dây đèn: $270 + 135 = 405\\text{ cm} = 4.05\\text{ m}$."
+    }
+  ]
+}
