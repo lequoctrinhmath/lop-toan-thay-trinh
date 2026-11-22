@@ -1,0 +1,429 @@
+{
+  "id": "toan-6-so-nguyen",
+  "grade": 6,
+  "gradeName": "Khối 6",
+  "title": "Ôn tập Chương 3: Số Nguyên – Toán 6",
+  "description": "Bộ 30 câu trắc nghiệm khách quan chuẩn SGK mới: Tập hợp số nguyên, thứ tự trong Z, quy tắc dấu, bốn phép tính, lũy thừa & bài toán thực tế kèm lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Chọn phát biểu đúng trong số các câu sau:",
+      "svg": "",
+      "opts": [
+        "Tập hợp số nguyên được kí hiệu là $\\mathbb{N}$.",
+        "$-3$ không phải là một số nguyên.",
+        "$7$ không phải là một số tự nhiên.",
+        "$0$ là một số nguyên."
+      ],
+      "a": "D",
+      "why": "Số $0$ là một số nguyên (thuộc $\\mathbb{Z}$). Tập hợp số nguyên kí hiệu là $\\mathbb{Z}$, $-3$ là số nguyên âm, $7$ là số tự nhiên."
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Trong các phát biểu sau đây, phát biểu nào SAI?",
+      "svg": "",
+      "opts": [
+        "$-2 < -1$",
+        "$0 > -6$",
+        "$-4 > -3$",
+        "$5 > -2$"
+      ],
+      "a": "C",
+      "why": "Vì $4 > 3$ nên khi lấy số đối ta có $-4 < -3$. Do đó phát biểu $-4 > -3$ là sai."
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Tính thương sau: $(-24) : (-6)$?",
+      "svg": "",
+      "opts": [
+        "$4$",
+        "$-4$",
+        "$3$",
+        "$-3$"
+      ],
+      "a": "A",
+      "why": "Thương của hai số nguyên cùng dấu (âm) là một số nguyên dương: $(-24) : (-6) = 24 : 6 = 4$."
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Kết quả của phép tính $30 - (12 - 15) + (35 - 7)$ là:",
+      "svg": "",
+      "opts": [
+        "$61$",
+        "$39$",
+        "$55$",
+        "$33$"
+      ],
+      "a": "A",
+      "why": "Thực hiện phép tính trong ngoặc trước: $12 - 15 = -3$ và $35 - 7 = 28$. Khi đó biểu thức trở thành: $30 - (-3) + 28 = 30 + 3 + 28 = 61$."
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Kết quả của phép tính $(-5) \\cdot (+12) \\cdot (-20) \\cdot (-3)$ là:",
+      "svg": "",
+      "opts": [
+        "$3600$",
+        "$-3600$",
+        "$360$",
+        "$-360$"
+      ],
+      "a": "B",
+      "why": "Tích có $3$ thừa số nguyên âm (số lẻ) nên kết quả mang dấu âm. Nhóm hợp lý: $-[ (5 \\cdot 20) \\cdot (12 \\cdot 3) ] = -[ 100 \\cdot 36 ] = -3600$."
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Kết quả của phép tính $(-55) - (35 - 10)$ là:",
+      "svg": "",
+      "opts": [
+        "$-80$",
+        "$-30$",
+        "$80$",
+        "$30$"
+      ],
+      "a": "A",
+      "why": "Ta có $35 - 10 = 25$. Do đó $(-55) - 25 = -(55 + 25) = -80$."
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Tìm số nguyên $x$ thỏa mãn $x^2 = 64$:",
+      "svg": "",
+      "opts": [
+        "$x = 8$",
+        "$x = -8$",
+        "$x = 8$ hoặc $x = -8$",
+        "$x = 4$"
+      ],
+      "a": "C",
+      "why": "Vì $8^2 = 64$ và $(-8)^2 = 64$ nên có hai giá trị nguyên thỏa mãn là $x = 8$ hoặc $x = -8$ (viết gọn là $x = \\pm 8$)."
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Cho biết năm sinh của một số nhà toán học: Archimedes (287 TCN), Descartes (1596), Fermat (1601), Pythagore (570 TCN), Thales (624 TCN), Lương Thế Vinh (1441). Hãy sắp xếp các nhà toán học theo thứ tự GIẢM DẦN của năm sinh:",
+      "svg": "",
+      "opts": [
+        "Fermat; Descartes; Lương Thế Vinh; Archimedes; Pythagore; Thales.",
+        "Fermat; Descartes; Lương Thế Vinh; Pythagore; Thales; Archimedes.",
+        "Fermat; Descartes; Lương Thế Vinh; Thales; Pythagore; Archimedes.",
+        "Fermat; Lương Thế Vinh; Descartes; Thales; Pythagore; Archimedes."
+      ],
+      "a": "A",
+      "why": "Biểu diễn năm sinh bằng số nguyên: Fermat ($1601$), Descartes ($1596$), Lương Thế Vinh ($1441$), Archimedes ($-287$), Pythagore ($-570$), Thales ($-624$). Thứ tự giảm dần: $1601 > 1596 > 1441 > -287 > -570 > -624$."
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Nhận xét nào sau đây đúng về kết quả của phép tính: $(3050 - 50) + [(-30) + (-70)]$?",
+      "svg": "",
+      "opts": [
+        "Kết quả là một số nguyên âm.",
+        "Kết quả là một số nguyên dương lớn hơn $3000$.",
+        "Kết quả là một số nguyên dương nhỏ hơn $3000$.",
+        "Kết quả bằng $0$."
+      ],
+      "a": "C",
+      "why": "Ta có $3050 - 50 = 3000$ và $(-30) + (-70) = -100$. Kết quả là $3000 + (-100) = 2900$. Vì $2900$ là số nguyên dương và $2900 < 3000$ nên nhận xét C là đúng."
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Nếu $x + 5 = 2$ thì giá trị của $x$ bằng:",
+      "svg": "",
+      "opts": [
+        "$7$",
+        "$-3$",
+        "$3$",
+        "$-7$"
+      ],
+      "a": "B",
+      "why": "Chuyển vế đổi dấu: $x = 2 - 5 = -3$."
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Kết quả của phép tính $20 - (10 - 5)$ là:",
+      "svg": "",
+      "opts": [
+        "$15$",
+        "$25$",
+        "$5$",
+        "$-5$"
+      ],
+      "a": "A",
+      "why": "Ta có $10 - 5 = 5$. Do đó $20 - 5 = 15$."
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Tính nhanh: $125 - (-75) + 200$?",
+      "svg": "",
+      "opts": [
+        "$0$",
+        "$400$",
+        "$-400$",
+        "$250$"
+      ],
+      "a": "B",
+      "why": "Áp dụng trừ số âm thành cộng số đối: $125 - (-75) + 200 = 125 + 75 + 200 = 200 + 200 = 400$."
+    },
+    {
+      "n": 13,
+      "type": "mc",
+      "q": "Cho $x \\in \\mathbb{Z}$ và $-2 < x < 2$. Tập hợp các giá trị của $x$ là:",
+      "svg": "",
+      "opts": [
+        "$\\{-1; 0; 1\\}$",
+        "$\\{-2; -1; 0; 1; 2\\}$",
+        "$\\{-1; 1\\}$",
+        "$\\{0; 1\\}$"
+      ],
+      "a": "A",
+      "why": "Các số nguyên lớn hơn $-2$ và nhỏ hơn $2$ là: $-1, 0, 1$. Vậy tập hợp là $\\{-1; 0; 1\\}$."
+    },
+    {
+      "n": 14,
+      "type": "mc",
+      "q": "Kết quả của phép nhân $(-3) \\cdot (-3)$ là:",
+      "svg": "",
+      "opts": [
+        "$-9$",
+        "$9$",
+        "$-6$",
+        "$6$"
+      ],
+      "a": "B",
+      "why": "Tích của hai số nguyên cùng dấu (âm) là một số nguyên dương: $(-3) \\cdot (-3) = 9$."
+    },
+    {
+      "n": 15,
+      "type": "mc",
+      "q": "Số nguyên nào sau đây là ước của $6$?",
+      "svg": "",
+      "opts": [
+        "$12$",
+        "$-6$",
+        "$0$",
+        "$7$"
+      ],
+      "a": "B",
+      "why": "Tập hợp các ước nguyên của $6$ là $\\{\\pm 1; \\pm 2; \\pm 3; \\pm 6\\}$. Do đó $-6$ là ước của $6$."
+    },
+    {
+      "n": 16,
+      "type": "mc",
+      "q": "Một máy bay đang bay ở độ cao $5000\\text{ m}$ trên mực nước biển, tình cờ thẳng ngay bên dưới máy bay có một chiếc tàu ngầm đang lặn ở độ sâu $1200\\text{ m}$ dưới mực nước biển. Tính khoảng cách theo chiều thẳng đứng giữa máy bay và tàu ngầm:",
+      "svg": "<svg viewBox=\"0 0 320 200\" width=\"300\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Sky -->\n  <rect x=\"0\" y=\"0\" width=\"320\" height=\"110\" fill=\"#e0f2fe\"/>\n  <!-- Sea water -->\n  <rect x=\"0\" y=\"110\" width=\"320\" height=\"90\" fill=\"#0284c7\"/>\n  <!-- Sea level 0m -->\n  <line x1=\"0\" y1=\"110\" x2=\"320\" y2=\"110\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n  <text x=\"240\" y=\"105\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">Mực nước biển (0m)</text>\n  <!-- Airplane at +5000m -->\n  <circle cx=\"100\" cy=\"35\" r=\"4\" fill=\"#0284c7\"/>\n  <rect x=\"70\" y=\"30\" width=\"60\" height=\"10\" rx=\"5\" fill=\"#38bdf8\"/>\n  <polygon points=\"95,20 110,30 90,30\" fill=\"#0284c7\"/>\n  <text x=\"140\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">✈ Máy bay (+5000m)</text>\n  <!-- Submarine at -1200m -->\n  <rect x=\"75\" y=\"150\" width=\"55\" height=\"18\" rx=\"8\" fill=\"#facc15\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n  <circle cx=\"90\" cy=\"159\" r=\"3\" fill=\"#0369a1\"/>\n  <circle cx=\"105\" cy=\"159\" r=\"3\" fill=\"#0369a1\"/>\n  <text x=\"140\" y=\"163\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">🚢 Tàu ngầm (-1200m)</text>\n  <!-- Vertical measurement line -->\n  <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"159\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/>\n  <text x=\"8\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">d = ?</text>\n</svg>",
+      "opts": [
+        "$4800\\text{ m}$",
+        "$-720\\text{ m}$",
+        "$7200\\text{ m}$",
+        "$6200\\text{ m}$"
+      ],
+      "a": "D",
+      "why": "Độ cao của máy bay là $+5000\\text{ m}$, độ sâu của tàu ngầm biểu diễn bằng số nguyên âm là $-1200\\text{ m}$. Khoảng cách thẳng đứng giữa chúng là: $5000 - (-1200) = 5000 + 1200 = 6200\\text{ m}$."
+    },
+    {
+      "n": 17,
+      "type": "mc",
+      "q": "Một công ty có 3 cửa hàng A, B, C. Kết quả kinh doanh sau một năm: Cửa hàng A lãi $300$ triệu đồng, cửa hàng B lỗ $120$ triệu đồng, cửa hàng C lãi $420$ triệu đồng. Hỏi bình quân mỗi tháng công ty lãi bao nhiêu tiền từ ba cửa hàng đó?",
+      "svg": "",
+      "opts": [
+        "$50$ triệu đồng",
+        "$60$ triệu đồng",
+        "$40$ triệu đồng",
+        "$70$ triệu đồng"
+      ],
+      "a": "A",
+      "why": "Tổng kết quả kinh doanh trong 1 năm của 3 cửa hàng: $300 + (-120) + 420 = 600$ triệu đồng. Một năm có 12 tháng nên bình quân mỗi tháng công ty lãi: $600 : 12 = 50$ triệu đồng."
+    },
+    {
+      "n": 18,
+      "type": "mc",
+      "q": "Tính một cách hợp lí: $(-10) \\cdot 50 \\cdot (-2) \\cdot 20 - 10^4$?",
+      "svg": "",
+      "opts": [
+        "$10^4$",
+        "$0$",
+        "$2 \\cdot 10^4$",
+        "$10^3$"
+      ],
+      "a": "A",
+      "why": "Ta nhóm các thừa số: $[(-10) \\cdot (-2)] \\cdot (50 \\cdot 20) - 10^4 = 20 \\cdot 1000 - 10^4 = 20000 - 10000 = 10000 = 10^4$."
+    },
+    {
+      "n": 19,
+      "type": "mc",
+      "q": "Tìm số nguyên $x \\ge 0$ biết: $(2 \\cdot 3)^x = 6^2 \\cdot 6^1$?",
+      "svg": "",
+      "opts": [
+        "$x = 0$",
+        "$x = 1$",
+        "$x = 2$",
+        "$x = 3$"
+      ],
+      "a": "D",
+      "why": "Ta có $(2 \\cdot 3)^x = 6^x$. Mặt khác $6^2 \\cdot 6^1 = 6^{2+1} = 6^3$. Do đó $6^x = 6^3 \\Rightarrow x = 3$."
+    },
+    {
+      "n": 20,
+      "type": "mc",
+      "q": "Tính một cách hợp lí: $(200 - 100) \\cdot (-15) + 50 \\cdot (-20 - 10)$?",
+      "svg": "",
+      "opts": [
+        "$-3000$",
+        "$-1500$",
+        "$-4500$",
+        "$4500$"
+      ],
+      "a": "A",
+      "why": "Tính từng tích: $(200 - 100) \\cdot (-15) = 100 \\cdot (-15) = -1500$. Tiếp theo $50 \\cdot (-20 - 10) = 50 \\cdot (-30) = -1500$. Tổng hai tích: $(-1500) + (-1500) = -3000$."
+    },
+    {
+      "n": 21,
+      "type": "mc",
+      "q": "Tổng các số nguyên âm có một chữ số bằng:",
+      "svg": "",
+      "opts": [
+        "$5$",
+        "$-45$",
+        "$-5$",
+        "$45$"
+      ],
+      "a": "B",
+      "why": "Các số nguyên âm có một chữ số là: $-1, -2, -3, -4, -5, -6, -7, -8, -9$. Tổng của chúng là: $(-1) + (-2) + (-3) + (-4) + (-5) + (-6) + (-7) + (-8) + (-9) = -(1 + 2 + ... + 9) = -45$."
+    },
+    {
+      "n": 22,
+      "type": "mc",
+      "q": "Tìm giá trị thích hợp của chữ số nguyên $a$, sao cho: $\\overline{a50} : 5 < 35$?",
+      "svg": "",
+      "opts": [
+        "$a = 0$",
+        "$a = 2$",
+        "$a = 1$",
+        "$a = 3$"
+      ],
+      "a": "C",
+      "why": "Ta có $\\overline{a50} : 5 < 35 \\Leftrightarrow \\overline{a50} < 35 \\cdot 5 = 175$. Vì $\\overline{a50}$ là số có 3 chữ số nên $a \\ne 0$. Trong các số $150, 250, 350$, chỉ có $150 < 175$, do đó $a = 1$."
+    },
+    {
+      "n": 23,
+      "type": "mc",
+      "q": "Tính một cách hợp lí: $(234 - 34) \\cdot (-20) + 50 \\cdot (-60 - 40)$ là:",
+      "svg": "",
+      "opts": [
+        "$-9000$",
+        "$-4000$",
+        "$-5000$",
+        "$-8000$"
+      ],
+      "a": "A",
+      "why": "Ta có: $200 \\cdot (-20) + 50 \\cdot (-100) = -4000 + (-5000) = -9000$."
+    },
+    {
+      "n": 24,
+      "type": "mc",
+      "q": "Có bao nhiêu giá trị nguyên của $x$ thỏa mãn: $(x + 2) \\cdot (x - 5) < 0$?",
+      "svg": "",
+      "opts": [
+        "Vô số",
+        "$0$",
+        "$6$",
+        "$7$"
+      ],
+      "a": "C",
+      "why": "Tích $(x + 2)(x - 5) < 0$ khi hai thừa số trái dấu. Vì $x + 2 > x - 5$ nên ta có $x + 2 > 0$ và $x - 5 < 0 \\Leftrightarrow -2 < x < 5$. Các số nguyên thỏa mãn là $x \\in \\{-1; 0; 1; 2; 3; 4\\}$, tổng cộng có $6$ giá trị."
+    },
+    {
+      "n": 25,
+      "type": "mc",
+      "q": "Tìm số nguyên $x \\ge 0$ biết: $(2 \\cdot 5)^x = 10 \\cdot (2^3 + 2 \\cdot 1)^2 : (2^4 - 2^2 \\cdot 2 + 2)$?",
+      "svg": "",
+      "opts": [
+        "Không có giá trị nguyên của $x$",
+        "$x = 1$",
+        "$x = 2$",
+        "$x = 3$"
+      ],
+      "a": "C",
+      "why": "Vế trái: $10^x$. Vế phải: $10 \\cdot (8 + 2)^2 : (16 - 8 + 2) = 10 \\cdot 10^2 : 10 = 10 \\cdot 100 : 10 = 100 = 10^2$. Suy ra $10^x = 10^2 \\Rightarrow x = 2$."
+    },
+    {
+      "n": 26,
+      "type": "mc",
+      "q": "Chọn khẳng định đúng trong các câu sau:",
+      "svg": "",
+      "opts": [
+        "Số $0$ là số nguyên âm.",
+        "Số $0$ không phải là số nguyên dương, cũng không phải là số nguyên âm.",
+        "Mọi số nguyên âm đều nhỏ hơn $0$.",
+        "Cả B và C đều đúng."
+      ],
+      "a": "D",
+      "why": "Số $0$ không là số nguyên âm và cũng không là số nguyên dương (B đúng). Mọi số nguyên âm đều nhỏ hơn $0$ (C đúng). Do đó khẳng định D là đúng nhất."
+    },
+    {
+      "n": 27,
+      "type": "mc",
+      "q": "Kết quả của phép tính $(-2) \\cdot (-2) \\cdot (-2)$ là:",
+      "svg": "",
+      "opts": [
+        "$-8$",
+        "$8$",
+        "$-6$",
+        "$6$"
+      ],
+      "a": "A",
+      "why": "Ta có $(-2) \\cdot (-2) \\cdot (-2) = (-2)^3 = -8$."
+    },
+    {
+      "n": 28,
+      "type": "mc",
+      "q": "Tính nhanh giá trị của biểu thức $P = (-5) \\cdot 125 \\cdot (-2) \\cdot 8$:",
+      "svg": "",
+      "opts": [
+        "$10000$",
+        "$-10000$",
+        "$1000$",
+        "$-1000$"
+      ],
+      "a": "A",
+      "why": "Áp dụng tính chất giao hoán và kết hợp: $P = [(-5) \\cdot (-2)] \\cdot (125 \\cdot 8) = 10 \\cdot 1000 = 10000$."
+    },
+    {
+      "n": 29,
+      "type": "mc",
+      "q": "Tìm tất cả các ước nguyên của $-8$:",
+      "svg": "",
+      "opts": [
+        "$\\{1; 2; 4; 8\\}$",
+        "$\\{-1; -2; -4; -8\\}$",
+        "$\\{1; 2; 4; 8; -1; -2; -4; -8\\}$",
+        "$\\{-8; -4; -2; -1\\}$"
+      ],
+      "a": "C",
+      "why": "Các ước nguyên của $-8$ gồm cả ước nguyên dương và ước nguyên âm: $\\pm 1, \\pm 2, \\pm 4, \\pm 8$."
+    },
+    {
+      "n": 30,
+      "type": "mc",
+      "q": "Nếu tích $a \\cdot b > 0$ thì hai số nguyên $a$ và $b$ phải:",
+      "svg": "",
+      "opts": [
+        "Trái dấu.",
+        "Cùng dấu.",
+        "Bằng $0$.",
+        "Cùng dương."
+      ],
+      "a": "B",
+      "why": "Tích của hai số nguyên khác $0$ lớn hơn $0$ khi và chỉ khi hai số đó cùng dấu (cùng dương hoặc cùng âm)."
+    }
+  ]
+}
