@@ -1,0 +1,363 @@
+{
+  "id": "toan-9-vi-tri-duong-thang-duong-tron",
+  "grade": 9,
+  "gradeName": "Khối 9",
+  "title": "Vị trí tương đối của đường thẳng và đường tròn – Toán 9",
+  "description": "Trọn bộ 22 câu chuẩn format mới Bộ GD&ĐT: 12 câu trắc nghiệm nhiều lựa chọn, 4 câu Đúng/Sai (16 ý) và 6 câu Trả lời ngắn về tiếp tuyến, dây cung & tính chất hai tiếp tuyến cắt nhau kèm lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Đường thẳng và đường tròn $(O; R)$ cắt nhau khi:",
+      "svg": "",
+      "opts": [
+        "$d < R$",
+        "$d = R$",
+        "$d > R$",
+        "$d \\ge R$"
+      ],
+      "a": "A",
+      "why": "Đường thẳng và đường tròn cắt nhau khi khoảng cách $d$ từ tâm đến đường thẳng nhỏ hơn bán kính $R$ ($d < R$), khi đó chúng có đúng hai điểm chung."
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Nếu khoảng cách từ tâm đến đường thẳng bằng bán kính ($d = R$) thì đường thẳng và đường tròn:",
+      "svg": "",
+      "opts": [
+        "cắt nhau.",
+        "tiếp xúc nhau.",
+        "không giao nhau.",
+        "có hai điểm chung."
+      ],
+      "a": "B",
+      "why": "Khi $d = R$, đường thẳng và đường tròn tiếp xúc nhau (có đúng một điểm chung duy nhất, đường thẳng được gọi là tiếp tuyến của đường tròn)."
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Cho đường tròn $(O; 5\\text{ cm})$ và đường thẳng $a$ cách tâm $O$ một khoảng là $6\\text{ cm}$. Vị trí tương đối của chúng là:",
+      "svg": "",
+      "opts": [
+        "cắt nhau.",
+        "tiếp xúc.",
+        "không giao nhau.",
+        "không xác định."
+      ],
+      "a": "C",
+      "why": "Ta có khoảng cách $d = 6\\text{ cm}$ và bán kính $R = 5\\text{ cm}$. Vì $d > R$ ($6 > 5$) nên đường thẳng và đường tròn không giao nhau."
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Tiếp tuyến của đường tròn $(O)$ tại điểm $A$ nằm trên đường tròn thì:",
+      "svg": "",
+      "opts": [
+        "song song với $OA$.",
+        "đi qua tâm $O$.",
+        "tạo với $OA$ góc $45^\\circ$.",
+        "vuông góc với $OA$ tại $A$."
+      ],
+      "a": "D",
+      "why": "Định lí: Nếu một đường thẳng là tiếp tuyến của một đường tròn thì nó vuông góc với bán kính đi qua tiếp điểm (vuông góc với $OA$ tại $A$)."
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Cho đường tròn $(O; 6\\text{ cm})$, điểm $A$ cách tâm một khoảng $OA = 10\\text{ cm}$, kẻ tiếp tuyến $AB$ ($B$ là tiếp điểm). Độ dài đoạn tiếp tuyến $AB$ là:",
+      "svg": "",
+      "opts": [
+        "$8\\text{ cm}$",
+        "$4\\text{ cm}$",
+        "$16\\text{ cm}$",
+        "$2\\sqrt{34}\\text{ cm}$"
+      ],
+      "a": "A",
+      "why": "Vì $AB$ là tiếp tuyến tại $B$ nên $\\triangle OAB$ vuông tại $B$. Theo định lí Pytago: $AB = \\sqrt{OA^2 - OB^2} = \\sqrt{10^2 - 6^2} = \\sqrt{64} = 8\\text{ cm}$."
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Nếu $MA, MB$ là hai tiếp tuyến kẻ từ điểm $M$ đến đường tròn $(O)$ ($A, B$ là hai tiếp điểm) thì:",
+      "svg": "",
+      "opts": [
+        "$MA > MB$",
+        "$MA = MB$",
+        "$MA < MB$",
+        "$MA = 2MB$"
+      ],
+      "a": "B",
+      "why": "Theo tính chất của hai tiếp tuyến cắt nhau: Điểm $M$ cách đều hai tiếp điểm $A$ và $B$, do đó $MA = MB$."
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Dây $MN$ của đường tròn $(O; 8\\text{ cm})$ cách tâm một khoảng bằng $6\\text{ cm}$. Độ dài của dây $MN$ là:",
+      "svg": "",
+      "opts": [
+        "$4\\text{ cm}$",
+        "$2\\sqrt{7}\\text{ cm}$",
+        "$4\\sqrt{7}\\text{ cm}$",
+        "$20\\text{ cm}$"
+      ],
+      "a": "C",
+      "why": "Kẻ $OH \\perp MN$ tại $H$ ($H$ là trung điểm $MN$). Trong $\\triangle OHM$ vuông tại $H$: $HM = \\sqrt{OM^2 - OH^2} = \\sqrt{8^2 - 6^2} = \\sqrt{28} = 2\\sqrt{7}\\text{ cm}$. Do đó độ dài dây $MN = 2HM = 4\\sqrt{7}\\text{ cm}$."
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Hai tiếp tuyến tại $B, C$ của đường tròn $(O)$ cắt nhau tại điểm $A$, biết bán kính $OB = 3\\text{ cm}$ và $OA = 5\\text{ cm}$. Độ dài đoạn $AB$ là:",
+      "svg": "",
+      "opts": [
+        "$2\\text{ cm}$",
+        "$3\\text{ cm}$",
+        "$5\\text{ cm}$",
+        "$4\\text{ cm}$"
+      ],
+      "a": "D",
+      "why": "Tam giác $OAB$ vuông tại tiếp điểm $B$: $AB = \\sqrt{OA^2 - OB^2} = \\sqrt{5^2 - 3^2} = 4\\text{ cm}$."
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Từ điểm $M$ kẻ hai tiếp tuyến $MA, MB$ tới đường tròn $(O; 3\\text{ cm})$, biết góc $\\widehat{AMB} = 60^\\circ$. Độ dài đoạn thẳng $OM$ là:",
+      "svg": "",
+      "opts": [
+        "$6\\text{ cm}$",
+        "$3\\sqrt{3}\\text{ cm}$",
+        "$3\\sqrt{2}\\text{ cm}$",
+        "$9\\text{ cm}$"
+      ],
+      "a": "A",
+      "why": "Tia $MO$ là tia phân giác của $\\widehat{AMB}$ nên $\\widehat{AMO} = \\frac{60^\\circ}{2} = 30^\\circ$. Trong tam giác vuông $OAM$ tại $A$: $\\sin \\widehat{AMO} = \\frac{OA}{OM} \\Rightarrow \\sin 30^\\circ = \\frac{3}{OM} \\Rightarrow OM = \\frac{3}{\\sin 30^\\circ} = \\frac{3}{0.5} = 6\\text{ cm}$."
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Trên mặt phẳng tọa độ $Oxy$, đường tròn tâm $O$ bán kính $R = 3$ và đường thẳng $y = 3$ có vị trí tương đối là:",
+      "svg": "",
+      "opts": [
+        "cắt nhau.",
+        "không giao nhau.",
+        "tiếp xúc nhau.",
+        "trùng nhau."
+      ],
+      "a": "C",
+      "why": "Khoảng cách từ gốc tọa độ $O(0,0)$ đến đường thẳng nằm ngang $y = 3$ là $d = |3| = 3$. Vì $d = R = 3$ nên đường thẳng và đường tròn tiếp xúc nhau (tại điểm $(0, 3)$)."
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Từ điểm $M$ nằm ngoài $(O; R)$ với $OM = R\\sqrt{2}$, kẻ hai tiếp tuyến $MA, MB$ tới đường tròn. Số đo góc $\\widehat{AOB}$ là:",
+      "svg": "",
+      "opts": [
+        "$60^\\circ$",
+        "$90^\\circ$",
+        "$120^\\circ$",
+        "$45^\\circ$"
+      ],
+      "a": "B",
+      "why": "Trong tam giác $OAM$ vuông tại $A$: $\\cos \\widehat{AOM} = \\frac{OA}{OM} = \\frac{R}{R\\sqrt{2}} = \\frac{\\sqrt{2}}{2} \\Rightarrow \\widehat{AOM} = 45^\\circ$. Do $OM$ là phân giác của $\\widehat{AOB}$ nên $\\widehat{AOB} = 2 \\cdot \\widehat{AOM} = 2 \\cdot 45^\\circ = 90^\\circ$."
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Từ điểm $M$ kẻ hai tiếp tuyến $MA, MB$ tới $(O)$ với $MA = 10$; tiếp tuyến tại một điểm trên cung nhỏ $AB$ cắt $MA, MB$ lần lượt tại $P$ và $Q$. Chu vi tam giác $MPQ$ là:",
+      "svg": "",
+      "opts": [
+        "$10$",
+        "$30$",
+        "$15$",
+        "$20$"
+      ],
+      "a": "D",
+      "why": "Gọi $K$ là tiếp điểm trên cung nhỏ $AB$. Theo tính chất tiếp tuyến cắt nhau: $PK = PA$ và $QK = QB$. Chu vi $\\triangle MPQ = MP + MQ + PQ = MP + MQ + (PK + KQ) = (MP + PA) + (MQ + QB) = MA + MB = 2MA = 2 \\cdot 10 = 20$."
+    },
+    {
+      "n": 13,
+      "type": "tf",
+      "q": "Cho đường tròn $(O; R)$ và điểm $M$ với $OM = 2R$. Kẻ hai tiếp tuyến $MA, MB$ ($A, B$ là tiếp điểm như hình vẽ bên dưới). Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 280 180\" width=\"260\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <circle cx=\"80\" cy=\"90\" r=\"50\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <circle cx=\"80\" cy=\"90\" r=\"3\" fill=\"#0f172a\"/>\n  <!-- Tangent lines MA, MB from M(240, 90) -->\n  <line x1=\"240\" y1=\"90\" x2=\"105\" y2=\"46.7\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"240\" y1=\"90\" x2=\"105\" y2=\"133.3\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Radii OA, OB -->\n  <line x1=\"80\" y1=\"90\" x2=\"105\" y2=\"46.7\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"80\" y1=\"90\" x2=\"105\" y2=\"133.3\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"80\" y1=\"90\" x2=\"240\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <!-- Labels -->\n  <text x=\"65\" y=\"95\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <text x=\"105\" y=\"38\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"105\" y=\"150\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"248\" y=\"95\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$MA = R\\sqrt{3}$.",
+          "a": "Đ",
+          "why": "Đúng vì trong tam giác vuông $OAM$: $MA = \\sqrt{OM^2 - OA^2} = \\sqrt{(2R)^2 - R^2} = R\\sqrt{3}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\widehat{AMO} = 30^\\circ$.",
+          "a": "Đ",
+          "why": "Đúng vì $\\sin \\widehat{AMO} = \\frac{OA}{OM} = \\frac{R}{2R} = \\frac{1}{2} \\Rightarrow \\widehat{AMO} = 30^\\circ$."
+        },
+        {
+          "id": "c",
+          "text": "$\\widehat{AOB} = 60^\\circ$.",
+          "a": "S",
+          "why": "Sai vì $\\widehat{AOM} = 90^\\circ - 30^\\circ = 60^\\circ \\Rightarrow \\widehat{AOB} = 2\\widehat{AOM} = 120^\\circ \\ne 60^\\circ$."
+        },
+        {
+          "id": "d",
+          "text": "Tam giác $MAB$ là tam giác đều.",
+          "a": "Đ",
+          "why": "Đúng vì $MA = MB$ và $\\widehat{AMB} = 2\\widehat{AMO} = 2 \\cdot 30^\\circ = 60^\\circ$ nên tam giác $MAB$ cân có một góc $60^\\circ$, là tam giác đều."
+        }
+      ],
+      "why": "Sử dụng tỉ số lượng giác trong tam giác vuông $OAM$ và tính chất hai tiếp tuyến cắt nhau."
+    },
+    {
+      "n": 14,
+      "type": "tf",
+      "q": "Từ điểm $A$ trên đường tròn $(O; R)$ kẻ tiếp tuyến $d$. Trên $d$ lấy điểm $B$ với $AB = R\\sqrt{3}$. Đoạn $OB$ cắt đường tròn tại $C$. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "$OB = 2R$.",
+          "a": "Đ",
+          "why": "Đúng vì $\\triangle OAB$ vuông tại $A$: $OB = \\sqrt{OA^2 + AB^2} = \\sqrt{R^2 + (R\\sqrt{3})^2} = \\sqrt{4R^2} = 2R$."
+        },
+        {
+          "id": "b",
+          "text": "$\\widehat{AOB} = 60^\\circ$.",
+          "a": "Đ",
+          "why": "Đúng vì $\\cos \\widehat{AOB} = \\frac{OA}{OB} = \\frac{R}{2R} = \\frac{1}{2} \\Rightarrow \\widehat{AOB} = 60^\\circ$."
+        },
+        {
+          "id": "c",
+          "text": "$C$ là trung điểm của đoạn thẳng $OB$.",
+          "a": "Đ",
+          "why": "Đúng vì điểm $C$ nằm trên đường tròn nên $OC = R$. Khi đó $BC = OB - OC = 2R - R = R = OC$, suy ra $C$ là trung điểm $OB$."
+        },
+        {
+          "id": "d",
+          "text": "$BC = R\\sqrt{3}$.",
+          "a": "S",
+          "why": "Sai vì $BC = OB - OC = 2R - R = R \\ne R\\sqrt{3}$."
+        }
+      ],
+      "why": "Phân tích tam giác vuông $OAB$ có cạnh góc vuông bằng một nửa cạnh huyền."
+    },
+    {
+      "n": 15,
+      "type": "tf",
+      "q": "Cho tam giác $ABC$ có các cạnh $AB = 6, AC = 8, BC = 10$. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "Tam giác $ABC$ vuông tại $A$.",
+          "a": "Đ",
+          "why": "Đúng vì $6^2 + 8^2 = 36 + 64 = 100 = 10^2$ ($AB^2 + AC^2 = BC^2$), theo định lí Pytago đảo $\\triangle ABC$ vuông tại $A$."
+        },
+        {
+          "id": "b",
+          "text": "$AC$ tiếp xúc với đường tròn $(B; 6)$.",
+          "a": "Đ",
+          "why": "Đúng vì $AC \\perp AB$ tại $A$ và khoảng cách từ tâm $B$ đến $AC$ chính là $BA = 6 = R$."
+        },
+        {
+          "id": "c",
+          "text": "$BC$ tiếp xúc với đường tròn $(A; 4.8)$.",
+          "a": "Đ",
+          "why": "Đúng vì kẻ đường cao $AH \\perp BC$ thì $AH = \\frac{AB \\cdot AC}{BC} = \\frac{6 \\cdot 8}{10} = 4.8$. Khoảng cách từ tâm $A$ đến $BC$ bằng bán kính $R = 4.8$."
+        },
+        {
+          "id": "d",
+          "text": "$AB$ tiếp xúc với đường tròn $(C; 6)$.",
+          "a": "S",
+          "why": "Sai vì khoảng cách từ tâm $C$ đến đường thẳng $AB$ là đoạn $CA = 8 \\ne 6$."
+        }
+      ],
+      "why": "Đường thẳng là tiếp tuyến của đường tròn khi và chỉ khi khoảng cách từ tâm đến đường thẳng bằng đúng bán kính ($d = R$)."
+    },
+    {
+      "n": 16,
+      "type": "tf",
+      "q": "Cho nửa đường tròn $(O; R)$ đường kính $AB$. Vẽ các tiếp tuyến $Ax, By$ cùng phía với nửa đường tròn. Tiếp tuyến tại $M$ trên nửa đường tròn cắt $Ax, By$ lần lượt tại $C, D$ (như hình vẽ). Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 280 180\" width=\"260\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Semicircle AB -->\n  <path d=\"M 40,140 A 80,80 0 0,1 200,140\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"140\" x2=\"200\" y2=\"140\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <circle cx=\"120\" cy=\"140\" r=\"3\" fill=\"#0f172a\"/>\n  <!-- Tangent rays Ax, By -->\n  <line x1=\"40\" y1=\"140\" x2=\"40\" y2=\"40\" stroke=\"#059669\" stroke-width=\"1.5\"/>\n  <line x1=\"200\" y1=\"140\" x2=\"200\" y2=\"40\" stroke=\"#059669\" stroke-width=\"1.5\"/>\n  <!-- Point M at angle ~60 deg -->\n  <circle cx=\"80\" cy=\"70.7\" r=\"3.5\" fill=\"#2563eb\"/>\n  <!-- Tangent CD at M -->\n  <line x1=\"40\" y1=\"47.6\" x2=\"200\" y2=\"140\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- Radii OM, OC, OD -->\n  <line x1=\"120\" y1=\"140\" x2=\"80\" y2=\"70.7\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"120\" y1=\"140\" x2=\"40\" y2=\"47.6\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <text x=\"30\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"206\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"116\" y=\"156\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <text x=\"26\" y=\"45\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">C</text>\n  <text x=\"206\" y=\"80\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"75\" y=\"62\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$CD = AC + BD$.",
+          "a": "Đ",
+          "why": "Đúng theo tính chất hai tiếp tuyến cắt nhau: $CM = CA$ và $DM = DB$, suy ra $CD = CM + MD = AC + BD$."
+        },
+        {
+          "id": "b",
+          "text": "$\\widehat{COD} = 90^\\circ$.",
+          "a": "Đ",
+          "why": "Đúng vì $OC$ và $OD$ lần lượt là tia phân giác của hai góc kề bù $\\widehat{AOM}$ và $\\widehat{BOM}$, góc tạo bởi hai tia phân giác của hai góc kề bù bằng $90^\\circ$."
+        },
+        {
+          "id": "c",
+          "text": "$AC \\cdot BD = R^2$.",
+          "a": "Đ",
+          "why": "Đúng vì tam giác $COD$ vuông tại $O$, có đường cao $OM = R$. Theo hệ thức lượng: $CM \\cdot MD = OM^2 \\Rightarrow AC \\cdot BD = R^2$."
+        },
+        {
+          "id": "d",
+          "text": "Tứ giác $ABDC$ luôn là hình chữ nhật.",
+          "a": "S",
+          "why": "Sai vì tứ giác $ABDC$ có $AC \\parallel BD$ và cùng vuông góc với $AB$ nên $ABDC$ là hình thang vuông, chỉ khi $M$ ở chính giữa cung nửa đường tròn ($AC = BD = R$) thì mới là hình vuông/chữ nhật."
+        }
+      ],
+      "why": "Bài toán kinh điển về tính chất hai tiếp tuyến cắt nhau và nửa đường tròn."
+    },
+    {
+      "n": 17,
+      "type": "sa",
+      "q": "Cho đường tròn $(O; 5\\text{ cm})$ và điểm $M$ cách tâm một khoảng $OM = 13\\text{ cm}$. Kẻ tiếp tuyến $MA$ với đường tròn ($A$ là tiếp điểm). Tính độ dài đoạn tiếp tuyến $MA$ theo đơn vị cm?",
+      "unit": "cm",
+      "svg": "",
+      "a": "12",
+      "why": "Trong tam giác $OAM$ vuông tại $A$: $MA = \\sqrt{OM^2 - OA^2} = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}$."
+    },
+    {
+      "n": 18,
+      "type": "sa",
+      "q": "Cho đường tròn $(O; R)$ có bán kính $R = 6\\text{ cm}$ và dây cung $AB$ có độ dài bằng $8\\text{ cm}$. Tính khoảng cách từ tâm $O$ đến dây $AB$ theo cm (kết quả làm tròn đến hàng phần mười)?",
+      "unit": "cm",
+      "svg": "",
+      "a": "4.5",
+      "why": "Kẻ $OH \\perp AB$ tại $H$ ($H$ là trung điểm $AB$). Ta có $AH = \\frac{AB}{2} = 4\\text{ cm}$. Khoảng cách $OH = \\sqrt{OA^2 - AH^2} = \\sqrt{6^2 - 4^2} = \\sqrt{20} \\approx 4.472\\text{ cm}$. Làm tròn đến hàng phần mười được $4.5$."
+    },
+    {
+      "n": 19,
+      "type": "sa",
+      "q": "Từ điểm $M$ nằm ngoài đường tròn $(O; 4\\text{ cm})$, kẻ hai tiếp tuyến $MA, MB$ với đường tròn ($A, B$ là các tiếp điểm). Biết góc tạo bởi hai tiếp tuyến $\\widehat{AMB} = 60^\\circ$. Tính độ dài đoạn thẳng $OM$ theo đơn vị cm?",
+      "unit": "cm",
+      "svg": "",
+      "a": "8",
+      "why": "Tia $MO$ là phân giác của $\\widehat{AMB}$ nên $\\widehat{AMO} = 30^\\circ$. Trong tam giác vuông $OAM$ tại tiếp điểm $A$: $\\sin 30^\\circ = \\frac{OA}{OM} \\Rightarrow OM = \\frac{OA}{\\sin 30^\\circ} = \\frac{4}{0.5} = 8\\text{ cm}$."
+    },
+    {
+      "n": 20,
+      "type": "sa",
+      "q": "Cho nửa đường tròn $(O; R)$ có đường kính $AB = 10\\text{ cm}$. Vẽ các tiếp tuyến $Ax, By$ cùng phía với nửa đường tròn. Tiếp tuyến tại một điểm $M$ trên nửa đường tròn cắt $Ax, By$ lần lượt tại $C$ và $D$. Biết đoạn $AC = 4\\text{ cm}$. Tính độ dài đoạn thẳng $BD$ theo đơn vị cm?",
+      "unit": "cm",
+      "svg": "",
+      "a": "6.25",
+      "why": "Bán kính nửa đường tròn là $R = \\frac{AB}{2} = 5\\text{ cm}$. Theo tính chất tiếp tuyến cắt nhau: $AC \\cdot BD = R^2 \\Rightarrow BD = \\frac{R^2}{AC} = \\frac{5^2}{4} = \\frac{25}{4} = 6.25\\text{ cm}$."
+    },
+    {
+      "n": 21,
+      "type": "sa",
+      "q": "Cho đường tròn $(O; 3\\text{ cm})$ và điểm $M$ sao cho $OM = 6\\text{ cm}$. Kẻ hai tiếp tuyến $MA, MB$ tới đường tròn ($A, B$ là tiếp điểm). Tính diện tích của tứ giác $OAMB$ theo $\\text{cm}^2$ (kết quả làm tròn đến hàng phần mười)?",
+      "unit": "cm²",
+      "svg": "",
+      "a": "15.6",
+      "why": "Đoạn tiếp tuyến: $MA = \\sqrt{OM^2 - OA^2} = \\sqrt{6^2 - 3^2} = 3\\sqrt{3}\\text{ cm}$. Diện tích tứ giác $OAMB$ bằng $2$ lần diện tích tam giác vuông $OAM$: $S = 2 \\cdot (\\frac{1}{2} OA \\cdot MA) = 3 \\cdot 3\\sqrt{3} = 9\\sqrt{3} \\approx 15.588\\text{ cm}^2$. Làm tròn đến hàng phần mười được $15.6$."
+    },
+    {
+      "n": 22,
+      "type": "sa",
+      "q": "Từ điểm $M$ nằm ngoài đường tròn $(O)$, kẻ hai tiếp tuyến $MA, MB$ ($A, B$ là tiếp điểm) có độ dài $MA = 15\\text{ cm}$. Tiếp tuyến tại một điểm $K$ trên cung nhỏ $AB$ cắt $MA, MB$ lần lượt tại $P$ và $Q$. Tính chu vi của tam giác $MPQ$ theo đơn vị cm?",
+      "unit": "cm",
+      "svg": "",
+      "a": "30",
+      "why": "Theo tính chất hai tiếp tuyến cắt nhau: $PK = PA$ và $QK = QB$. Chu vi tam giác $MPQ = MP + MQ + PQ = MP + MQ + (PK + KQ) = (MP + PA) + (MQ + QB) = MA + MB = 2MA = 2 \\cdot 15 = 30\\text{ cm}$."
+    }
+  ]
+}
