@@ -1,0 +1,363 @@
+{
+  "id": "toan-10-tong-hieu-vecto",
+  "grade": 10,
+  "gradeName": "Khối 10",
+  "title": "Đề Test Số 01: Tổng và Hiệu hai vectơ – Toán 10",
+  "description": "Trọn bộ chuyên đề Tổng và Hiệu hai vectơ chuẩn cấu trúc 3 phần mới của Bộ GD&ĐT (Trắc nghiệm nhiều lựa chọn, Đúng/Sai, Trả lời ngắn) kèm hình vẽ & lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Cho tam giác $ABC$. Khẳng định nào sau đây đúng?",
+      "svg": "",
+      "opts": [
+        "$\\vec{AB} + \\vec{AC} = \\vec{BC}$",
+        "$\\vec{AB} + \\vec{BC} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{CB} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{CA} = \\vec{BC}$"
+      ],
+      "a": "B",
+      "why": "Áp dụng quy tắc 3 điểm (quy tắc tam giác) đối với phép cộng vectơ: $\\vec{AB} + \\vec{BC} = \\vec{AC}$."
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Cho hình bình hành $ABCD$. Khẳng định nào sau đây đúng?",
+      "svg": "",
+      "opts": [
+        "$\\vec{AB} + \\vec{AD} = \\vec{BD}$",
+        "$\\vec{AB} + \\vec{AD} = \\vec{DB}$",
+        "$\\vec{AB} + \\vec{AD} = \\vec{AC}$",
+        "$\\vec{AB} + \\vec{AD} = \\vec{CA}$"
+      ],
+      "a": "C",
+      "why": "Theo quy tắc hình bình hành: nếu $ABCD$ là hình bình hành thì $\\vec{AB} + \\vec{AD} = \\vec{AC}$."
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Đẳng thức nào dưới đây là SAI?",
+      "svg": "",
+      "opts": [
+        "$\\vec{MN} - \\vec{MP} = \\vec{NP}$",
+        "$\\vec{MN} = \\vec{MP} + \\vec{PN}$",
+        "$\\vec{NM} - \\vec{NP} = \\vec{PM}$",
+        "$\\vec{MN} + \\vec{NP} = \\vec{MP}$"
+      ],
+      "a": "A",
+      "why": "Theo quy tắc trừ hai vectơ chung gốc: $\\vec{MN} - \\vec{MP} = \\vec{PN} \\ne \\vec{NP}$. Do đó đẳng thức $\\vec{MN} - \\vec{MP} = \\vec{NP}$ là sai."
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Cho tam giác $ABC$ có trung tuyến $AM$ và trọng tâm $G$. Khẳng định nào sau đây là đúng?",
+      "svg": "",
+      "opts": [
+        "$\\vec{AB} + \\vec{AC} = \\vec{AM}$",
+        "$\\vec{BG} = \\vec{GA} + \\vec{GC}$",
+        "$\\vec{BM} = \\vec{CM}$",
+        "$\\vec{GA} + \\vec{GM} = \\vec{0}$"
+      ],
+      "a": "B",
+      "why": "Vì $G$ là trọng tâm tam giác $ABC$ nên $\\vec{GA} + \\vec{GB} + \\vec{GC} = \\vec{0} \\Leftrightarrow \\vec{GA} + \\vec{GC} = -\\vec{GB} = \\vec{BG}$."
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Cho bốn điểm phân biệt $A, B, C, D$. Vectơ tổng $\\vec{AB} + \\vec{CD} + \\vec{BC} + \\vec{DA}$ bằng:",
+      "svg": "",
+      "opts": [
+        "$\\vec{0}$",
+        "$\\vec{AC}$",
+        "$\\vec{BD}$",
+        "$\\vec{BA}$"
+      ],
+      "a": "A",
+      "why": "Giao hoán và kết hợp các vectơ: $\\vec{AB} + \\vec{CD} + \\vec{BC} + \\vec{DA} = (\\vec{AB} + \\vec{BC}) + (\\vec{CD} + \\vec{DA}) = \\vec{AC} + \\vec{CA} = \\vec{AA} = \\vec{0}$."
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Cho hình bình hành $ABCD$ có tâm $O$ (hình vẽ bên dưới). Khẳng định nào sau đây đúng?",
+      "svg": "<svg viewBox=\"0 0 260 160\" width=\"240\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"80,30 230,30 180,130 30,130\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <line x1=\"80\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"230\" y1=\"30\" x2=\"30\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"130\" cy=\"80\" r=\"3\" fill=\"#2563eb\"/>\n  <text x=\"74\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"236\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"18\" y=\"142\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"185\" y=\"145\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"135\" y=\"78\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">O</text>\n</svg>",
+      "opts": [
+        "$\\vec{OB} - \\vec{OD} = \\vec{BD}$",
+        "$\\vec{OB} - \\vec{OC} = \\vec{OD} - \\vec{OA}$",
+        "$\\vec{OA} - \\vec{OB} = \\vec{CD}$",
+        "$\\vec{AB} - \\vec{AD} = \\vec{BD}$"
+      ],
+      "a": "C",
+      "why": "Theo quy tắc trừ: $\\vec{OA} - \\vec{OB} = \\vec{BA}$. Vì $ABCD$ là hình bình hành nên $\\vec{BA} = \\vec{CD}$. Do đó $\\vec{OA} - \\vec{OB} = \\vec{CD}$ luôn đúng."
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Cho $M, N, P$ lần lượt là trung điểm các cạnh $AB, BC, CA$ của tam giác $ABC$. Hỏi vectơ $\\vec{MB} + \\vec{AP}$ bằng vectơ nào sau đây?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 35,150 205,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <polygon points=\"77.5,87.5 162.5,87.5 120,150\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"20\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"210\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"50\" y=\"90\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">M</text>\n  <text x=\"170\" y=\"90\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">P</text>\n  <text x=\"116\" y=\"168\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">N</text>\n</svg>",
+      "opts": [
+        "$\\vec{AC}$",
+        "$\\vec{PB}$",
+        "$\\vec{MP}$",
+        "$\\vec{AN}$"
+      ],
+      "a": "D",
+      "why": "Vì $M$ là trung điểm $AB$ nên $\\vec{MB} = \\vec{AM}$. Do đó: $\\vec{MB} + \\vec{AP} = \\vec{AM} + \\vec{AP}$. Mặt khác, tứ giác $AMPN$ là hình bình hành nên $\\vec{AM} + \\vec{AP} = \\vec{AN}$."
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Rút gọn vectơ $\\vec{u} = \\vec{MN} + \\vec{PQ} + \\vec{NP} + \\vec{QR}$ ta được kết quả là:",
+      "svg": "",
+      "opts": [
+        "$\\vec{u} = \\vec{MR}$",
+        "$\\vec{u} = \\vec{MN}$",
+        "$\\vec{u} = \\vec{PR}$",
+        "$\\vec{u} = \\vec{MP}$"
+      ],
+      "a": "A",
+      "why": "Giao hoán và kết hợp: $\\vec{u} = (\\vec{MN} + \\vec{NP}) + (\\vec{PQ} + \\vec{QR}) = \\vec{MP} + \\vec{PR} = \\vec{MR}$."
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Cho tam giác $ABC$, gọi $D, E, F$ lần lượt là trung điểm của các cạnh $BC, CA, AB$. Đẳng thức nào sau đây là đúng?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,25 35,150 205,150\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <polygon points=\"77.5,87.5 162.5,87.5 120,150\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"116\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"20\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"210\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"116\" y=\"168\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">D</text>\n  <text x=\"170\" y=\"90\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">E</text>\n  <text x=\"50\" y=\"90\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">F</text>\n</svg>",
+      "opts": [
+        "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AB} + \\vec{AC} + \\vec{BC}$",
+        "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AF} + \\vec{CE} + \\vec{DB}$",
+        "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AE} + \\vec{BF} + \\vec{CD}$",
+        "$\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{BA} + \\vec{BC} + \\vec{AC}$"
+      ],
+      "a": "C",
+      "why": "Chèn điểm: $\\vec{AD} + \\vec{BE} + \\vec{CF} = (\\vec{AE} + \\vec{ED}) + (\\vec{BF} + \\vec{FE}) + (\\vec{CD} + \\vec{DF}) = (\\vec{AE} + \\vec{BF} + \\vec{CD}) + (\\vec{ED} + \\vec{DF} + \\vec{FE})$. Vì $\\vec{ED} + \\vec{DF} + \\vec{FE} = \\vec{0}$ nên ta có $\\vec{AD} + \\vec{BE} + \\vec{CF} = \\vec{AE} + \\vec{BF} + \\vec{CD}$."
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Cho hình thoi $ABCD$ cạnh $a$ và góc $\\widehat{BAD} = 60^\\circ$. Độ dài của vectơ $\\vec{BD}$ bằng:",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"40,90 120,30 200,90 120,150\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"90\" x2=\"200\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  <text x=\"24\" y=\"95\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"116\" y=\"20\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"95\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"116\" y=\"168\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"55\" y=\"95\" font-size=\"11\" fill=\"#2563eb\">60°</text>\n</svg>",
+      "opts": [
+        "$2a$",
+        "$a$",
+        "$\\frac{a\\sqrt{3}}{2}$",
+        "$a\\sqrt{2}$"
+      ],
+      "a": "B",
+      "why": "Hình thoi $ABCD$ có $AB = AD = a$ và $\\widehat{BAD} = 60^\\circ$ nên tam giác $ABD$ là tam giác đều cạnh $a$. Do đó độ dài $BD = a$, suy ra $|\\vec{BD}| = a$."
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Hai bạn An và Bình cùng di chuyển một xe đẩy trên đường phẳng: bạn An đẩy xe từ phía sau theo hướng di chuyển của xe bằng lực $F_1 = 2\\text{ N}$, bạn Bình kéo xe từ phía trước theo hướng di chuyển của xe một lực $F_2 = 3\\text{ N}$. Giả sử hai bạn thực hiện đúng kỹ thuật để xe di chuyển hiệu quả nhất. Hỏi xe di chuyển với lực tác động có độ lớn bằng bao nhiêu?",
+      "svg": "",
+      "opts": [
+        "$2\\text{ N}$",
+        "$3\\text{ N}$",
+        "$1\\text{ N}$",
+        "$5\\text{ N}$"
+      ],
+      "a": "D",
+      "why": "Để xe di chuyển hiệu quả nhất thì hai lực $\\vec{F}_1$ và $\\vec{F}_2$ phải cùng hướng. Khi đó lực tổng hợp là $\\vec{F} = \\vec{F}_1 + \\vec{F}_2$ có độ lớn $F = F_1 + F_2 = 2 + 3 = 5\\text{ N}$."
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Giả sử có các lực $\\vec{F}_1 = \\vec{MA}, \\vec{F}_2 = \\vec{MB}, \\vec{F}_3 = \\vec{MC}$ cùng tác động vào một vật tại điểm $M$. Cường độ hai lực $\\vec{F}_1, \\vec{F}_2$ lần lượt là $300\\text{ N}, 400\\text{ N}$ và $\\widehat{AMB} = 90^\\circ$. Tìm cường độ của lực $\\vec{F}_3 = \\vec{MC}$ biết vật đứng yên.",
+      "svg": "",
+      "opts": [
+        "$700\\text{ N}$",
+        "$250\\text{ N}$",
+        "$500\\text{ N}$",
+        "$1000\\text{ N}$"
+      ],
+      "a": "C",
+      "why": "Vì vật đứng yên nên hợp lực bằng $\\vec{0}$: $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0} \\Rightarrow \\vec{F}_3 = -(\\vec{F}_1 + \\vec{F}_2)$. Do $\\widehat{AMB} = 90^\\circ \\Leftrightarrow \\vec{F}_1 \\perp \\vec{F}_2$, ta có: $|\\vec{F}_3| = |\\vec{F}_1 + \\vec{F}_2| = \\sqrt{F_1^2 + F_2^2} = \\sqrt{300^2 + 400^2} = 500\\text{ N}$."
+    },
+    {
+      "n": 13,
+      "type": "tf",
+      "q": "Cho bốn điểm phân biệt $A, B, C, D$. Các đẳng thức vectơ sau là Đúng hay Sai?",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{BC} = \\vec{CA}$.",
+          "a": "S",
+          "why": "Theo quy tắc tam giác $\\vec{AB} + \\vec{BC} = \\vec{AC} = -\\vec{CA} \\ne \\vec{CA}$. Khẳng định này Sai."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AD} + \\vec{DA} = \\vec{0}$.",
+          "a": "Đ",
+          "why": "Ta có $\\vec{AD} + \\vec{DA} = \\vec{AA} = \\vec{0}$. Khẳng định này Đúng."
+        },
+        {
+          "id": "c",
+          "text": "$\\vec{AB} + \\vec{CD} = \\vec{AD} + \\vec{CB}$.",
+          "a": "Đ",
+          "why": "Biến đổi tương đương: $\\vec{AB} - \\vec{AD} = \\vec{CB} - \\vec{CD} \\Leftrightarrow \\vec{DB} = \\vec{DB}$ (luôn đúng). Khẳng định này Đúng."
+        },
+        {
+          "id": "d",
+          "text": "$\\vec{AB} - \\vec{CD} = \\vec{AC} + \\vec{DB}$.",
+          "a": "Đ",
+          "why": "Biến đổi: $\\vec{AB} - \\vec{AC} = \\vec{CD} + \\vec{DB} \\Leftrightarrow \\vec{CB} = \\vec{CB}$ (luôn đúng). Khẳng định này Đúng."
+        }
+      ],
+      "why": "Áp dụng các quy tắc cộng, trừ ba điểm cơ bản đối với vectơ."
+    },
+    {
+      "n": 14,
+      "type": "tf",
+      "q": "Cho tam giác $ABC$ đều cạnh $a$, có trọng tâm $G$. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 240 220\" width=\"220\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"120,30 40,160 200,160\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n  <!-- D forming parallelogram ABDC -->\n  <polygon points=\"40,160 120,220 200,160\" fill=\"none\" stroke=\"#64748b\" stroke-dasharray=\"3 3\"/>\n  <!-- Altitude AH and line AD -->\n  <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"220\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"120\" cy=\"117\" r=\"3.5\" fill=\"#dc2626\"/>\n  <text x=\"116\" y=\"20\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"22\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"206\" y=\"165\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"126\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">G</text>\n  <text x=\"126\" y=\"168\" font-size=\"11\" fill=\"#475569\">H</text>\n  <text x=\"116\" y=\"235\" font-size=\"13\" font-weight=\"bold\" fill=\"#64748b\">D</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{BC} = \\vec{AC}$.",
+          "a": "Đ",
+          "why": "Đúng theo quy tắc 3 điểm: $\\vec{AB} + \\vec{BC} = \\vec{AC}$."
+        },
+        {
+          "id": "b",
+          "text": "$|\\vec{AB} - \\vec{CB}| = 2a$.",
+          "a": "S",
+          "why": "Ta có $\\vec{AB} - \\vec{CB} = \\vec{AB} + \\vec{BC} = \\vec{AC} \\Rightarrow |\\vec{AB} - \\vec{CB}| = |\\vec{AC}| = a \\ne 2a$."
+        },
+        {
+          "id": "c",
+          "text": "$|\\vec{AB} + \\vec{AC}| = a\\sqrt{3}$.",
+          "a": "Đ",
+          "why": "Dựng hình bình hành $ABDC$, ta có $\\vec{AB} + \\vec{AC} = \\vec{AD}$. Vì $H$ là trung điểm $BC$ nên $AD = 2AH = 2 \\cdot \\frac{a\\sqrt{3}}{2} = a\\sqrt{3}$."
+        },
+        {
+          "id": "d",
+          "text": "$|\\vec{BG} - \\vec{BC}| = \\frac{a\\sqrt{3}}{2}$.",
+          "a": "S",
+          "why": "Ta có $\\vec{BG} - \\vec{BC} = \\vec{CG} \\Rightarrow |\\vec{BG} - \\vec{BC}| = CG = \\frac{2}{3}AH = \\frac{2}{3} \\cdot \\frac{a\\sqrt{3}}{2} = \\frac{a\\sqrt{3}}{3} \\ne \\frac{a\\sqrt{3}}{2}$."
+        }
+      ],
+      "why": "Sử dụng tính chất tam giác đều cạnh $a$ (đường cao $AH = \\frac{a\\sqrt{3}}{2}$, khoảng cách đến trọng tâm $AG = \\frac{a\\sqrt{3}}{3}$) và quy tắc hình bình hành."
+    },
+    {
+      "n": 15,
+      "type": "tf",
+      "q": "Cho hình bình hành $ABCD$ có $O$ là giao điểm của hai đường chéo. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\vec{AB} + \\vec{AC} = \\vec{AD}$.",
+          "a": "S",
+          "why": "Trong hình bình hành $ABCD$, theo quy tắc hình bình hành thì $\\vec{AB} + \\vec{AD} = \\vec{AC}$, không phải $\\vec{AB} + \\vec{AC} = \\vec{AD}$."
+        },
+        {
+          "id": "b",
+          "text": "$\\vec{AC} + \\vec{BA} = \\vec{AD}$.",
+          "a": "Đ",
+          "why": "Giao hoán: $\\vec{BA} + \\vec{AC} = \\vec{BC}$. Vì $ABCD$ là hình bình hành nên $\\vec{BC} = \\vec{AD}$."
+        },
+        {
+          "id": "c",
+          "text": "$|\\vec{AB} + \\vec{AD}| = AC$.",
+          "a": "Đ",
+          "why": "Vì $\\vec{AB} + \\vec{AD} = \\vec{AC}$ nên $|\\vec{AB} + \\vec{AD}| = |\\vec{AC}| = AC$."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $|\\vec{AB} + \\vec{AD}| = |\\vec{CB} - \\vec{CD}|$ thì $ABCD$ là hình thoi.",
+          "a": "S",
+          "why": "Ta có $\\vec{AB} + \\vec{AD} = \\vec{AC}$ và $\\vec{CB} - \\vec{CD} = \\vec{DB}$. Đẳng thức $|\\vec{AC}| = |\\vec{DB}| \\Leftrightarrow AC = BD$. Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật, không phải hình thoi."
+        }
+      ],
+      "why": "Dựa vào quy tắc hình bình hành và tính chất hình học của hình bình hành, hình chữ nhật."
+    },
+    {
+      "n": 16,
+      "type": "tf",
+      "q": "Cho hình vuông $ABCD$ tâm $O$ có cạnh bằng $a$. $M$ là một điểm bất kì trong mặt phẳng. Các khẳng định sau là Đúng hay Sai?",
+      "svg": "<svg viewBox=\"0 0 240 180\" width=\"220\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"50,30 170,30 170,150 50,150\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <line x1=\"50\" y1=\"30\" x2=\"170\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"170\" y1=\"30\" x2=\"50\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n  <circle cx=\"110\" cy=\"90\" r=\"3\" fill=\"#2563eb\"/>\n  <text x=\"36\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"176\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">B</text>\n  <text x=\"176\" y=\"162\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">C</text>\n  <text x=\"36\" y=\"162\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">D</text>\n  <text x=\"115\" y=\"88\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">O</text>\n</svg>",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\vec{OC} = \\vec{AO}$.",
+          "a": "Đ",
+          "why": "Vì $O$ là trung điểm của đường chéo $AC$ nên $\\vec{AO} = \\vec{OC}$."
+        },
+        {
+          "id": "b",
+          "text": "$|\\vec{AB} + \\vec{OD}| = AO$.",
+          "a": "Đ",
+          "why": "Vì $\\vec{OD} = \\vec{BO}$ nên $\\vec{AB} + \\vec{OD} = \\vec{AB} + \\vec{BO} = \\vec{AO} \\Rightarrow |\\vec{AB} + \\vec{OD}| = AO$."
+        },
+        {
+          "id": "c",
+          "text": "$|\\vec{AB} - \\vec{OC} + \\vec{OD}| = 0$.",
+          "a": "Đ",
+          "why": "Ta có $\\vec{OC} = \\vec{AO} \\Rightarrow \\vec{AB} - \\vec{AO} + \\vec{OD} = \\vec{OB} + \\vec{OD} = \\vec{0}$ (vì $O$ là trung điểm $BD$). Do đó độ dài bằng $0$."
+        },
+        {
+          "id": "d",
+          "text": "Độ dài vectơ $\\vec{MA} - \\vec{MB} - \\vec{MC} + \\vec{MD}$ bằng $DC$.",
+          "a": "S",
+          "why": "Ta có $(\\vec{MA} - \\vec{MB}) + (\\vec{MD} - \\vec{MC}) = \\vec{BA} + \\vec{CD} = \\vec{BA} + \\vec{BA} = 2\\vec{BA}$. Độ dài của vectơ này là $2a \\ne a = DC$."
+        }
+      ],
+      "why": "Sử dụng tính chất tâm đối xứng và các phép biến đổi vectơ trong hình vuông."
+    },
+    {
+      "n": 17,
+      "type": "sa",
+      "q": "Hai người đứng hai bên bờ kênh, cùng kéo một chiếc thuyền xuôi trên kênh. Người $A$ kéo với một lực bằng $60\\text{ N}$, người $B$ kéo với một lực bằng $80\\text{ N}$, hai lực hợp nhau một góc bằng $90^\\circ$. Hỏi hợp lực mà hai người đã tác động lên thuyền có độ lớn bằng bao nhiêu niutơn (N)?",
+      "unit": "N",
+      "svg": "<svg viewBox=\"0 0 280 160\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"50,130 190,130 190,30 50,30\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <!-- Vector OA = 60N (upward vertical) -->\n  <line x1=\"50\" y1=\"130\" x2=\"50\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#arrow)\"/>\n  <!-- Vector OB = 80N (horizontal) -->\n  <line x1=\"50\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <!-- Resultant OC (diagonal) -->\n  <line x1=\"50\" y1=\"130\" x2=\"190\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <!-- Right angle mark at O -->\n  <polyline points=\"50,118 62,118 62,130\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n  <text x=\"35\" y=\"140\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">O</text>\n  <text x=\"35\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">A (60N)</text>\n  <text x=\"195\" y=\"140\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">B (80N)</text>\n  <text x=\"198\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">C</text>\n</svg>",
+      "a": "100",
+      "why": "Gọi $\\vec{F}_1 = \\vec{OA}$ và $\\vec{F}_2 = \\vec{OB}$. Do góc giữa hai lực là $90^\\circ$ nên hợp lực $\\vec{F} = \\vec{OC}$ là đường chéo hình chữ nhật $OACB$: $F = \\sqrt{OA^2 + OB^2} = \\sqrt{60^2 + 80^2} = 100\\text{ N}$."
+    },
+    {
+      "n": 18,
+      "type": "sa",
+      "q": "Cho ba lực $\\vec{F}_1 = \\vec{MA}, \\vec{F}_2 = \\vec{MB}, \\vec{F}_3 = \\vec{MC}$ cùng tác động vào một vật tại điểm $M$ và vật đứng yên. Biết cường độ của $\\vec{F}_1, \\vec{F}_2$ đều bằng $100\\text{ N}$ và $\\widehat{AMB} = 60^\\circ$. Cường độ của lực $\\vec{F}_3$ bằng bao nhiêu niutơn (kết quả làm tròn đến hàng đơn vị)?",
+      "unit": "N",
+      "svg": "<svg viewBox=\"0 0 280 160\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <!-- Point M -->\n  <circle cx=\"150\" cy=\"80\" r=\"4\" fill=\"#0f172a\"/>\n  <!-- F1 to A: length 70, angle -30 deg -->\n  <line x1=\"150\" y1=\"80\" x2=\"210\" y2=\"45\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <!-- F2 to B: length 70, angle +30 deg -->\n  <line x1=\"150\" y1=\"80\" x2=\"210\" y2=\"115\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <!-- F3 to C: opposite to F1+F2 -->\n  <line x1=\"150\" y1=\"80\" x2=\"40\" y2=\"80\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"145\" y=\"98\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">M</text>\n  <text x=\"215\" y=\"42\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">A (F₁)</text>\n  <text x=\"215\" y=\"125\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\">B (F₂)</text>\n  <text x=\"15\" y=\"85\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">C (F₃)</text>\n  <text x=\"175\" y=\"85\" font-size=\"11\" fill=\"#475569\">60°</text>\n</svg>",
+      "a": "173",
+      "why": "Vật đứng yên nên $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0} \\Rightarrow |\\vec{F}_3| = |\\vec{F}_1 + \\vec{F}_2|$. Vì $F_1 = F_2 = 100\\text{ N}$ và góc giữa chúng bằng $60^\\circ$ nên tam giác lực là hình thoi tạo bởi hai tam giác đều: $|\\vec{F}_1 + \\vec{F}_2| = 2 \\cdot 100 \\cdot \\cos 30^\\circ = 100\\sqrt{3} \\approx 173.2\\text{ N}$. Làm tròn đến hàng đơn vị được $173$."
+    },
+    {
+      "n": 19,
+      "type": "sa",
+      "q": "Một chiếc tàu di chuyển từ phía Tây sang phía Đông với vận tốc $30\\text{ km/h}$, dòng nước chảy từ phía Nam lên phía Bắc với vận tốc $5\\text{ km/h}$. Hỏi tàu di chuyển với vận tốc thực tế bằng bao nhiêu km/h (kết quả làm tròn đến hàng phần mười)?",
+      "unit": "km/h",
+      "svg": "<svg viewBox=\"0 0 280 160\" width=\"260\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family:'Plus Jakarta Sans',sans-serif;\">\n  <polygon points=\"50,120 220,120 220,40 50,40\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/>\n  <!-- v_tau (West to East) -->\n  <line x1=\"50\" y1=\"120\" x2=\"220\" y2=\"120\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <!-- v_nuoc (South to North) -->\n  <line x1=\"50\" y1=\"120\" x2=\"50\" y2=\"40\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n  <!-- Resultant v -->\n  <line x1=\"50\" y1=\"120\" x2=\"220\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"35\" y=\"135\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">A</text>\n  <text x=\"120\" y=\"140\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\">v_tàu = 30 km/h (Đông)</text>\n  <text x=\"8\" y=\"75\" font-size=\"11\" font-weight=\"bold\" fill=\"#059669\">v_nước (Bắc)</text>\n  <text x=\"228\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">v_thực tế</text>\n</svg>",
+      "a": "30.4",
+      "why": "Véc-tơ vận tốc thực tế của tàu là $\\vec{v} = \\vec{v}_1 + \\vec{v}_2$. Do hai hướng Đông và Bắc vuông góc nhau nên: $v = \\sqrt{v_1^2 + v_2^2} = \\sqrt{30^2 + 5^2} = \\sqrt{925} = 5\\sqrt{37} \\approx 30.4138\\text{ km/h}$. Làm tròn đến hàng phần mười là $30.4$."
+    },
+    {
+      "n": 20,
+      "type": "sa",
+      "q": "Cho hai lực $\\vec{F}_1, \\vec{F}_2$ có điểm đặt tại $A$ tạo với nhau một góc $45^\\circ$, biết rằng cường độ của hai lực lần lượt bằng $60\\text{ N}$ và $90\\text{ N}$. Tính cường độ của lực tổng hợp của hai lực trên (kết quả làm tròn đến hàng đơn vị theo niutơn)?",
+      "unit": "N",
+      "svg": "",
+      "a": "139",
+      "why": "Theo quy tắc hình bình hành: $F^2 = F_1^2 + F_2^2 + 2F_1F_2\\cos 45^\\circ = 60^2 + 90^2 + 2 \\cdot 60 \\cdot 90 \\cdot \\frac{\\sqrt{2}}{2} = 3600 + 8100 + 5400\\sqrt{2} \\approx 19336.75 \\Rightarrow F \\approx 139.056\\text{ N}$. Làm tròn đến hàng đơn vị được $139$."
+    },
+    {
+      "n": 21,
+      "type": "sa",
+      "q": "Cho ba lực $\\vec{F}_1 = \\vec{MA}, \\vec{F}_2 = \\vec{MB}, \\vec{F}_3 = \\vec{MC}$ cùng tác động vào một ô tô tại điểm $M$ và ô tô đứng yên. Cho biết cường độ hai lực $\\vec{F}_1, \\vec{F}_2$ đều bằng $25\\text{ N}$ và góc $\\widehat{AMB} = 60^\\circ$. Khi đó cường độ của lực $\\vec{F}_3$ đạt bao nhiêu niutơn (kết quả làm tròn đến hàng phần mười)?",
+      "unit": "N",
+      "svg": "",
+      "a": "43.3",
+      "why": "Ô tô đứng yên nên $\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0} \\Rightarrow |\\vec{F}_3| = |\\vec{F}_1 + \\vec{F}_2|$. Vì $F_1 = F_2 = 25\\text{ N}$ và $\\widehat{AMB} = 60^\\circ$ nên $|\\vec{F}_1 + \\vec{F}_2| = 2 \\cdot 25 \\cdot \\cos 30^\\circ = 25\\sqrt{3} \\approx 43.301\\text{ N}$. Làm tròn đến hàng phần mười được $43.3$."
+    },
+    {
+      "n": 22,
+      "type": "sa",
+      "q": "Cho ba lực $\\vec{F}_1 = \\vec{MA}, \\vec{F}_2 = \\vec{MB}, \\vec{F}_3 = \\vec{MC}$ cùng tác động vào một vật tại điểm $M$ và vật đứng yên. Cho biết cường độ của $\\vec{F}_1, \\vec{F}_2$ đều bằng $100\\text{ N}$ và góc $\\widehat{AMB} = 90^\\circ$. Khi đó hãy tính cường độ của lực $\\vec{F}_3$ theo niutơn (kết quả làm tròn đến hàng đơn vị)?",
+      "unit": "N",
+      "svg": "",
+      "a": "141",
+      "why": "Vật đứng yên nên $\\vec{F}_3 = -(\\vec{F}_1 + \\vec{F}_2) \\Rightarrow |\\vec{F}_3| = \\sqrt{F_1^2 + F_2^2} = \\sqrt{100^2 + 100^2} = 100\\sqrt{2} \\approx 141.42\\text{ N}$. Làm tròn đến hàng đơn vị được $141$."
+    }
+  ]
+}
