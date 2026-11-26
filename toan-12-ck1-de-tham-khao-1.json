@@ -36,7 +36,7 @@
     {
       "n": 3,
       "type": "mc",
-      "q": "Trong không gian $Oxyz$, cho điểm $A(-1; 2; -1)$ và vectơ $\\vec{u} = 2\\vec{i} + \\vec{j} + 3\\vec{k}$. Gọi điểm $A'$ là hình chiếu của điểm $A$ lên mặt phẳng $(Oxz)$. Tọa độ của điểm $A'$ là",
+      "q": "Sử dụng thông tin sau để trả lời các câu hỏi 3, 4 và 5: Trong không gian $Oxyz$, cho điểm $A(-1; 2; -1)$ và vectơ $\\vec{u} = 2\\vec{i} + \\vec{j} + 3\\vec{k}$. Gọi điểm $A'$ là hình chiếu của điểm $A$ lên mặt phẳng $(Oxz)$.\n\nTọa độ của điểm $A'$ là?",
       "opts": [
         "$(-1; 2; 0)$",
         "$(-1; 0; -1)$",
@@ -50,7 +50,7 @@
     {
       "n": 4,
       "type": "mc",
-      "q": "Tọa độ của vectơ $\\vec{u} = 2\\vec{i} + \\vec{j} + 3\\vec{k}$ là",
+      "q": "Sử dụng thông tin sau để trả lời các câu hỏi 3, 4 và 5: Trong không gian $Oxyz$, cho điểm $A(-1; 2; -1)$ và vectơ $\\vec{u} = 2\\vec{i} + \\vec{j} + 3\\vec{k}$. Gọi điểm $A'$ là hình chiếu của điểm $A$ lên mặt phẳng $(Oxz)$.\n\nTọa độ của vectơ $\\vec{u}$ là?",
       "opts": [
         "$(1; 3; 2)$",
         "$(2; 1; 3)$",
@@ -64,7 +64,7 @@
     {
       "n": 5,
       "type": "mc",
-      "q": "Tích vô hướng của hai vectơ $\\overrightarrow{AA'}$ và $\\vec{u}$ bằng",
+      "q": "Sử dụng thông tin sau để trả lời các câu hỏi 3, 4 và 5: Trong không gian $Oxyz$, cho điểm $A(-1; 2; -1)$ và vectơ $\\vec{u} = 2\\vec{i} + \\vec{j} + 3\\vec{k}$. Gọi điểm $A'$ là hình chiếu của điểm $A$ lên mặt phẳng $(Oxz)$.\n\nTích vô hướng của hai vectơ $\\overrightarrow{AA'}$ và $\\vec{u}$ bằng?",
       "opts": [
         "$3$",
         "$-4$",
