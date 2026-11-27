@@ -1,0 +1,363 @@
+{
+  "id": "toan-10-ck1-de-1",
+  "grade": 10,
+  "gradeName": "Khối 10",
+  "title": "Đề ôn tập cuối kì 1 Toán 10 – Đề số 1",
+  "description": "Trọn bộ 22 câu ôn tập HK1 Toán 10 chuẩn cấu trúc 3 phần mới của Bộ GD&ĐT: 12 câu trắc nghiệm nhiều lựa chọn, 4 câu Đúng/Sai (16 ý) và 6 câu Trả lời ngắn kèm lời giải chi tiết",
+  "questions": [
+    {
+      "n": 1,
+      "type": "mc",
+      "q": "Cho mệnh đề $P$: \"Nếu $a$ và $b$ chia hết cho 3 thì $a + b$ cũng chia hết cho 3\". Mệnh đề nào là mệnh đề đảo của mệnh đề $P$?",
+      "opts": [
+        "Nếu $a + b$ chia hết cho 3 thì $a$ chia hết cho 3.",
+        "Nếu $a + b$ chia hết cho 3 thì $b$ chia hết cho 3.",
+        "Nếu $a$ và $b$ không chia hết cho 3 thì $a + b$ cũng không chia hết cho 3.",
+        "Nếu $a + b$ chia hết cho 3 thì $a$ và $b$ chia hết cho 3."
+      ],
+      "a": "D",
+      "why": "Mệnh đề $P$ có dạng \"Nếu $A$ thì $B$\". Mệnh đề đảo của $P$ là \"Nếu $B$ thì $A$\".\nDo đó mệnh đề đảo là: \"Nếu $a + b$ chia hết cho 3 thì $a$ và $b$ chia hết cho 3\".",
+      "svg": ""
+    },
+    {
+      "n": 2,
+      "type": "mc",
+      "q": "Cho tập hợp $A = \\{y \\in \\mathbb{R} \\mid y = 2x + 1,\\text{ với } x \\in \\mathbb{R}\\text{ và } -2 \\le x < 3\\}$. Tập $A$ bằng tập hợp nào sau đây?",
+      "opts": [
+        "$M = [-3; 7]$.",
+        "$N = [-2; 3)$.",
+        "$P = \\{x \\in \\mathbb{R} \\mid -3 \\le x < 7\\}$.",
+        "$Q = \\{y \\in \\mathbb{R} \\mid -3 < y \\le 7\\}$."
+      ],
+      "a": "C",
+      "why": "Ta có $y = 2x + 1 \\Rightarrow x = \\dfrac{y - 1}{2}$.\nVì $-2 \\le x < 3 \\Leftrightarrow -2 \\le \\dfrac{y - 1}{2} < 3 \\Leftrightarrow -4 \\le y - 1 < 6 \\Leftrightarrow -3 \\le y < 7$.\nVậy tập $A = [-3; 7) = \\{x \\in \\mathbb{R} \\mid -3 \\le x < 7\\} = P$.",
+      "svg": ""
+    },
+    {
+      "n": 3,
+      "type": "mc",
+      "q": "Bất phương trình bậc nhất hai ẩn $ax + by \\le c$ (với $a, b$ không đồng thời bằng 0)",
+      "opts": [
+        "luôn có vô số nghiệm.",
+        "luôn vô nghiệm.",
+        "luôn có đúng một nghiệm.",
+        "luôn có đúng hai nghiệm."
+      ],
+      "a": "A",
+      "why": "Miền nghiệm của bất phương trình bậc nhất hai ẩn là một nửa mặt phẳng kể cả bờ (hoặc không kể bờ), do đó bất phương trình bậc nhất hai ẩn luôn có vô số nghiệm.",
+      "svg": ""
+    },
+    {
+      "n": 4,
+      "type": "mc",
+      "q": "Điều kiện để hệ $\\begin{cases}ax + by < 0 \\\\ 2x + 5y \\ge -3\\end{cases}$ là một hệ bất phương trình bậc nhất hai ẩn $x, y$ là",
+      "opts": [
+        "$a \\neq 0$.",
+        "$b \\neq 0$.",
+        "$a^2 + b^2 \\ge 0$.",
+        "$a^2 + b^2 \\neq 0$."
+      ],
+      "a": "D",
+      "why": "Hệ gồm 2 bất phương trình là hệ bất phương trình bậc nhất hai ẩn khi và chỉ khi mỗi bất phương trình trong hệ đều là bất phương trình bậc nhất hai ẩn.\nBất phương trình thứ hai $2x + 5y \\ge -3$ đã là bậc nhất hai ẩn ($2^2 + 5^2 \\neq 0$).\nBất phương trình $ax + by < 0$ là bất phương trình bậc nhất hai ẩn khi và chỉ khi $a, b$ không đồng thời bằng 0, tức là $a^2 + b^2 \\neq 0$.",
+      "svg": ""
+    },
+    {
+      "n": 5,
+      "type": "mc",
+      "q": "Cho biết $\\cos \\alpha = -\\dfrac{3}{5}$, với $0^\\circ < \\alpha < 180^\\circ$. Khẳng định nào sau đây là đúng?",
+      "opts": [
+        "$\\sin \\alpha = -\\dfrac{4}{5}$.",
+        "$\\cot \\alpha = \\dfrac{3}{4}$.",
+        "$\\sin \\alpha = \\dfrac{4}{5}$.",
+        "$\\cos \\alpha = \\dfrac{3}{5}$."
+      ],
+      "a": "C",
+      "why": "Vì $0^\\circ < \\alpha < 180^\\circ$ nên $\\sin \\alpha > 0$.\nTa có: $\\sin^2 \\alpha = 1 - \\cos^2 \\alpha = 1 - \\left(-\\dfrac{3}{5}\\right)^2 = 1 - \\dfrac{9}{25} = \\dfrac{16}{25} \\Rightarrow \\sin \\alpha = \\dfrac{4}{5}$.",
+      "svg": ""
+    },
+    {
+      "n": 6,
+      "type": "mc",
+      "q": "Tam giác với ba cạnh là 5; 12; 13 có bán kính đường tròn nội tiếp tam giác đó bằng bao nhiêu?",
+      "opts": [
+        "$2$",
+        "$2\\sqrt{2}$",
+        "$2\\sqrt{3}$",
+        "$3$"
+      ],
+      "a": "A",
+      "why": "Nửa chu vi tam giác: $p = \\dfrac{5 + 12 + 13}{2} = 15$.\nNhận thấy $5^2 + 12^2 = 25 + 144 = 169 = 13^2$, nên tam giác vuông tại góc xen giữa hai cạnh 5 và 12.\nDiện tích tam giác: $S = \\dfrac{1}{2} \\cdot 5 \\cdot 12 = 30$.\nBán kính đường tròn nội tiếp: $r = \\dfrac{S}{p} = \\dfrac{30}{15} = 2$.",
+      "svg": ""
+    },
+    {
+      "n": 7,
+      "type": "mc",
+      "q": "Phát biểu nào sau đây đúng?",
+      "opts": [
+        "Hai vectơ bằng nhau thì có giá trùng nhau hoặc song song.",
+        "Hai vectơ có độ dài không bằng nhau thì không cùng hướng.",
+        "Hai vectơ không bằng nhau thì chúng không cùng hướng.",
+        "Hai vectơ không bằng nhau thì độ dài của chúng không bằng nhau."
+      ],
+      "a": "A",
+      "why": "Hai vectơ bằng nhau khi và chỉ khi chúng cùng hướng và cùng độ dài. Hai vectơ cùng hướng thì cùng phương, mà hai vectơ cùng phương thì có giá trùng nhau hoặc song song.",
+      "svg": ""
+    },
+    {
+      "n": 8,
+      "type": "mc",
+      "q": "Cho các điểm phân biệt $M, N, P, Q$. Tổng $\\overrightarrow{MN} + \\overrightarrow{PQ} + \\overrightarrow{NP} - \\overrightarrow{MP}$ bằng",
+      "opts": [
+        "$\\overrightarrow{MP}$.",
+        "$\\overrightarrow{MN}$.",
+        "$\\overrightarrow{PQ}$.",
+        "$\\overrightarrow{QN}$."
+      ],
+      "a": "C",
+      "why": "Áp dụng quy tắc cộng vectơ:\n$$\\overrightarrow{MN} + \\overrightarrow{PQ} + \\overrightarrow{NP} - \\overrightarrow{MP} = (\\overrightarrow{MN} + \\overrightarrow{NP}) + \\overrightarrow{PQ} - \\overrightarrow{MP} = \\overrightarrow{MP} + \\overrightarrow{PQ} - \\overrightarrow{MP} = \\overrightarrow{PQ}.$$",
+      "svg": ""
+    },
+    {
+      "n": 9,
+      "type": "mc",
+      "q": "Cho tam giác $OAB$ vuông cân tại $O$, $OA = a$. Độ dài của vectơ $3\\overrightarrow{OA} + 4\\overrightarrow{OB}$ là",
+      "opts": [
+        "$5a$.",
+        "$4a$.",
+        "$7a$.",
+        "$a$."
+      ],
+      "a": "A",
+      "why": "Đặt $\\overrightarrow{OD} = 3\\overrightarrow{OA}$ và $\\overrightarrow{OE} = 4\\overrightarrow{OB}$.\nVì tam giác $OAB$ vuông cân tại $O$ nên $OA \\perp OB \\Rightarrow OD \\perp OE$.\nDựng hình chữ nhật $ODCE$, theo quy tắc hình bình hành:\n$$\\overrightarrow{OD} + \\overrightarrow{OE} = \\overrightarrow{OC} \\Rightarrow 3\\overrightarrow{OA} + 4\\overrightarrow{OB} = \\overrightarrow{OC}.$$\nĐộ dài: $OC = \\sqrt{OD^2 + OE^2} = \\sqrt{(3a)^2 + (4a)^2} = \\sqrt{9a^2 + 16a^2} = \\sqrt{25a^2} = 5a$.",
+      "svg": ""
+    },
+    {
+      "n": 10,
+      "type": "mc",
+      "q": "Cho $\\vec{a} = \\left(2016\\sqrt{2015}; 0\\right)$, $\\vec{b} = (4; x)$. Hai vectơ $\\vec{a}, \\vec{b}$ cùng phương khi",
+      "opts": [
+        "$x = 504$.",
+        "$x = 0$.",
+        "$x = -504$.",
+        "$x = 2017$."
+      ],
+      "a": "B",
+      "why": "Vì $\\vec{a} \\neq \\vec{0}$, hai vectơ $\\vec{a}$ và $\\vec{b}$ cùng phương khi và chỉ khi tồn tại $k$ sao cho $\\vec{b} = k\\vec{a}$, tức là:\n$$\\begin{cases}4 = k \\cdot 2016\\sqrt{2015} \\\\ x = k \\cdot 0 = 0\\end{cases} \\Rightarrow x = 0.$$",
+      "svg": ""
+    },
+    {
+      "n": 11,
+      "type": "mc",
+      "q": "Cho hình vuông $ABCD$ có cạnh là $a$. Tính giá trị của biểu thức: $$\\left(\\overrightarrow{BC} + \\overrightarrow{BD} + \\overrightarrow{BA}\\right) \\cdot \\left(\\overrightarrow{AC} - \\overrightarrow{AB}\\right).$$",
+      "opts": [
+        "$-2\\sqrt{2}a^2$.",
+        "$-2a^2$.",
+        "$0$.",
+        "$2a^2$."
+      ],
+      "a": "D",
+      "why": "Theo quy tắc hình bình hành cho hình vuông $ABCD$: $\\overrightarrow{BC} + \\overrightarrow{BA} = \\overrightarrow{BD}$.\nDo đó: $\\overrightarrow{BC} + \\overrightarrow{BD} + \\overrightarrow{BA} = 2\\overrightarrow{BD}$.\nLại có: $\\overrightarrow{AC} - \\overrightarrow{AB} = \\overrightarrow{BC}$.\nSuy ra:\n$$\\left(\\overrightarrow{BC} + \\overrightarrow{BD} + \\overrightarrow{BA}\\right) \\cdot \\left(\\overrightarrow{AC} - \\overrightarrow{AB}\\right) = 2\\overrightarrow{BD} \\cdot \\overrightarrow{BC} = 2 |\\overrightarrow{BD}| \\cdot |\\overrightarrow{BC}| \\cdot \\cos(\\overrightarrow{BD}, \\overrightarrow{BC}).$$\nTrong hình vuông cạnh $a$: $BD = a\\sqrt{2}$, $BC = a$, góc giữa $\\overrightarrow{BD}$ và $\\overrightarrow{BC}$ là $45^\\circ$ (vì $BD$ là đường chéo hình vuông).\nDo đó:\n$$2 \\cdot a\\sqrt{2} \\cdot a \\cdot \\cos 45^\\circ = 2a^2\\sqrt{2} \\cdot \\dfrac{\\sqrt{2}}{2} = 2a^2.$$",
+      "svg": ""
+    },
+    {
+      "n": 12,
+      "type": "mc",
+      "q": "Giá trị gần đúng của $\\sqrt{5}$ chính xác đến hàng phần trăm là",
+      "opts": [
+        "$2{,}2$.",
+        "$2{,}24$.",
+        "$2{,}3$.",
+        "$2{,}236$."
+      ],
+      "a": "B",
+      "why": "Ta có $\\sqrt{5} = 2{,}2360679...$\nChữ số ở hàng phần nghìn là $6 \\ge 5$, do đó làm tròn đến hàng phần trăm (hai chữ số sau dấu phẩy) ta được $2{,}24$.",
+      "svg": ""
+    },
+    {
+      "n": 13,
+      "type": "tf",
+      "q": "Cho hai nửa khoảng $A = (-\\infty; m]$ và $B = [5; +\\infty)$. Khi đó:",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "Nếu $m = 5$ thì $A \\cap B = \\{5\\}$.",
+          "a": "Đ",
+          "why": "Khi $m = 5$, $A = (-\\infty; 5]$ và $B = [5; +\\infty)$, giao điểm chung duy nhất là phần tử 5. Vậy $A \\cap B = \\{5\\}$. Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Nếu $m < 5$ thì $A \\cap B = \\varnothing$.",
+          "a": "Đ",
+          "why": "Khi $m < 5$, không có số thực nào thỏa mãn đồng thời $x \\le m$ và $x \\ge 5$. Do đó $A \\cap B = \\varnothing$. Đúng."
+        },
+        {
+          "id": "c",
+          "text": "Nếu $m > 5$ thì $A \\cap B = [5; m]$.",
+          "a": "Đ",
+          "why": "Khi $m > 5$, phần chung của $x \\le m$ và $x \\ge 5$ là đoạn $[5; m]$. Đúng."
+        },
+        {
+          "id": "d",
+          "text": "Nếu $m = 9$ thì $A \\cup B = \\{9\\}$.",
+          "a": "S",
+          "why": "Khi $m = 9$, $A = (-\\infty; 9]$ và $B = [5; +\\infty)$. Hợp của hai tập hợp là $A \\cup B = (-\\infty; +\\infty) = \\mathbb{R}$, không phải $\\{9\\}$. Sai."
+        }
+      ],
+      "why": "Xem chi tiết giải thích cho từng ý a, b, c, d ở trên."
+    },
+    {
+      "n": 14,
+      "type": "tf",
+      "q": "Một người quan sát đứng tại điểm $A$ trên bờ sông muốn đo khoảng cách đến điểm $B$ bên kia sông. Người đó chọn điểm $C$ trên bờ cùng phía với $A$ sao cho $AC = 50\\text{ m}$. Dùng giác kế đo được $\\widehat{BAC} = 105^\\circ$ và $\\widehat{BCA} = 45^\\circ$.",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "Góc $\\widehat{ABC}$ bằng $30^\\circ$.",
+          "a": "Đ",
+          "why": "Tổng ba góc trong tam giác $ABC$ bằng $180^\\circ$ nên: $\\widehat{ABC} = 180^\\circ - (105^\\circ + 45^\\circ) = 30^\\circ$. Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Khoảng cách từ $C$ đến $B$ là $50\\sqrt{2}\\text{ m}$.",
+          "a": "S",
+          "why": "Áp dụng định lí sin: $\\dfrac{CB}{\\sin \\widehat{BAC}} = \\dfrac{AC}{\\sin \\widehat{ABC}} \\Rightarrow CB = \\dfrac{50 \\cdot \\sin 105^\\circ}{\\sin 30^\\circ} = 100 \\sin 105^\\circ \\approx 96{,}6\\text{ m} \\neq 50\\sqrt{2}\\text{ m}$. Sai."
+        },
+        {
+          "id": "c",
+          "text": "Khoảng cách từ $A$ đến $B$ xấp xỉ $70{,}7\\text{ m}$.",
+          "a": "Đ",
+          "why": "Áp dụng định lí sin: $\\dfrac{AB}{\\sin \\widehat{BCA}} = \\dfrac{AC}{\\sin \\widehat{ABC}} \\Rightarrow AB = \\dfrac{50 \\cdot \\sin 45^\\circ}{\\sin 30^\\circ} = 50\\sqrt{2} \\approx 70{,}7\\text{ m}$. Đúng."
+        },
+        {
+          "id": "d",
+          "text": "Diện tích tam giác $ABC$ xấp xỉ $1708\\text{ m}^2$ (làm tròn đến hàng đơn vị).",
+          "a": "Đ",
+          "why": "Diện tích tam giác: $S = \\dfrac{1}{2} AC \\cdot AB \\cdot \\sin \\widehat{BAC} = \\dfrac{1}{2} \\cdot 50 \\cdot 50\\sqrt{2} \\cdot \\sin 105^\\circ \\approx 1707{,}57\\text{ m}^2 \\approx 1708\\text{ m}^2$. Đúng."
+        }
+      ],
+      "why": "Xem chi tiết giải thích cho từng ý a, b, c, d ở trên."
+    },
+    {
+      "n": 15,
+      "type": "tf",
+      "q": "Cho hình bình hành $ABCD$ tâm $O$, gọi $G$ là trọng tâm tam giác $ABC$ và $N$ là trung điểm của $AB$. Khi đó:",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "$\\overrightarrow{DA} + \\overrightarrow{DC} = \\overrightarrow{DB}$.",
+          "a": "Đ",
+          "why": "Đúng theo quy tắc hình bình hành tại đỉnh $D$ của hình bình hành $ABCD$."
+        },
+        {
+          "id": "b",
+          "text": "$\\overrightarrow{AB} + \\overrightarrow{AD} = 2\\overrightarrow{AO}$.",
+          "a": "Đ",
+          "why": "Theo quy tắc hình bình hành: $\\overrightarrow{AB} + \\overrightarrow{AD} = \\overrightarrow{AC}$. Vì $O$ là trung điểm đường chéo $AC$ nên $\\overrightarrow{AC} = 2\\overrightarrow{AO}$. Đúng."
+        },
+        {
+          "id": "c",
+          "text": "$\\overrightarrow{BA} + \\overrightarrow{BC} = 3\\overrightarrow{BG}$.",
+          "a": "Đ",
+          "why": "Ta có $\\overrightarrow{BA} + \\overrightarrow{BC} = \\overrightarrow{BD} = 2\\overrightarrow{BO}$. Vì $G$ là trọng tâm $\\triangle ABC$ trên trung tuyến $BO$ nên $BO = \\dfrac{3}{2}BG \\Rightarrow 2\\overrightarrow{BO} = 3\\overrightarrow{BG}$. Đúng."
+        },
+        {
+          "id": "d",
+          "text": "$\\overrightarrow{GA} = \\dfrac{1}{3}\\overrightarrow{BD} - \\dfrac{2}{3}\\overrightarrow{NC}$.",
+          "a": "Đ",
+          "why": "Vì $G$ là trọng tâm $\\triangle ABC$ nên $\\overrightarrow{GA} + \\overrightarrow{GB} + \\overrightarrow{GC} = \\vec{0} \\Rightarrow \\overrightarrow{GA} = -(\\overrightarrow{GB} + \\overrightarrow{GC})$. Lại có $\\overrightarrow{GB} = \\dfrac{2}{3}\\overrightarrow{OB} = -\\dfrac{1}{3}\\overrightarrow{BD}$ và $\\overrightarrow{GC} = \\dfrac{2}{3}\\overrightarrow{NC}$. Suy ra $\\overrightarrow{GA} = \\dfrac{1}{3}\\overrightarrow{BD} - \\dfrac{2}{3}\\overrightarrow{NC}$. Đúng."
+        }
+      ],
+      "why": "Cả 4 khẳng định a, b, c, d đều đúng."
+    },
+    {
+      "n": 16,
+      "type": "tf",
+      "q": "Mẫu số liệu về chiều cao (đơn vị: cm) của các học sinh trong một nhóm lớp 10 được sắp xếp như sau:\n$$161;\\ 162;\\ 163;\\ 164;\\ 165;\\ 166;\\ 167;\\ 168;\\ 169;\\ 170;\\ 171.$$",
+      "svg": "",
+      "items": [
+        {
+          "id": "a",
+          "text": "Số trung bình của mẫu số liệu là $\\bar{x} = 166$.",
+          "a": "Đ",
+          "why": "Số trung bình: $\\bar{x} = \\dfrac{161 + 162 + ... + 171}{11} = \\dfrac{1826}{11} = 166$. Đúng."
+        },
+        {
+          "id": "b",
+          "text": "Số trung vị của mẫu số liệu là $M_e = 167$.",
+          "a": "S",
+          "why": "Cỡ mẫu $N = 11$ (số lẻ), số trung vị là giá trị đứng ở vị trí thứ $\\dfrac{11 + 1}{2} = 6$, đó là số 166 (không phải 167). Sai."
+        },
+        {
+          "id": "c",
+          "text": "Tứ phân vị thứ ba của mẫu số liệu là $Q_3 = 169$.",
+          "a": "Đ",
+          "why": "Nửa số liệu bên phải gồm 5 giá trị: $\\{167; 168; 169; 170; 171\\}$. Tứ phân vị thứ ba $Q_3$ là trung vị của nửa này, tức là 169. Đúng."
+        },
+        {
+          "id": "d",
+          "text": "Số trung bình và số trung vị bằng nhau.",
+          "a": "Đ",
+          "why": "Số trung bình $\\bar{x} = 166$ và số trung vị $M_e = 166$, do đó $\\bar{x} = M_e$. Đúng."
+        }
+      ],
+      "why": "Xem chi tiết giải thích cho từng ý a, b, c, d ở trên."
+    },
+    {
+      "n": 17,
+      "type": "sa",
+      "q": "Để chuẩn bị cho Hội khoẻ Phù Đổng của tỉnh, trường THPT X có 42 học sinh đăng kí tham gia. Trong đó có 20 học sinh đăng kí thi cầu lông, 22 học sinh đăng kí thi bóng chuyền, 21 học sinh đăng kí thi nhảy cao, 3 em đăng kí tham gia cả 3 môn. Biết mỗi em đều đăng kí ít nhất 1 môn, hỏi số em đăng kí tham gia đúng 1 môn trong ba môn trên là bao nhiêu em?",
+      "a": "24",
+      "unit": "học sinh",
+      "why": "Gọi $a, b, c$ lần lượt là số học sinh chỉ tham gia đúng 1 môn: cầu lông, bóng chuyền, nhảy cao. Đặt $M = a + b + c$.\nGọi $x, y, z$ lần lượt là số học sinh chỉ tham gia đúng 2 môn. Đặt $N = x + y + z$.\nSố học sinh tham gia cả 3 môn là 3.\nTheo giả thiết:\n1) Tổng số học sinh: $M + N + 3 = 42 \\Rightarrow M + N = 39$.\n2) Tổng lượt đăng kí: $M + 2N + 3 \\cdot 3 = 20 + 22 + 21 = 63 \\Rightarrow M + 2N = 54$.\nLấy phương trình (2) trừ phương trình (1): $N = 54 - 39 = 15$.\nSuy ra số học sinh chỉ tham gia đúng 1 môn là: $M = 39 - 15 = 24$ (em).",
+      "svg": ""
+    },
+    {
+      "n": 18,
+      "type": "sa",
+      "q": "Một xưởng sản xuất có hai máy, sản xuất ra hai loại sản phẩm I và II. Một tấn sản phẩm loại I lãi 300 nghìn đồng, một tấn sản phẩm loại II lãi 400 nghìn đồng. Để sản xuất một tấn sản phẩm loại I cần máy thứ nhất làm việc trong 1 giờ và máy thứ hai làm việc trong 2 giờ. Để sản xuất một tấn sản phẩm loại II cần máy thứ nhất làm việc trong 2 giờ và máy thứ hai làm việc trong 1 giờ. Mỗi máy không đồng thời làm hai loại sản phẩm cùng lúc. Một ngày máy thứ nhất làm việc không quá 5 giờ, máy thứ hai làm việc không quá 4 giờ. Hỏi một ngày tiền lãi lớn nhất bằng bao nhiêu nghìn đồng?",
+      "a": "1100",
+      "unit": "nghìn đồng",
+      "why": "Gọi $x, y \\ge 0$ lần lượt là số tấn sản phẩm loại I và loại II sản xuất trong ngày.\nTiền lãi thu được: $L(x, y) = 300x + 400y$ (nghìn đồng).\nĐiều kiện thời gian làm việc của các máy:\n$$\\begin{cases} x + 2y \\le 5 \\\\ 2x + y \\le 4 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$$\nMiền nghiệm là tứ giác $OABC$ với các đỉnh: $O(0; 0), A(0; 2{,}5), B(1; 2), C(2; 0)$.\nTính giá trị tiền lãi tại các đỉnh:\n- $L(O) = 0$.\n- $L(A) = 300(0) + 400(2{,}5) = 1000$.\n- $L(B) = 300(1) + 400(2) = 1100$.\n- $L(C) = 300(2) + 400(0) = 600$.\nVậy tiền lãi lớn nhất là 1100 nghìn đồng (đạt được khi sản xuất 1 tấn loại I và 2 tấn loại II).",
+      "svg": ""
+    },
+    {
+      "n": 19,
+      "type": "sa",
+      "q": "Cho tam giác nhọn $ABC$ có $a = 3, b = 4$ và diện tích $S = 3\\sqrt{3}$. Tính bán kính $R$ của đường tròn ngoại tiếp tam giác đó (làm tròn kết quả đến hàng phần trăm).",
+      "a": "2,08",
+      "unit": "",
+      "why": "Ta có diện tích tam giác: $S = \\dfrac{1}{2}ab \\sin C \\Rightarrow \\sin C = \\dfrac{2S}{ab} = \\dfrac{2 \\cdot 3\\sqrt{3}}{3 \\cdot 4} = \\dfrac{\\sqrt{3}}{2}$.\nVì tam giác $ABC$ nhọn nên $\\widehat{C} = 60^\\circ$.\nTheo định lí cosin, cạnh $c$ là:\n$$c = \\sqrt{a^2 + b^2 - 2ab \\cos C} = \\sqrt{3^2 + 4^2 - 2 \\cdot 3 \\cdot 4 \\cdot \\cos 60^\\circ} = \\sqrt{9 + 16 - 12} = \\sqrt{13}.$$\nBán kính đường tròn ngoại tiếp:\n$$R = \\dfrac{c}{2\\sin C} = \\dfrac{\\sqrt{13}}{2 \\cdot \\frac{\\sqrt{3}}{2}} = \\dfrac{\\sqrt{13}}{\\sqrt{3}} = \\dfrac{\\sqrt{39}}{3} \\approx 2{,}0816... \\approx 2{,}08.$$",
+      "svg": ""
+    },
+    {
+      "n": 20,
+      "type": "sa",
+      "q": "Cho tứ giác $ABCD$. Gọi $I, J$ theo thứ tự là trung điểm của $AB, CD$ và $IJ = \\dfrac{5}{4}$. Gọi $M, N$ theo thứ tự là trung điểm của $BC, AC$. Tính giá trị của biểu thức $\\left|\\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CJ}\\right|$.",
+      "a": "1,25",
+      "unit": "",
+      "why": "Áp dụng tính chất trung điểm:\n- Vì $M$ là trung điểm $BC$: $2\\overrightarrow{AM} = \\overrightarrow{AB} + \\overrightarrow{AC}$.\n- Vì $N$ là trung điểm $AC$: $2\\overrightarrow{BN} = \\overrightarrow{BA} + \\overrightarrow{BC}$.\n- Vì $I$ là trung điểm $AB$: $2\\overrightarrow{CI} = \\overrightarrow{CA} + \\overrightarrow{CB}$.\nCộng vế theo vế:\n$$2(\\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CI}) = (\\overrightarrow{AB} + \\overrightarrow{BA}) + (\\overrightarrow{AC} + \\overrightarrow{CA}) + (\\overrightarrow{BC} + \\overrightarrow{CB}) = \\vec{0} \\Rightarrow \\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CI} = \\vec{0}.$$\nDo đó:\n$$\\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CJ} = (\\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CI}) + \\overrightarrow{IJ} = \\vec{0} + \\overrightarrow{IJ} = \\overrightarrow{IJ}.$$\nSuy ra: $\\left|\\overrightarrow{AM} + \\overrightarrow{BN} + \\overrightarrow{CJ}\\right| = |\\overrightarrow{IJ}| = IJ = \\dfrac{5}{4} = 1{,}25$.",
+      "svg": ""
+    },
+    {
+      "n": 21,
+      "type": "sa",
+      "q": "Cho tam giác $ABC$ đều cạnh 1. Lấy $M, N, P$ lần lượt nằm trên ba cạnh $BC, CA, AB$ sao cho $BM = 2MC$, $AC = 3AN$, $AP = x$ ($x > 0$). Tìm $x$ để $AM$ vuông góc với $NP$ (kết quả làm tròn đến hai chữ số thập phân).",
+      "a": "0,42",
+      "unit": "",
+      "why": "Đặt $\\overrightarrow{AB} = \\vec{b}$, $\\overrightarrow{AC} = \\vec{c}$. Khi đó $|\\vec{b}| = |\\vec{c}| = 1$ và $\\vec{b} \\cdot \\vec{c} = 1 \\cdot 1 \\cdot \\cos 60^\\circ = \\dfrac{1}{2}$.\nBiểu diễn các vectơ:\n- $\\overrightarrow{AM} = \\overrightarrow{AB} + \\overrightarrow{BM} = \\vec{b} + \\dfrac{2}{3}\\overrightarrow{BC} = \\vec{b} + \\dfrac{2}{3}(\\vec{c} - \\vec{b}) = \\dfrac{1}{3}\\vec{b} + \\dfrac{2}{3}\\vec{c} = \\dfrac{1}{3}(\\vec{b} + 2\\vec{c})$.\n- $\\overrightarrow{PN} = \\overrightarrow{AN} - \\overrightarrow{AP} = \\dfrac{1}{3}\\vec{c} - x\\vec{b} = \\dfrac{1}{3}(-3x\\vec{b} + \\vec{c})$.\nĐể $AM \\perp NP \\Leftrightarrow \\overrightarrow{AM} \\cdot \\overrightarrow{PN} = 0$:\n$$\\Leftrightarrow (\\vec{b} + 2\\vec{c}) \\cdot (-3x\\vec{b} + \\vec{c}) = 0$$\n$$\\Leftrightarrow -3x|\\vec{b}|^2 + \\vec{b} \\cdot \\vec{c} - 6x(\\vec{b} \\cdot \\vec{c}) + 2|\\vec{c}|^2 = 0$$\nThay $|\\vec{b}|^2 = 1, |\\vec{c}|^2 = 1, \\vec{b} \\cdot \\vec{c} = \\dfrac{1}{2}$ vào:\n$$-3x + \\dfrac{1}{2} - 6x \\cdot \\dfrac{1}{2} + 2 = 0 \\Leftrightarrow -6x + \\dfrac{5}{2} = 0 \\Leftrightarrow x = \\dfrac{5}{12} \\approx 0{,}4166... \\approx 0{,}42.$$",
+      "svg": ""
+    },
+    {
+      "n": 22,
+      "type": "sa",
+      "q": "Cho mẫu số liệu $\\{a, 4, b, 8\\}$ với $a < b$. Biết giá trị trung bình của mẫu số liệu $\\bar{x} = 5$ và phương sai của mẫu số liệu $s^2 = 5$. Tính giá trị của biểu thức $a + 2b$.",
+      "a": "14",
+      "unit": "",
+      "why": "1) Giá trị trung bình của mẫu số liệu:\n$$\\bar{x} = \\dfrac{a + 4 + b + 8}{4} = 5 \\Leftrightarrow a + b + 12 = 20 \\Leftrightarrow a + b = 8 \\Rightarrow a = 8 - b \\quad (1).$$\n2) Phương sai của mẫu số liệu:\n$$s^2 = \\dfrac{(a - 5)^2 + (4 - 5)^2 + (b - 5)^2 + (8 - 5)^2}{4} = 5$$\n$$\\Leftrightarrow (a - 5)^2 + 1 + (b - 5)^2 + 9 = 20 \\Leftrightarrow (a - 5)^2 + (b - 5)^2 = 10 \\quad (2).$$\nThay (1) vào (2):\n$$(8 - b - 5)^2 + (b - 5)^2 = 10 \\Leftrightarrow (3 - b)^2 + (b - 5)^2 = 10$$\n$$\\Leftrightarrow (b^2 - 6b + 9) + (b^2 - 10b + 25) = 10 \\Leftrightarrow 2b^2 - 16b + 24 = 0 \\Leftrightarrow b^2 - 8b + 12 = 0$$\n$$\\Leftrightarrow (b - 2)(b - 6) = 0 \\Rightarrow \\left[\\begin{array}{l} b = 2 \\\\ b = 6 \\end{array}\\right.$$\n- Nếu $b = 2 \\Rightarrow a = 8 - 2 = 6$ (loại vì $a < b$).\n- Nếu $b = 6 \\Rightarrow a = 8 - 6 = 2$ (thỏa mãn $a < b$ vì $2 < 6$).\nVậy $a = 2, b = 6 \\Rightarrow a + 2b = 2 + 2 \\cdot 6 = 14$.",
+      "svg": ""
+    }
+  ]
+}
